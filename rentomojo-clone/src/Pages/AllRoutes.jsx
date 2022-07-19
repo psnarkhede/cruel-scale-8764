@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, routes} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Cartpage from './Cartpage';
 import Homepage from './Homepage';
 import Loginpage from './Loginpage';
@@ -8,7 +8,7 @@ import Productpage from './Productpage';
 import Productspage from './Productspage';
 import Signuppage from './Signuppage';
 
-const Routes = () => {
+const AllRoutes = () => {
   return (
     <Routes>
         
@@ -30,4 +30,4 @@ const Routes = () => {
   )
 }
 
-export default Routes
+export default AllRoutes
