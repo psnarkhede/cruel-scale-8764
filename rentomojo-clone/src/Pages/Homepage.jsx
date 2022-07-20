@@ -6,7 +6,8 @@ import { Box } from "@chakra-ui/react";
 const Homepage = () => {
   return (
     <Box>
-      <Box width={"85%"} border="1px solid red" margin={"auto"}>
+      <Box width={"90%"} border="1px solid red" margin={"auto"}>
+        <Carousel />
         <Carousel />
       </Box>
       <BsFillChatQuoteFill
