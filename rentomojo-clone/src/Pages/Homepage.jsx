@@ -8,7 +8,7 @@ const Homepage = () => {
     <Box>
       <Box width={"90%"} border="1px solid red" margin={"auto"}>
         <Carousel />
-        <Carousel />
+        {/* <Carousel /> */}
       </Box>
       <BsFillChatQuoteFill
         postion="fixed"
