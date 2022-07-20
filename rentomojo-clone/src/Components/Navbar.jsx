@@ -7,28 +7,42 @@ import {
   useColorModeValue,
   Input,
 } from "@chakra-ui/react";
-import Loginpage from "../Pages/Loginpage";
 import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export default function WithSubnavigation() {
   return (
-    <Box margin="auto">
+    <Box
+      margin="auto"
+      border={"1px solid red"}
+      // position="sticky"
+      // top={0}
+      background-color="transparent"
+      overflow="hidden"
+      // width="100%"
+      position="sticky"
+      // position="-webkit-sticky"
+      top={0}
+      width="100%"
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        width={"85%"}
+        width={"90%"}
         margin="auto"
-        gap="30px"
+        // margin="10px 10px 5px 20px"
+        gap="10px"
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         flexDirection="row"
-        justifyContent={"space-around"}
+        justifyContent={"space-between"}
+        border={"1px solid red"}
+        padding="10px"
       >
         {/* <Flex
           flex={{ base: 1, md: "auto" }}
@@ -40,7 +54,10 @@ export default function WithSubnavigation() {
             {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
             <img
               src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
+              // src="https://cdn.tradetracker.net/in/campaign_image_rectangle/31144.png"
               alt=""
+              width="300px"
+              overflow="hidden"
             />
           </Box>
         </Link>

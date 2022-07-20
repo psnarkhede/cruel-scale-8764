@@ -16,7 +16,7 @@ const LocationMenu = () => {
           Pune <AiOutlineDown style={{ margin: "5px 2px 2px 4px" }} />
         </Flex>
       </MenuButton>
-      <MenuList marginTop={"-24.5px"} justifyContent="left" maxWidth={"50px"}>
+      <MenuList marginTop={"-12px"} justifyContent="left" maxWidth={"50px"}>
         <Box>
           <MenuItem>Chennai</MenuItem>
           <MenuItem>Mumbai</MenuItem>
