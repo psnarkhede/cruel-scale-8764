@@ -9,6 +9,7 @@ import {
   Container,
   Flex,
   Button,
+  color,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
@@ -58,7 +59,7 @@ export default function CaptionCarousel() {
       position={"relative"}
       height={"450px"}
       width={"full"}
-      marginTop="30px"
+      marginTop="20px"
       // overflow={"hidden"}
     >
       {/* CSS files for react-slick */}
@@ -78,9 +79,11 @@ export default function CaptionCarousel() {
         aria-label="left-arrow"
         variant="ghost"
         position={"absolute"}
-        left={side}
+        left={"0px"}
         top={top}
         bg="white"
+        color="grey"
+        height={"70px"}
         // justifyContent="center"
         transform={"translate(0%, -50%)"}
         zIndex={2}
@@ -93,8 +96,10 @@ export default function CaptionCarousel() {
         aria-label="right-arrow"
         variant="ghost"
         position="absolute"
-        right={side}
+        right={"0px"}
+        color="grey"
         bg="white"
+        height={"70px"}
         top={top}
         transform={"translate(0%, -50%)"}
         zIndex={2}
@@ -114,7 +119,7 @@ export default function CaptionCarousel() {
             backgroundSize="cover"
             backgroundImage={`url(${card.image})`}
             borderRadius="30px"
-            border={"1px solid red"}
+            // border={"1px solid red"}
           >
             {/* This is the block you need to change, to customize the caption */}
             <Container size="container.lg" height="600px" position="relative">
@@ -134,7 +139,7 @@ export default function CaptionCarousel() {
         ))}
       </Slider>
       <Box
-        border="1px red solid"
+        border="1px rgb(212,224,233) solid"
         borderRadius={"30px"}
         bg="rgb(212,224,233)"
         marginTop={"-70px"}
@@ -144,7 +149,13 @@ export default function CaptionCarousel() {
         <Text marginTop={"60px"} textAlign="center">
           Safety precautions during COVID-19. We’re taking additional steps and
           precautionary measures to protect our community from COVID-19.",
-          <Button bg={"hidden"}>
+          <Button
+            className="a"
+            bg={"ff00ff"}
+            color="ff00ff"
+            fontFamily="aerial"
+            fontWeight={"3px"}
+          >
             Know more <IoIosArrowDroprightCircle />
           </Button>
         </Text>

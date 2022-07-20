@@ -6,12 +6,16 @@ import { Box } from "@chakra-ui/react";
 const Homepage = () => {
   return (
     <Box>
-      <Carousel />
+      <Box width={"85%"} border="1px solid red" margin={"auto"}>
+        <Carousel />
+      </Box>
       <BsFillChatQuoteFill
-        // marginTop="20px"
+        postion="fixed"
         size={"60px"}
-        right="side"
-        top="0"
+        right="0"
+        left="0"
+        // vertical-align="bottom"
+        display="inline-block"
         bottom="0"
       />
     </Box>

@@ -19,6 +19,8 @@ export default function WithSubnavigation() {
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
+        width={"85%"}
+        margin="auto"
         gap="30px"
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -33,15 +35,15 @@ export default function WithSubnavigation() {
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         ></Flex> */}
-        <Box cursor="pointer">
-          {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
-          <img
-            src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
-            alt=""
-            width={"300px"}
-            cursor="pointer"
-          />
-        </Box>
+        <Link to="/">
+          <Box cursor="pointer">
+            {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
+            <img
+              src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
+              alt=""
+            />
+          </Box>
+        </Link>
         <Box>
           <LocationMenu />
         </Box>
@@ -57,10 +59,12 @@ export default function WithSubnavigation() {
             borderRadius={"10px"}
           />
         </Box>
-        <Flex alignItems={"center"} gap="10px" cursor="pointer">
-          <BsCart2 size={"20px"} />
-          <Text>Cart</Text>
-        </Flex>
+        <Link to="/cart">
+          <Flex alignItems={"center"} gap="10px" cursor="pointer">
+            <BsCart2 size={"20px"} />
+            <Text>Cart</Text>
+          </Flex>
+        </Link>
 
         <Stack
           flex={{ base: 1, md: 0 }}
