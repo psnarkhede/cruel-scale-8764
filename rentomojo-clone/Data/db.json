@@ -1,0 +1,220 @@
+{
+    "WFH-Essentials": [
+      {
+        "id": 1,
+        "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
+        "title": "Cross Trainer C-500",
+        "rent": "1109",
+        "deliverytime": "72 hrs",
+        "dimensions":[54,46,23],
+        "producttype": "",
+        "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
+        "features":["Capacity/Size : 53", "Max user weight: 110kg","8kg flywheel for a smooth noise-free workout", "Non-slip pedals with 18 inches stride", "Monitor distance, time, calories & heart-rate", "Accessory tablet holder"],
+        "material":"",
+        "color": "",
+        "deposit": "1719"
+      },
+      {
+          "id": 2,
+          "productimage": "https://p.rmjo.in/moodShot/wlb98aev-1024x512.jpg",
+          "title": "Exercise Cycle AB-100",
+          "rent": "409",
+          "deliverytime": "72 hrs",
+          "dimensions":[54,46,23],
+          "producttype": "",
+          "description": "Experience total elliptical and upper body training in one machine with Reach AB-100 air bike exercise cycle. The dual-action arms and manual resistance control ensure a true full-body workout from start till the end while the belt drive system ensures a natural position of cycling giving you the confidence to reach your fitness goals every time.",
+          "features":["Max user weight: 100kg","Moving and stationary handle options","Non-slip pedals with strap", "Cushioned adjustable seat", "Monitor distance, time, calories & heart-rate"],
+          "material":"",
+          "color": "",
+          "deposit": "629"
+        },
+        {
+          "id": 3,
+          "productimage": "https://p.rmjo.in/moodShot/66nko2kj-1024x512.jpg",
+          "title": "Felix 3-Seater Fabric Sofa (Blue)",
+          "rent": "789",
+          "deliverytime": "72 hrs",
+          "dimensions":[70,33,24],
+          "producttype": "sofa",
+          "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
+          "features":["Soft fabric cover", "3 seat cushions", "Upholstered backrest cushions"],
+          "material":"fabric",
+          "color":"blue",
+          "deposit": "1229"
+        },
+        {
+          "id": 4,
+          "productimage": "https://p.rmjo.in/moodShot/z3vtekv3-1024x512.jpg",
+          "title": "Barney Leather Recliner (Brown)",
+          "rent": "799",
+          "deliverytime": "72 hrs",
+          "dimensions":[42,40,40],
+          "producttype": "",
+          "description": "We know you want this already! The comfort of putting up your feet and sinking into the comfy Barney recliner is unmatchable. The cushy seat comes with a 160-degrees recline feature.",
+          "features":["Reclines upto 160 degrees", "Single step reclining","Made with quality leatherette", "Seat Height: 20inches"],
+          "material": "PU Leather",
+          "color":"brown",
+          "deposit": "1239"
+        },
+        {
+          "id": 5,
+          "productimage": "https://p.rmjo.in/moodShot/lx0e9aiz-1024x512.jpg",
+          "title": "Dell XPS 13 , Intel Core i5 processor , 8th Gen - ( 8 GB / 256 GB SSD / Win 10 Pro OS , 13.3 inch,Silver )",
+          "rent": "3679",
+          "deliverytime": "72 hrs",
+          "dimensions":[0.4, 11.96, 7.87],
+          "producttype": "",
+          "description": "A laptop that is made to cater to students as well as working professionals with its eighth-generation quad-core i5 processor. Carry this compact lightweight 13.3-inch display laptop anywhere to multitask on-the-go. Let it be work, play or leisure, the Dell XPS 13 will let you do it all.",
+          "features":["Capacity/Size : 13.3", "RAM: 8GB, SSD: 256GB","Windows 10 Pro operating system", "Backlit Keyboard", "Fingerprint reader"],
+          "material":"",
+          "color": "",
+          "deposit": "9549"
+        }
+    ],
+  
+    "packages":[
+      {
+          "id":1,
+          "roomtype":["bedroom","appliances"],
+          "productimage":"https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
+          "title":"Double Bed with Fridge & Washing Machine",
+          "items":"3",
+          "rent": "1049",
+          "deposit": "1629",
+          "product":[
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
+                  "title": "Double Door Fridge (240 Litre)",
+                  "rent": "1049",
+                  "dimensions":[30,25,60],
+                  "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
+                  "features":["Capacity/Size : 230-250 L", "Brand May vary","Whirlpool/Haier/Godrej/Samsung","Deep Frost"],
+                  "material":"",
+                  "color": "",
+                  "deposit": "1629"
+              },
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
+                  "title": "Top Load Washing Machine",
+                  "rent": "769",
+                  "dimensions":[24,23,39],
+                  "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
+                  "features":["Capacity/Size : 5.8 to 6.5", "Brands: Whirlpool/Haier/Godrej/Samsung", "Sleek, compact design","Multiple wash modes"],
+                  "material":"",
+                  "color": "",
+                  "deposit": "1189"
+              },
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/m9qgitpv-500x500.jpg",
+                  "title": "Aurora Wooden Queen Bed (6x5)",
+                  "rent": "539",
+                  "dimensions":[72,60,8],
+                  "description": "The Aurora bed's frame provides a simple & stylish look to your room. The light brown colour of the bed matches any decor. The cot's frame has a low height & a headboard for you to lean comfortably.",
+                  "features":["Cot frame with Headboard", "Cot frame with Headboard", "Wooden headboard","To fit Mattress Size: 72 inches L x 60 inches B"],
+                  "material":"Solid wood",
+                  "color": "Brown",
+                  "deposit": "829"
+              }
+          ]
+      },
+      {
+          "id":2,
+          "roomtype":["bedroom","livingroom"],
+          "productimage":"https://p.rmjo.in/moodShot/wruziw9d-1024x512.jpg",
+          "title":"Sofa & Bed Combo",
+          "items":"2",
+          "rent": "789",
+          "deposit": "1229",
+          "product":[
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/mf3434ld-500x500.jpg",
+                  "title": "Felix 3-Seater Fabric Sofa (Blue)",
+                  "rent": "789",
+                  "dimensions":[70,33,24],
+                  "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you.",
+                  "features":["Soft fabric cover", "3 seat cushions","Upholstered backrest cushions"],
+                  "material":"Fabric",
+                  "color": "Blue",
+                  "deposit": "1229"
+              },
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/70rj36m0-500x500.jpg",
+                  "title": "Poise Wooden Queen Bed (6x5)",
+                  "rent": "549",
+                  "dimensions":[72,60,17],
+                  "description": "Comfort and compactness, get them both with the Poise queen bed. The bed's strong metal frame ensures durability while the honey-toned solid wood adds both style and comfort to the mix.",
+                  "features":["Metal bodied bed", "Solid wood headboard", "Durable coating to prevent rust","Honey finish"],
+                  "material":"Metal & Solid Wood",
+                  "color": "brown",
+                  "deposit": "849"
+              }
+          ]
+      },
+      {
+          "id":2,
+          "roomtype":["kitchen","appliances"],
+          "productimage":"https://p.rmjo.in/moodShot/omkdax17-1024x512.jpg",
+          "title":"Fridge & Induction Combo",
+          "items":"2",
+          "rent": "824",
+          "deposit": "1358",
+          "product":[
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/bwskug14-500x500.jpg",
+                  "title": "Single Door Fridge (190 Litre)",
+                  "rent": "719",
+                  "dimensions":[25,21,49],
+                  "description": "There’s always room for more food with a Single Door Refrigerator (190L). Designed for the modern home, this refrigerator effortlessly cools and keeps all your fruits and veggies fresh for a longer time. With best-in-class storage, corral your way to your favorite food station.",
+                  "features":["Capacity/Size : 180-200L", "Whirlpool/Haier/Godrej/Samsung/Voltbek","Energy rating: 2 Star and above","Superior cooling"],
+                  "material":"",
+                  "color": "",
+                  "deposit": "1109"
+              },
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/xev0b5yi-500x500.jpg",
+                  "title": "Induction Cooktop",
+                  "rent": "149",
+                  "dimensions":[17,14.1,8.1],
+                  "description": "The Induction comes with digital display timer, variable temperature selection and preset menus to suit your cooking needs.",
+                  "features":["Capacity/Size : 1900W", "Very useful when you are new in a city", "6-8 preset cooking menus","Energy saving, quick & efficient heating", "Compact, portable & easy to install"],
+                  "material":"",
+                  "color": "",
+                  "deposit": "249"
+              }
+          ]
+      },
+      {
+          "id":2,
+          "roomtype":["livingroom","appliances"],
+          "productimage":"https://p.rmjo.in/moodShot/ky79yiti-1024x512.jpg",
+          "title":"Cricket Mania Package",
+          "items":"2",
+          "rent": "849",
+          "deposit": "1309",
+          "product":[
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/605n5qi4-500x500.jpg",
+                  "title": "Smart LED TV - 32inches",
+                  "rent": "849",
+                  "dimensions":[20,5,32],
+                  "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
+                  "features":["Capacity/Size : 32inches", "Brands may vary","Wifi & Ethernet for internet connectivity","HDMI & USB support"],
+                  "material":"",
+                  "color": "",
+                  "deposit": "1309"
+              },
+              {
+                  "productimage": "https://p.rmjo.in/productSquare/p2dm6gz4-500x500.jpg",
+                  "title": "Oliver 3-Seater Fabric Sofa (Blue)",
+                  "rent": "559",
+                  "dimensions":[67,30,24],
+                  "description": "Wooden three seater sofa with comfortable cushioned seating, this is your living room's new best friend.",
+                  "features":["Wooden Frame", "Three seat cushions", "Bright and soft upholstery"],
+                  "material":"Solid wood",
+                  "color": "brown",
+                  "deposit": "869"
+              }
+          ]
+      }
+    ]
+  }
