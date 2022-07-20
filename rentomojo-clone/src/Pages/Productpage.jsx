@@ -415,4 +415,3 @@ const Productpage = () => {
 };
 
 export default Productpage;
-
