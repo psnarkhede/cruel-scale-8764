@@ -5,19 +5,12 @@ import {
   Button,
   Stack,
   useColorModeValue,
-  Icon,
   Input,
-  useDisclosure,
 } from "@chakra-ui/react";
+import Loginpage from "../Pages/Loginpage";
 import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
-
-const fields = [
-  {
-    id: 1,
-    name: "rahul",
-  },
-];
+import { Link } from "react-router-dom";
 
 export default function WithSubnavigation() {
   return (
@@ -30,7 +23,6 @@ export default function WithSubnavigation() {
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
-        borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         flexDirection="row"
@@ -58,7 +50,6 @@ export default function WithSubnavigation() {
             placeholder="Search for products"
             border="1px solid red"
             type="search"
-            {...fields}
             width={"700px"}
             padding="20px"
             margin={"auto"}
@@ -77,22 +68,24 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"red"}
-            href={"#"}
-            border="1px solid red"
-            borderRadius={"8px"}
-            _hover={{
-              bg: "white",
-              color: "red",
-            }}
-          >
-            LOGIN/SIGNUP
-          </Button>
+          <Link to="/login">
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"red"}
+              href={"#"}
+              border="1px solid red"
+              borderRadius={"8px"}
+              _hover={{
+                bg: "white",
+                color: "red",
+              }}
+            >
+              LOGIN/SIGNUP
+            </Button>
+          </Link>
         </Stack>
       </Flex>
       {/* </Flex> */}
