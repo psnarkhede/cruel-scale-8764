@@ -5,47 +5,70 @@ import {
   Button,
   Stack,
   useColorModeValue,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  Icon,
+  Input,
+  useDisclosure,
 } from "@chakra-ui/react";
+import LocationMenu from "./LocationMenu";
+import { BsCart2 } from "react-icons/bs";
 
-export default function Navbar() {
+const fields = [
+  {
+    id: 1,
+    name: "rahul",
+  },
+];
+
+export default function WithSubnavigation() {
   return (
-    <Box>
+    <Box margin="auto">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
+        gap="30px"
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        flexDirection="row"
+        justifyContent={"space-around"}
       >
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        {/* <Flex
+          flex={{ base: 1, md: "auto" }}
+          ml={{ base: -2 }}
+          display={{ base: "flex", md: "none" }}
+        ></Flex> */}
+        <Box cursor="pointer">
+          {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
           <img
-            src="https://www.nicepng.com/png/detail/256-2564838_horizontal-dot-com-rentomojo-logo.png"
-            alt="logo"
-            // max-width="50%"
-            width="200px"
-            height="300px"
-            // object-fit="cover"
+            src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
+            alt=""
+            width={"300px"}
+            cursor="pointer"
           />
-        </Flex>
-        <Flex>
-          <Menu>
-            <MenuButton as={Button}>Actions</MenuButton>
-            <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
-            </MenuList>
-          </Menu>
+        </Box>
+        <Box>
+          <LocationMenu />
+        </Box>
+        <Box>
+          <Input
+            placeholder="Search for products"
+            border="1px solid red"
+            type="search"
+            {...fields}
+            width={"700px"}
+            padding="20px"
+            margin={"auto"}
+            autoComplete="on"
+            borderRadius={"10px"}
+          />
+        </Box>
+        <Flex alignItems={"center"} gap="10px" cursor="pointer">
+          <BsCart2 size={"20px"} />
+          <Text>Cart</Text>
         </Flex>
 
         <Stack
@@ -55,29 +78,24 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            bg={"pink.400"}
+            bg={"red"}
             href={"#"}
+            border="1px solid red"
+            borderRadius={"8px"}
             _hover={{
-              bg: "pink.300",
+              bg: "white",
+              color: "red",
             }}
           >
-            Sign Up
+            LOGIN/SIGNUP
           </Button>
         </Stack>
       </Flex>
+      {/* </Flex> */}
     </Box>
   );
 }
