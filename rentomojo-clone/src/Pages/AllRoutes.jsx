@@ -11,11 +11,11 @@ import Signuppage from "./Signuppage";
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route path="/home" element={<Homepage />}></Route>
+      <Route path="/" element={<Homepage />}></Route>
 
       <Route path="/products" element={<Productspage />}></Route>
 
-      <Route path="/" element={<Productpage />}></Route>
+      <Route path="/product/:id" element={<Productpage />}></Route>
 
       <Route path="/cart" element={<Cartpage />}></Route>
 
