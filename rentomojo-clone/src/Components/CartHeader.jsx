@@ -5,12 +5,14 @@ import { useState } from "react";
 export const CartHeader=()=>{
       const [isCheck] = useState(true)
     return (
-        <Box border='1px solid teal' w='100%' h='75px' boxShadow='md' p='0 5' rounded='' bg='white'>
+        <Box 
+        // border='1px solid teal'
+         w='100%' h='75px' boxShadow='md' p='0 5' rounded='' bg='white'>
           {/* <Stack direction='row'> */}
             <Flex direction='row'  justifyContent='space-around'>
                <Box 
             //    border='1px solid red'
-                w='25%' h='70px' p='0 20px'>
+                w='20%' h='70px' p='0 20px'>
                  <Flex>
                     <Image src='https://imgs.search.brave.com/OB0gsW8kLE55wzM881HIkuMGB4U_iSX6UXI3VddIHrE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9kMXFi/Mm5iNWN6bmF0dS5j/bG91ZGZyb250Lm5l/dC9zdGFydHVwcy9p/LzU1OTMxNS1mODUy/MDY3ZDQ1NjIyMTZk/MWExMTEyZTI2MjYw/YjM1Mi1tZWRpdW1f/anBnLmpwZz9idXN0/ZXI9MTQ3NTg0Mzg1/MQ' alt='rentomoj logo'
                       boxSize='80px'
@@ -38,7 +40,7 @@ export const CartHeader=()=>{
             
                <Box 
             //    border='1px solid red'
-                w='55%' h='70px'>
+                w='45%' h='70px'>
                 <Flex direction='row'  justifyContent='space-around'>
                  <Box 
                 //  border='1px solid red'
