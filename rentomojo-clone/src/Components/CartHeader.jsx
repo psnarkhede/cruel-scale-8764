@@ -11,6 +11,7 @@ export const CartHeader=()=>{
         position='sticky'
         z-index='1'
         top='0px'
+        //  bg='white'
          w='100%' h='75px' boxShadow='md' p='0 5' rounded='' bg='white'>
           {/* <Stack direction='row'> */}
             <Flex direction='row'  justifyContent='space-around'>
