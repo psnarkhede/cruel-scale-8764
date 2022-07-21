@@ -18,7 +18,7 @@ const Homepage = () => {
         height={"300px"}
         marginTop="-20px"
       ></Box>
-
+      {/* chat icon */}
       <BsFillChatQuoteFill
         position={"static"}
         size={"60px"}
