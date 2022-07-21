@@ -171,6 +171,7 @@ function WithSubnavigation() {
                       padding="25px 100px"
                       bg="#bababa"
                       color="white"
+                      disabled
                       borderRadius="10px"
                       _hover="none"
                     >
