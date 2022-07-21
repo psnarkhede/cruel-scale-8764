@@ -32,7 +32,7 @@ const Productpage = () => {
     <Box>
       <Flex>
         {/* Left Section */}
-        <Box className={styles.leftdiv} width="65%">
+        <Box className={styles.leftdiv} width="65%" height="100vh">
           <Box bg="white">
             <Box
               marginLeft="60%"
