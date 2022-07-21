@@ -1,12 +1,16 @@
 import React from "react";
-import {Box, Divider, Flex,  Image, Text} from "@chakra-ui/react"
+import {Box, Flex,  Image, Text} from "@chakra-ui/react"
 import {MdCheckCircle} from "react-icons/md"
 import { useState } from "react";
+import { CartPopover } from "./CartPopover";
 export const CartHeader=()=>{
       const [isCheck] = useState(true)
     return (
         <Box 
         // border='1px solid teal'
+        position='sticky'
+        z-index='1'
+        top='0px'
          w='100%' h='75px' boxShadow='md' p='0 5' rounded='' bg='white'>
           {/* <Stack direction='row'> */}
             <Flex direction='row'  justifyContent='space-around'>
@@ -26,14 +30,12 @@ export const CartHeader=()=>{
                </Box >
                {/* select city option  */}
             
-               <Box border='1px solid red' w='15%' h='70px'>
-               {/* <Select placeholder='Select option'>
-                    <option value='option1'>Option 1</option>
-                    <option value='option2'>Option 2</option>
-                    <option value='option3'>Option 3</option>
-                </Select> */}
-                  
-                  
+               <Box  
+                border='1px solid red'
+                 w='15%' h='70px'>
+                  <Flex>
+                     <CartPopover/>
+                  </Flex> 
                </Box>
            
                {/* delivey option checked */}
