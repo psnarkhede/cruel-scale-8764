@@ -12,15 +12,20 @@ const Homepage = () => {
         <Carousel />
         <Pagelinkhomepage />
       </Box>
+      <Box
+        bg={"rgb(245,247,250)"}
+        border="1px solid red"
+        height={"300px"}
+        marginTop="-20px"
+      ></Box>
 
       <BsFillChatQuoteFill
-        position={"fixed"}
+        position={"static"}
         size={"60px"}
-        right="0"
         left="0"
-        // vertical-align="bottom"
-        display="inline-block"
         bottom="0"
+        // vertical-align="bottom"
+        // display="inline-block"
       />
     </Box>
   );
