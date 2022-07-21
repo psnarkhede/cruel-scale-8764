@@ -11,12 +11,6 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-const Loginpage = () => {
-  return (
-    <div>Loginpage</div>
-  )
-}
-
 function Loginpage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
