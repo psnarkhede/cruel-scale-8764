@@ -1,14 +1,18 @@
 import React from "react";
 import Carousel from "../Components/Crousel";
 import { BsFillChatQuoteFill } from "react-icons/bs";
-import { Box } from "@chakra-ui/react";
+import { BiPackage } from "react-icons/bi";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 
 const Homepage = () => {
   return (
     <Box>
       <Box width={"90%"} margin={"auto"}>
         <Carousel />
+        <Pagelinkhomepage />
       </Box>
+
       <BsFillChatQuoteFill
         position={"fixed"}
         size={"60px"}
