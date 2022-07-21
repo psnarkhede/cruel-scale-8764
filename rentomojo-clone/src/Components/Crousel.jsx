@@ -84,9 +84,8 @@ export default function CaptionCarousel() {
         bg="white"
         color="grey"
         height={"70px"}
-        // justifyContent="center"
+        zIndex={"1"}
         transform={"translate(0%, -50%)"}
-        zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
         <RiArrowLeftSLine size="40px" />
@@ -99,6 +98,8 @@ export default function CaptionCarousel() {
         right={"0px"}
         color="grey"
         bg="white"
+        z-index="1"
+        // bg="transparent"
         height={"70px"}
         top={top}
         transform={"translate(0%, -50%)"}

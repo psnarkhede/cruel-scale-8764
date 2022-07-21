@@ -10,29 +10,18 @@ import {
 import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 export default function WithSubnavigation() {
   return (
-    <Box
-      margin="auto"
-      border={"1px solid red"}
-      // position="sticky"
-      // top={0}
-      background-color="transparent"
-      overflow="hidden"
-      // width="100%"
-      position="sticky"
-      // position="-webkit-sticky"
-      top={0}
-      width="100%"
-    >
+    <Box className="navbar" margin="auto" width="100%">
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white")}
+        // bg={"transparent"}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         width={"90%"}
         margin="auto"
-        // margin="10px 10px 5px 20px"
         gap="10px"
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -41,16 +30,11 @@ export default function WithSubnavigation() {
         align={"center"}
         flexDirection="row"
         justifyContent={"space-between"}
-        border={"1px solid red"}
-        padding="10px"
+        // border={"1px solid red"}
+        padding="2px 5px 2px 2px"
       >
-        {/* <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        ></Flex> */}
         <Link to="/">
-          <Box cursor="pointer">
+          <Box cursor="pointer" marginleft={"0px"}>
             {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
             <img
               src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
@@ -67,7 +51,7 @@ export default function WithSubnavigation() {
         <Box>
           <Input
             placeholder="Search for products"
-            border="1px solid red"
+            // border="1px solid red"
             type="search"
             width={"700px"}
             padding="20px"
