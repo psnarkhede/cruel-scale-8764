@@ -33,8 +33,8 @@ function WithSubnavigation() {
   const [login, SetLogin] = useState(true);
 
   const handleLoginSubmit = () => {
-    localStorage.setItem("LoginEmail", JSON.stringify(loginEmail));
-    localStorage.setItem("LoginPassword", JSON.stringify(loginPassword));
+    localStorage.setItem("Email", JSON.stringify(loginEmail));
+    localStorage.setItem("Password", JSON.stringify(loginPassword));
     SetLogin(!login);
   };
 
@@ -221,7 +221,7 @@ function WithSubnavigation() {
                       </Text>
                       <Link to="/login">
                         <Button
-                          onClick={handleLoginSubmit && onClose}
+                          onClick={handleLoginSubmit}
                           disabled={
                             !loginPassword ||
                             !loginName ||
