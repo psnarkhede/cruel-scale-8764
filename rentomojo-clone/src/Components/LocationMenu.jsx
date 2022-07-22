@@ -12,7 +12,7 @@ import {
 import { AiOutlineDown } from "react-icons/ai";
 import CityList from "./CityList";
 
-export default function SizeExample() {
+export default function LocationMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = useState("");
 
