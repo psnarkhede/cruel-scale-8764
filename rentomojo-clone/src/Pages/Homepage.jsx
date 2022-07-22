@@ -19,11 +19,7 @@ const Homepage = () => {
         marginTop="-50px"
       >
         <SliderHome />
-        <Box
-        //  border={"1px solid red"}
-        >
-          <MyOwlCarousel />
-        </Box>
+        <MyOwlCarousel />
       </Box>
       <Box>
         <Features />

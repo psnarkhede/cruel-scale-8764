@@ -73,6 +73,10 @@ const MyOwlCarousel = () => {
       marginTop="5px"
       gap={"10px"}
       marginLeft="80px"
+      // position={"relative"} position: sticky;
+      /* position: -webkit-sticky; */
+      z-index={1}
+      // top: 0;
     >
       <OwlCarousel className="owl-theme" {...options}>
         {data.map((e) => {

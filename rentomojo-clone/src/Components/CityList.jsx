@@ -5,11 +5,11 @@ const CityList = ({ city, image, id }) => {
   return (
     <Box key={id} width="140px">
       <Box
-        border={"1px solid red"}
+        // border={"1px solid red"}
         borderRadius="10px"
-        // transition="border 1px solid red 0.5s
-        // margin="5px"
         cursor={"pointer"}
+        _hover={{ border: "1px solid red" }}
+        height="160px"
       >
         <Box
           padding="17px"
