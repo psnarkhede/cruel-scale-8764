@@ -17,7 +17,7 @@ const AllRoutes = () => {
 
       <Route path="/products/:category" element={<Productspage />}></Route>
 
-      <Route path="/product/:id" element={<SingleProductPage />}></Route>
+      <Route path="/product" element={<SingleProductPage />}></Route>
 
       <Route path="/cart" element={<Cartpage />}></Route>
 

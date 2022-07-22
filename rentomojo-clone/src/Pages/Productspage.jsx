@@ -17,7 +17,7 @@ import { Link, useParams } from "react-router-dom";
 
 const Productspage = () => {
   const { category } = useParams();
-  const data = useSelector((state) => state.data);
+  const data = useSelector((state) => state.productsreducer.data);
   console.log(data);
   const dispatch = useDispatch();
 
