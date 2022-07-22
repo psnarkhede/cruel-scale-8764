@@ -6,7 +6,7 @@ import { CardCarts } from "./CardCarts";
 export const CartCard=()=>{
 
     return (
-        <Flex direction='column' border='1px solid teal'w='400px' px='10px' py='15px'  h='500px'marginTop='130px' gap={3} justifyContent='space-around'>
+        <Flex direction='column' border='1px solid teal'w='400px' px='10px' py='2px'  marginTop='130px' gap={3} justifyContent='space-around'>
              {/* have coupon code */}
             <Flex 
              direction='row'
@@ -29,7 +29,14 @@ export const CartCard=()=>{
                 </Box>
             </Flex>
             {/* cart Card start */}
-            <Flex>
+            <Flex 
+               direction='column'
+               w='95%'
+            //    h='190px'
+               boxShadow='xs' p='' rounded='md' bg='white'
+               justifyContent='space-around'
+               alignItems='center'
+            >
                 {/* todo */}
                 <CardCarts/>
             </Flex>
