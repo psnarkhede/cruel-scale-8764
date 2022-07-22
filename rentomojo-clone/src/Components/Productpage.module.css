@@ -1,7 +1,7 @@
-.leftdiv{
-    overflow: scroll;
+.leftdiv {
+  overflow: scroll;
 }
 
-.leftdiv::-webkit-scrollbar{
-    display:none
+.leftdiv::-webkit-scrollbar {
+  display: none;
 }
