@@ -5,10 +5,18 @@ import { BiRupee } from "react-icons/bi";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaChevronCircleRight, FaShoppingCart } from "react-icons/fa";
 import {Link} from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { postdatatocartapi } from '../Redux/Cartapp/action';
 
-const Productpageright = ({data}) => {
+const Productpageright = ({data,category}) => {
 
   {/* Today */}
+
+  const dispatch = useDispatch();
+
+  const handleaddtocart = (data) => {
+    dispatch(postdatatocartapi(data))
+  }
 
   const [viewcartoption, setViewcartoption] = useState(false)
 
@@ -219,6 +227,7 @@ const Productpageright = ({data}) => {
           border="1px solid red"
           padding="0px 24% 0px 24%"
           _hover={{ bg: "red" }}
+          onClick={() => handleaddtocart(data)}
         >
           <Icon marginRight="10px" as={FaShoppingCart} />
           Book Your Plan

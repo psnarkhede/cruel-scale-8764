@@ -1901,6 +1901,50 @@
       "deposit": "1889"
     }
   ],
-  "questions": [
+  "questions": [],
+  "cartitems": [
+    {
+      "id": 53,
+      "productimage": "https://p.rmjo.in/moodShot/sbg8gqe1-1024x512.jpg",
+      "title": "Brooklyn 1-Seater Fabric Sofa",
+      "rent": "299",
+      "deliverytime": "24 hrs",
+      "dimensions": [
+        24,
+        30,
+        32
+      ],
+      "producttype": "Sofas",
+      "description": "With the Brooklyn Sofa , elegance and comfort find a new name. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
+      "features": [
+        "Fully upholstered couch",
+        "Soft foam cushioning",
+        "Added pouf that serves as extender"
+      ],
+      "material": "Fabric & Wood",
+      "color": "Blue",
+      "deposit": "409"
+    },
+    {
+      "id": 56,
+      "productimage": "https://p.rmjo.in/moodShot/n557a055-1024x512.jpg",
+      "title": "Latte Wooden Coffee Table",
+      "rent": "279",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        35,
+        23,
+        14
+      ],
+      "producttype": "Center Tables",
+      "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
+      "features": [
+        "Wide-table top",
+        "Coffee table/center table"
+      ],
+      "material": " Solid Wood",
+      "color": "Teal Green",
+      "deposit": "379"
+    }
   ]
 }
