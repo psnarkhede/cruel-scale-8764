@@ -4,23 +4,17 @@ import {
   IconButton,
   useBreakpointValue,
   Stack,
-  Heading,
   Text,
   Container,
-  Flex,
   Button,
-  color,
 } from "@chakra-ui/react";
-// Here we have used react-icons package for the icons
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-// And react-slick as our Carousel Lib
 import Slider from "react-slick";
+import ReactOwlCarousel from "react-owl-carousel";
 
-// Settings for the slider
 const settings = {
-  dots: true,
-  arrows: false,
+  arrows: true,
   fade: true,
   infinite: true,
   autoplay: true,
@@ -31,17 +25,10 @@ const settings = {
 };
 
 export default function CaptionCarousel() {
-  // As we have used custom buttons, we need a reference variable to
-  // change the state
   const [slider, setSlider] = useState(Slider | (null > null));
-
-  // These are the breakpoints which changes the position of the
-  // buttons as the screen size changes
   const top = useBreakpointValue({ base: "90%", md: "50%" });
   const side = useBreakpointValue({ base: "30%", md: "40px" });
 
-  // This list contains all the data for carousels
-  // This can be static or loaded from a server
   const cards = [
     {
       image: "https://s.rmjo.in/WP-Web.png?width=200&height=200",
