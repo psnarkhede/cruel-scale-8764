@@ -26,7 +26,7 @@ export default function SizeExample() {
   const cities = [
     {
       id: 1,
-      city_Name: "Delhi",
+      city_Name: "New Delhi",
       image: "https://cdn.iconscout.com/icon/free/png-64/delhi-1-161357.png",
     },
     {
@@ -50,70 +50,65 @@ export default function SizeExample() {
       image: "https://cdn.iconscout.com/icon/free/png-64/hawamahal-119686.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 6,
+      city_Name: "Chandigarh",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://cdn.iconscout.com/icon/free/png-64/chandigarh-1-161356.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
-      image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+      id: 7,
+      city_Name: "Chennai",
+      image: "https://cdn.iconscout.com/icon/free/png-64/chennai-119687.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 8,
+      city_Name: "Mumbai",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://cdn.iconscout.com/icon/free/png-64/gatewayofindia-119678.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 9,
+      city_Name: "Ahemdabad",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://cdn.iconscout.com/icon/free/png-64/jhultaminar-119680.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 10,
+      city_Name: "Pune",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://cdn.iconscout.com/icon/free/png-64/shanivarwada-2-161359.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
-      image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+      id: 11,
+      city_Name: "Surat",
+      image: "https://cdn.iconscout.com/icon/free/png-64/surat-1-161360.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
-      image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+      id: 12,
+      city_Name: "Agra",
+      image: "https://cdn.iconscout.com/icon/free/png-64/tajmahal-119684.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
-      image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+      id: 13,
+      city_Name: "Faridabad",
+      image: "https://cdn.iconscout.com/icon/free/png-64/kerala-119681.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
-      image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+      id: 14,
+      city_Name: "Kolkata",
+      image: "https://cdn.iconscout.com/icon/free/png-64/victoria-119685.png",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 15,
+      city_Name: "Noida",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuilX4VHbwnr5zvHZSwYR0GWbkBEoNiUxcSw&usqp=CAU",
     },
     {
-      id: 1,
-      city_Name: "Delhi",
+      id: 16,
+      city_Name: "Gandhiagar",
       image:
-        "https://cdn-icons.flaticon.com/png/512/3375/premium/3375454.png?token=exp=1658464833~hmac=7741f268b55d11867efd5e0239c8f86b",
+        "https://cdn4.iconfinder.com/data/icons/indian-cities-landmarks/100/Ahmedabad-512.png",
     },
   ];
 
@@ -124,8 +119,9 @@ export default function SizeExample() {
         key={size}
         m={4}
         bg="transparent"
+        transition={"none"}
         // colorScheme="white"
-        variant={"ghost"}
+        // variant={"ghost"}
       >
         Pune
         <AiOutlineDown />
@@ -134,22 +130,31 @@ export default function SizeExample() {
       <Modal onClose={onClose} size={size} isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent>
-          <Box margin={"25px"}>
+          <Box margin={"15px"} padding="10px">
             <Input
               type="search"
               placeholder=" Search city here"
               padding={"20px"}
             />
-            <Grid
-              templateColumns="repeat(8, 1fr)"
-              gap={6}
-              padding="10px"
-              margin="20px"
+            <Box
+              // border={"1px solid red"}
+              marginTop={"30px"}
             >
-              {cities.map((e) => {
-                return <CityList city={e.city_Name} image={e.image} />;
-              })}
-            </Grid>
+              <Grid
+                templateColumns="repeat(8, 1fr)"
+                gap={6}
+                padding="0px"
+                margin="10px"
+              >
+                {cities.map((e) => {
+                  return (
+                    <Box>
+                      <CityList city={e.city_Name} id={e.id} image={e.image} />
+                    </Box>
+                  );
+                })}
+              </Grid>
+            </Box>
           </Box>
         </ModalContent>
       </Modal>
