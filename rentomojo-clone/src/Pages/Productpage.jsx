@@ -3,17 +3,36 @@ import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
+import styles from "../Components/Productpage.module.css"
+import Productpageright from "../Components/Productpageright";
+import Productsection from "../Components/Productsection";
 
 const Productpage = () => {
   const [box1, setBox1] = useState(true);
 
   const [like, setLike] = useState(false);
 
+  const data = {
+    id: 51,
+    productimage: "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
+    title: "Rex 3-Seater Leather Sofa",
+    rent: "739",
+    deliverytime: "48 hrs",
+    dimensions: [83, 31, 32],
+    producttype: "Sofas",
+    description:
+      " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+    features: ["Leatherette covering", "Foam filling"],
+    material: "Art Leather",
+    color: "black",
+    deposit: "1009",
+  };
+
   return (
     <Box>
       <Flex>
         {/* Left Section */}
-        <Box border="1px solid red" width="65%">
+        <Box className={styles.leftdiv} width="65%" height="100vh">
           <Box bg="white">
             <Box
               marginLeft="60%"
@@ -28,7 +47,11 @@ const Productpage = () => {
               justifyContent="center"
               alignItems="center"
             >
-              <Icon onClick={() => setLike(!like)}  fontSize="22px" as={like ? FcLike : AiOutlineHeart} />
+              <Icon
+                onClick={() => setLike(!like)}
+                fontSize="22px"
+                as={like ? FcLike : AiOutlineHeart}
+              />
             </Box>
             <Image src="https://p.rmjo.in/moodShot/ky3xx53f-1024x512.jpg" />
           </Box>
@@ -296,12 +319,17 @@ const Productpage = () => {
                 paddingTop="20px"
                 paddingBottom="20px"
               >
-                <Text fontWeight="500">
-                Why should I rent for 24 months?
-                </Text>
+                <Text fontWeight="500">Why should I rent for 24 months?</Text>
 
                 <Text fontSize="14px" marginTop="5px" color="gray.500">
-                24 months is the most preferred tenure due to the following reasons : possibility of shifting is high as an avg consumer today shifts once in 2 years. Rentomojo saves you from this burden by providing you free relocation within your city or any of the major metro cities. Not just that! you get options to upgrade or expand your rental collection anytime at the touch of a button as well as an option to cancel your subscription anytime as per your changing life priorities.
+                  24 months is the most preferred tenure due to the following
+                  reasons : possibility of shifting is high as an avg consumer
+                  today shifts once in 2 years. Rentomojo saves you from this
+                  burden by providing you free relocation within your city or
+                  any of the major metro cities. Not just that! you get options
+                  to upgrade or expand your rental collection anytime at the
+                  touch of a button as well as an option to cancel your
+                  subscription anytime as per your changing life priorities.
                 </Text>
               </Box>
 
@@ -314,11 +342,15 @@ const Productpage = () => {
                 paddingBottom="20px"
               >
                 <Text fontWeight="500">
-                Will I be charged any fee if I return the product before my minimum tenure ends?
+                  Will I be charged any fee if I return the product before my
+                  minimum tenure ends?
                 </Text>
 
                 <Text fontSize="14px" marginTop="5px" color="gray.500">
-                We do charge a small early closure fee, which is generally a multiple of your monthly rent as per your plan. To know more about the early closure charges associated with your plan, check out the Compare all tenures button.
+                  We do charge a small early closure fee, which is generally a
+                  multiple of your monthly rent as per your plan. To know more
+                  about the early closure charges associated with your plan,
+                  check out the Compare all tenures button.
                 </Text>
               </Box>
 
@@ -331,11 +363,50 @@ const Productpage = () => {
                 paddingBottom="20px"
               >
                 <Text fontWeight="500">
-                Why are rentals changing with tenure ?
+                  Why are rentals changing with tenure ?
                 </Text>
 
                 <Text fontSize="14px" marginTop="5px" color="gray.500">
-                its unfair to charge the same price across tenures as consumers end up paying a lot more than whats fair in cases of longer tenures. so to make it fair for someone who is committing longer, we reduce rentals with tenure similarly to how EMI reduces with tenure.
+                  its unfair to charge the same price across tenures as
+                  consumers end up paying a lot more than whats fair in cases of
+                  longer tenures. so to make it fair for someone who is
+                  committing longer, we reduce rentals with tenure similarly to
+                  how EMI reduces with tenure.
+                </Text>
+              </Box>
+
+              <Box
+                textAlign="left"
+                borderBottom="1px solid silver"
+                width="90%"
+                margin="auto"
+                paddingTop="20px"
+                paddingBottom="20px"
+              >
+                <Text fontWeight="500">Is relocation really free ?</Text>
+
+                <Text fontSize="14px" marginTop="5px" color="gray.500">
+                  Intercity relocation and Intracity relocation comes free with
+                  our service. We help you relocate to any cities we are present
+                  in.
+                </Text>
+              </Box>
+
+              <Box
+                textAlign="left"
+                borderBottom="1px solid silver"
+                width="90%"
+                margin="auto"
+                paddingTop="20px"
+                paddingBottom="20px"
+              >
+                <Text fontWeight="500">Why do you guys take deposit ?</Text>
+
+                <Text fontSize="14px" marginTop="5px" color="gray.500">
+                  We typically give you products worth a lot more than what we
+                  ask for in return as monthly rentals. To safegaurd us with
+                  risk of defaults or intential damage, we charge a nominal
+                  deposit.
                 </Text>
               </Box>
 
@@ -348,56 +419,36 @@ const Productpage = () => {
                 paddingBottom="20px"
               >
                 <Text fontWeight="500">
-                Is relocation really free ?
+                  What all do you cover in free maintenance ?
                 </Text>
 
                 <Text fontSize="14px" marginTop="5px" color="gray.500">
-                Intercity relocation and Intracity relocation comes free with our service. We help you relocate to any cities we are present in.
+                  We take care of all manufacturing defects and minor wear and
+                  tear. Not only that we end up waving damage upto ₹1000*
                 </Text>
               </Box>
 
-              <Box
-                textAlign="left"
-                borderBottom="1px solid silver"
-                width="90%"
-                margin="auto"
-                paddingTop="20px"
-                paddingBottom="20px"
-              >
-                <Text fontWeight="500">
-                Why do you guys take deposit ?
-                </Text>
-
-                <Text fontSize="14px" marginTop="5px" color="gray.500">
-                We typically give you products worth a lot more than what we ask for in return as monthly rentals. To safegaurd us with risk of defaults or intential damage, we charge a nominal deposit.
-                </Text>
+              <Box padding="40px">
+                <Flex alignItems="center">
+                  <Text color="gray.500" fontSize="16px">
+                    Have aquestion in mind?
+                  </Text>
+                  <Button
+                    marginLeft="15px"
+                    color="green.500"
+                    border="1px solid green"
+                    bg="white"
+                    fontWeight="400"
+                  >
+                    Post a question
+                  </Button>
+                </Flex>
               </Box>
-
-              <Box
-                textAlign="left"
-                borderBottom="1px solid silver"
-                width="90%"
-                margin="auto"
-                paddingTop="20px"
-                paddingBottom="20px"
-              >
-                <Text fontWeight="500">
-                What all do you cover in free maintenance ?
-                </Text>
-
-                <Text fontSize="14px" marginTop="5px" color="gray.500">
-                We take care of all manufacturing defects and minor wear and tear. Not only that we end up waving damage upto ₹1000*
-                </Text>
-              </Box>
-
-                <Box padding="40px">
-                    <Flex alignItems="center">
-                    <Text color="gray.500" fontSize="16px" >Have aquestion in mind?</Text>
-                    <Button marginLeft="15px" color="green.500" border="1px solid green" bg="white" fontWeight="400" >Post a question</Button>
-                    </Flex>
-                </Box>
-              
             </Box>
+          </Box>
+
+          <Box hidden={box1 ? false : true}>
+            <Productsection data={data} />
           </Box>
 
           <br />
@@ -408,7 +459,9 @@ const Productpage = () => {
         </Box>
 
         {/* Right Section */}
-        <Box border="1px solid red" width="35%" height="100vh"></Box>
+        <Box width="35%" height="100vh">
+          <Productpageright data={data} />
+        </Box>
       </Flex>
     </Box>
   );

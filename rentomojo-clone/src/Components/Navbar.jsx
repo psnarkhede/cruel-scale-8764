@@ -11,6 +11,7 @@ import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import FadeEx from "./NavbarTransition";
 
 import React, { useState } from "react";
 import {
@@ -61,10 +62,8 @@ function WithSubnavigation() {
       >
         <Link to="/">
           <Box cursor="pointer" marginleft={"0px"}>
-            {/* <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}> */}
             <img
               src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
-              // src="https://cdn.tradetracker.net/in/campaign_image_rectangle/31144.png"
               alt=""
               width="300px"
               overflow="hidden"
@@ -72,6 +71,7 @@ function WithSubnavigation() {
           </Box>
         </Link>
         <Box>
+          {/* <FadeEx /> */}
           <LocationMenu />
         </Box>
         <Box>
@@ -252,7 +252,6 @@ function WithSubnavigation() {
           </Modal>
         </Stack>
       </Flex>
-      {/* </Flex> */}
     </Box>
   );
 }
