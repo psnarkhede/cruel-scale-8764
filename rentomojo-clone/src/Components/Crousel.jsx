@@ -11,7 +11,6 @@ import {
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Slider from "react-slick";
-import ReactOwlCarousel from "react-owl-carousel";
 
 const settings = {
   arrows: true,
