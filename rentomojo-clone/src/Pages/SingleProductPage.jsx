@@ -3,11 +3,11 @@ import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
-import styles from "../Components/Productpage.module.css"
+import styles from "../Components/Productpage.module.css";
 import Productpageright from "../Components/Productpageright";
 import Productsection from "../Components/Productsection";
 
-const Productpage = () => {
+const SingleProductPage = () => {
   const [box1, setBox1] = useState(true);
 
   const [like, setLike] = useState(false);
@@ -467,4 +467,4 @@ const Productpage = () => {
   );
 };
 
-export default Productpage;
+export default SingleProductPage;

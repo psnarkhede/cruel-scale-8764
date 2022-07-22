@@ -9,8 +9,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import SliderComponent from "../Components/Slider";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../Redux/Productapp/action";
@@ -27,7 +25,6 @@ const Productspage = () => {
   }, []);
   return (
     <Box>
-      <Navbar />
       <Flex justifyContent="center">
         <Box
           width="25%"
