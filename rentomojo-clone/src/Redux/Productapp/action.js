@@ -7,11 +7,11 @@ import {
   GET_PRODUCTS_SUCCESS,
 } from "./actiontypes";
 
-export const getProducts = (param) => (dispatch) => {
+export const getProducts = (category) => (dispatch) => {
   dispatch({ type: GET_PRODUCTS_REQUEST });
 
   return axios
-    .get(` http://localhost:8080/packages`)
+    .get(` http://localhost:8080/${category}`)
     .then((res) => {
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: res.data });
     })

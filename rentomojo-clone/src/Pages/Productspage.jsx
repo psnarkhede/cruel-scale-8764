@@ -16,13 +16,13 @@ import SingleProduct from "../Components/SingleProduct";
 import { Link, useParams } from "react-router-dom";
 
 const Productspage = () => {
-  // const { category } = useParams();
+  const { category } = useParams();
   const data = useSelector((state) => state.data);
   console.log(data);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getProducts());
+    dispatch(getProducts(category));
   }, [dispatch, getProducts]);
   return (
     <Box>
