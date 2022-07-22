@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "../Components/Crousel";
 import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 import SliderHome from "../Components/SliderHome";
-import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
+import MyOwlCarousel from "../Components/MyOwlCarousel";
 import Features from "../Components/Features";
 
 const Homepage = () => {
