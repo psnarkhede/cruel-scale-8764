@@ -3,14 +3,14 @@ import {Box, Flex,  Image, Text} from "@chakra-ui/react"
 import {MdCheckCircle} from "react-icons/md"
 import { useState } from "react";
 import { CartPopover } from "./CartPopover";
+import "./CartHeaders.css"
 export const CartHeader=()=>{
       const [isCheck] = useState(true)
     return (
         <Box 
+         className="CartHeader"
         // border='1px solid teal'
-        position='sticky'
-        z-index='1'
-        top='0px'
+       
         //  bg='white'
          w='100%' h='75px' boxShadow='md' p='0 5' rounded='' bg='white'>
           {/* <Stack direction='row'> */}
