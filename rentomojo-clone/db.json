@@ -6,7 +6,11 @@
       "title": "Cross Trainer C-500",
       "rent": "1109",
       "deliverytime": "72 hrs",
-      "dimensions": [54, 46, 23],
+      "dimensions": [
+        54,
+        46,
+        23
+      ],
       "producttype": "",
       "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
       "features": [
@@ -27,7 +31,11 @@
       "title": "Exercise Cycle AB-100",
       "rent": "409",
       "deliverytime": "72 hrs",
-      "dimensions": [54, 46, 23],
+      "dimensions": [
+        54,
+        46,
+        23
+      ],
       "producttype": "",
       "description": "Experience total elliptical and upper body training in one machine with Reach AB-100 air bike exercise cycle. The dual-action arms and manual resistance control ensure a true full-body workout from start till the end while the belt drive system ensures a natural position of cycling giving you the confidence to reach your fitness goals every time.",
       "features": [
@@ -47,7 +55,11 @@
       "title": "Felix 3-Seater Fabric Sofa (Blue)",
       "rent": "789",
       "deliverytime": "72 hrs",
-      "dimensions": [70, 33, 24],
+      "dimensions": [
+        70,
+        33,
+        24
+      ],
       "producttype": "sofa",
       "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
       "features": [
@@ -65,7 +77,11 @@
       "title": "Barney Leather Recliner (Brown)",
       "rent": "799",
       "deliverytime": "72 hrs",
-      "dimensions": [42, 40, 40],
+      "dimensions": [
+        42,
+        40,
+        40
+      ],
       "producttype": "",
       "description": "We know you want this already! The comfort of putting up your feet and sinking into the comfy Barney recliner is unmatchable. The cushy seat comes with a 160-degrees recline feature.",
       "features": [
@@ -84,7 +100,11 @@
       "title": "Dell XPS 13 , Intel Core i5 processor , 8th Gen - ( 8 GB / 256 GB SSD / Win 10 Pro OS , 13.3 inch,Silver )",
       "rent": "3679",
       "deliverytime": "72 hrs",
-      "dimensions": [0.4, 11.96, 7.87],
+      "dimensions": [
+        0.4,
+        11.96,
+        7.87
+      ],
       "producttype": "",
       "description": "A laptop that is made to cater to students as well as working professionals with its eighth-generation quad-core i5 processor. Carry this compact lightweight 13.3-inch display laptop anywhere to multitask on-the-go. Let it be work, play or leisure, the Dell XPS 13 will let you do it all.",
       "features": [
@@ -99,11 +119,13 @@
       "deposit": "9549"
     }
   ],
-
   "packages": [
     {
       "id": 1,
-      "roomtype": ["bedroom", "appliances"],
+      "roomtype": [
+        "bedroom",
+        "appliances"
+      ],
       "productimage": "https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
       "title": "Double Bed with Fridge & Washing Machine",
       "items": "3",
@@ -114,7 +136,11 @@
           "productimage": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
           "title": "Double Door Fridge (240 Litre)",
           "rent": "1049",
-          "dimensions": [30, 25, 60],
+          "dimensions": [
+            30,
+            25,
+            60
+          ],
           "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
           "features": [
             "Capacity/Size : 230-250 L",
@@ -130,7 +156,11 @@
           "productimage": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
           "title": "Top Load Washing Machine",
           "rent": "769",
-          "dimensions": [24, 23, 39],
+          "dimensions": [
+            24,
+            23,
+            39
+          ],
           "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
           "features": [
             "Capacity/Size : 5.8 to 6.5",
@@ -146,7 +176,11 @@
           "productimage": "https://p.rmjo.in/productSquare/m9qgitpv-500x500.jpg",
           "title": "Aurora Wooden Queen Bed (6x5)",
           "rent": "539",
-          "dimensions": [72, 60, 8],
+          "dimensions": [
+            72,
+            60,
+            8
+          ],
           "description": "The Aurora bed's frame provides a simple & stylish look to your room. The light brown colour of the bed matches any decor. The cot's frame has a low height & a headboard for you to lean comfortably.",
           "features": [
             "Cot frame with Headboard",
@@ -162,7 +196,10 @@
     },
     {
       "id": 2,
-      "roomtype": ["bedroom", "livingroom"],
+      "roomtype": [
+        "bedroom",
+        "livingroom"
+      ],
       "productimage": "https://p.rmjo.in/moodShot/wruziw9d-1024x512.jpg",
       "title": "Sofa & Bed Combo",
       "items": "2",
@@ -173,7 +210,11 @@
           "productimage": "https://p.rmjo.in/productSquare/mf3434ld-500x500.jpg",
           "title": "Felix 3-Seater Fabric Sofa (Blue)",
           "rent": "789",
-          "dimensions": [70, 33, 24],
+          "dimensions": [
+            70,
+            33,
+            24
+          ],
           "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you.",
           "features": [
             "Soft fabric cover",
@@ -188,7 +229,11 @@
           "productimage": "https://p.rmjo.in/productSquare/70rj36m0-500x500.jpg",
           "title": "Poise Wooden Queen Bed (6x5)",
           "rent": "549",
-          "dimensions": [72, 60, 17],
+          "dimensions": [
+            72,
+            60,
+            17
+          ],
           "description": "Comfort and compactness, get them both with the Poise queen bed. The bed's strong metal frame ensures durability while the honey-toned solid wood adds both style and comfort to the mix.",
           "features": [
             "Metal bodied bed",
@@ -204,7 +249,10 @@
     },
     {
       "id": 2,
-      "roomtype": ["kitchen", "appliances"],
+      "roomtype": [
+        "kitchen",
+        "appliances"
+      ],
       "productimage": "https://p.rmjo.in/moodShot/omkdax17-1024x512.jpg",
       "title": "Fridge & Induction Combo",
       "items": "2",
@@ -215,7 +263,11 @@
           "productimage": "https://p.rmjo.in/productSquare/bwskug14-500x500.jpg",
           "title": "Single Door Fridge (190 Litre)",
           "rent": "719",
-          "dimensions": [25, 21, 49],
+          "dimensions": [
+            25,
+            21,
+            49
+          ],
           "description": "There’s always room for more food with a Single Door Refrigerator (190L). Designed for the modern home, this refrigerator effortlessly cools and keeps all your fruits and veggies fresh for a longer time. With best-in-class storage, corral your way to your favorite food station.",
           "features": [
             "Capacity/Size : 180-200L",
@@ -231,7 +283,11 @@
           "productimage": "https://p.rmjo.in/productSquare/xev0b5yi-500x500.jpg",
           "title": "Induction Cooktop",
           "rent": "149",
-          "dimensions": [17, 14.1, 8.1],
+          "dimensions": [
+            17,
+            14.1,
+            8.1
+          ],
           "description": "The Induction comes with digital display timer, variable temperature selection and preset menus to suit your cooking needs.",
           "features": [
             "Capacity/Size : 1900W",
@@ -248,7 +304,10 @@
     },
     {
       "id": 2,
-      "roomtype": ["livingroom", "appliances"],
+      "roomtype": [
+        "livingroom",
+        "appliances"
+      ],
       "productimage": "https://p.rmjo.in/moodShot/ky79yiti-1024x512.jpg",
       "title": "Cricket Mania Package",
       "items": "2",
@@ -259,7 +318,11 @@
           "productimage": "https://p.rmjo.in/productSquare/605n5qi4-500x500.jpg",
           "title": "Smart LED TV - 32inches",
           "rent": "849",
-          "dimensions": [20, 5, 32],
+          "dimensions": [
+            20,
+            5,
+            32
+          ],
           "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
           "features": [
             "Capacity/Size : 32inches",
@@ -275,7 +338,11 @@
           "productimage": "https://p.rmjo.in/productSquare/p2dm6gz4-500x500.jpg",
           "title": "Oliver 3-Seater Fabric Sofa (Blue)",
           "rent": "559",
-          "dimensions": [67, 30, 24],
+          "dimensions": [
+            67,
+            30,
+            24
+          ],
           "description": "Wooden three seater sofa with comfortable cushioned seating, this is your living room's new best friend.",
           "features": [
             "Wooden Frame",
@@ -289,7 +356,6 @@
       ]
     }
   ],
-
   "electronics": [
     {
       "id": 1,
@@ -750,7 +816,6 @@
       "deposit": "1499"
     }
   ],
-
   "fitness": [
     {
       "id": 1,
@@ -758,7 +823,10 @@
       "title": "Motorized Treadmill AF-515",
       "rent": "2949",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [68, 28],
+      "dimensions": [
+        68,
+        28
+      ],
       "producttype": "treadmills",
       "description": "Workout from the comfort of your home with AF 515 Motorized Treadmill. Equipped with a powerful and noiseless 2.0 HP motor (4.0 peak) and a high-density 2-ply urethane belt, AF515 is a great option for beginners and fitness enthusiasts to crush your fitness goals.",
       "features": [
@@ -779,7 +847,11 @@
       "title": "Motorized Treadmill AF 517",
       "rent": "2949",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [67, 29, 56],
+      "dimensions": [
+        67,
+        29,
+        56
+      ],
       "producttype": "treadmills",
       "description": "Train harder with the new AF 517 Motorized Treadmill (N.S.). Ideal for muscle strengthening and improving your heart and circulatory functions, AF 517 is equipped with a powerful 2.0 HP motor (4.0 peak) with P.W.M. control to make your workout sessions at home better than ever.",
       "features": [
@@ -799,7 +871,10 @@
       "title": "Foldable Treadmill TD-M4",
       "rent": "2699",
       "deliverytime": "28th Jul 2022",
-      "dimensions": [43.3, 16.9],
+      "dimensions": [
+        43.3,
+        16.9
+      ],
       "producttype": "treadmills",
       "description": "Powermax TD-M4 is a modern lightweight design treadmill that subverts the traditional with folding storage less than 0.5 square meters for your ambition to lose weight. The TD-M4 Treadmill has a top speed of 14km/hr powered by a 2.0 Horse Power HiTorque DC LAMMER motor and equipped with 4 Rubber Balloon Powerflex precision cushioning by which you can challenge yourself to take your fitness to the next level.",
       "features": [
@@ -820,7 +895,11 @@
       "title": "Auto Inclination Treadmill T-501",
       "rent": "2649",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [65, 53, 30],
+      "dimensions": [
+        65,
+        53,
+        30
+      ],
       "producttype": "treadmills",
       "description": "Designed for the modern fitness enthusiast, Reach T-501 is a sleek and intuitive treadmill that’s equipped with features like auto-inclination and pro cushioning system to ensure a comfortable workout while reducing stress in your knees. Featuring 15 pre-set smart workout programs and a 5HP motor (peak), the T-501 will keep you motivated to push harder.",
       "features": [
@@ -841,7 +920,10 @@
       "title": "Auto Inclination Treadmill TM-33",
       "rent": "2939",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [49, 17],
+      "dimensions": [
+        49,
+        17
+      ],
       "producttype": "treadmills",
       "description": "Engage in a whole new fitness experience with Treadmill TM 33 Built with a powerful 1.5/3.0 HP DC motor and an automatic motorized incline, TM-33 can deliver high-intensity training for walkers, runners and fitness enthusiasts. With the added benefit of elastomer cushion and intelligent space-saving design, make fitness a way of life.",
       "features": [
@@ -904,7 +986,11 @@
       "title": "Cross Trainer C-500",
       "rent": "1389",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [56, 63, 13],
+      "dimensions": [
+        56,
+        63,
+        13
+      ],
       "producttype": "cross trainers",
       "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
       "features": [
@@ -925,7 +1011,11 @@
       "title": "Exercise Cycle AB-100",
       "rent": "509",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [54, 46, 23],
+      "dimensions": [
+        54,
+        46,
+        23
+      ],
       "producttype": "cross trainers",
       "description": "Experience total elliptical and upper body training in one machine with Reach AB-100 air bike exercise cycle. The dual-action arms and manual resistance control ensure a true full-body workout from start till the end while the belt drive system ensures a natural position of cycling giving you the confidence to reach your fitness goals every time.",
       "features": [
@@ -945,7 +1035,11 @@
       "title": "Smart Magnetic Exercise Bike",
       "rent": "779",
       "deliverytime": "25th Jul 2022",
-      "dimensions": [31.5, 48.75, 18],
+      "dimensions": [
+        31.5,
+        48.75,
+        18
+      ],
       "producttype": "cross trainers",
       "description": "Built to keep you fit, the Cockatoo CUB-01 is a modern exercise bike that comes with 8-level magnetic resistance to ensure uniform pressure across each weight level. The engineered seat structure allows the body to conform precisely to the desired posture, enabling maximum workout effect and helping you shed those extra K's",
       "features": [
@@ -1002,7 +1096,6 @@
       "deposit": "2079"
     }
   ],
-
   "furniture": [
     {
       "id": 51,
@@ -1010,10 +1103,17 @@
       "title": "Rex 3-Seater Leather Sofa",
       "rent": "739",
       "deliverytime": "48 hrs",
-      "dimensions": [83, 31, 32],
+      "dimensions": [
+        83,
+        31,
+        32
+      ],
       "producttype": "Sofas",
       "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
-      "features": ["Leatherette covering", "Foam filling"],
+      "features": [
+        "Leatherette covering",
+        "Foam filling"
+      ],
       "material": "Art Leather",
       "color": "Black",
       "deposit": "1009"
@@ -1024,7 +1124,11 @@
       "title": "Casper L-Shaped Fabric Sofa",
       "rent": "1249",
       "deliverytime": "72 hrs",
-      "dimensions": [83, 31, 32],
+      "dimensions": [
+        83,
+        31,
+        32
+      ],
       "producttype": "Sofas",
       "description": "With the Casper L-Shaped Sofa, elegance and comfort find a new name. This plush design with soft fabric exterior and ergonomic armrest and a pouf to extend the 3 seaters to an L shaped one.",
       "features": [
@@ -1042,7 +1146,11 @@
       "title": "Brooklyn 1-Seater Fabric Sofa",
       "rent": "299",
       "deliverytime": "24 hrs",
-      "dimensions": [24, 30, 32],
+      "dimensions": [
+        24,
+        30,
+        32
+      ],
       "producttype": "Sofas",
       "description": "With the Brooklyn Sofa , elegance and comfort find a new name. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
       "features": [
@@ -1060,7 +1168,11 @@
       "title": "Regina 3-Seater Fabric Sofa ",
       "rent": "899",
       "deliverytime": "24 hrs",
-      "dimensions": [72, 34, 33],
+      "dimensions": [
+        72,
+        34,
+        33
+      ],
       "producttype": "Sofas",
       "description": "Indulge in classic styling of the Regina Sofa, which exudes pure comfort and style. With attention to the smallest detail, this designer sofa is finished with luxurious cushion seams and tapered legs in a premium walnut finish—perfect for making a bold statement.",
       "features": [
@@ -1079,7 +1191,11 @@
       "title": "Roma 3-Seater Fabric Sofa",
       "rent": "1159",
       "deliverytime": "72 hrs",
-      "dimensions": [72, 34, 33],
+      "dimensions": [
+        72,
+        34,
+        33
+      ],
       "producttype": "Sofas",
       "description": "From creating a cozy nook for your guests to hosting the perfect movie nights, the Roma 3-Seater sofa is a quintessential piece in your living room. Perched atop sleek low-profile legs and plush, spacious armrests, Roma 3-Seater sofa extrudes a soft yet a classy and contemporary look that will never go out of vogue.",
       "features": [
@@ -1098,10 +1214,17 @@
       "title": "Latte Wooden Coffee Table",
       "rent": "279",
       "deliverytime": "72 hrs",
-      "dimensions": [35, 23, 14],
+      "dimensions": [
+        35,
+        23,
+        14
+      ],
       "producttype": "Center Tables",
       "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
-      "features": ["Wide-table top", "Coffee table/center table"],
+      "features": [
+        "Wide-table top",
+        "Coffee table/center table"
+      ],
       "material": " Solid Wood",
       "color": "Teal Green",
       "deposit": "379"
@@ -1112,26 +1235,38 @@
       "title": "Perk 4-Seater Wooden Coffee Table",
       "rent": "539",
       "deliverytime": "72 hrs",
-      "dimensions": [37, 37, 14],
+      "dimensions": [
+        37,
+        37,
+        14
+      ],
       "producttype": "Center Tables",
       "description": "Strike a new vibe to your living room with the Perk 4-Seater Coffee Table. Crafted from sturdy solid wood, the Perk coffee table is complemented by four matching upholstered seats that can seat your guests comfortably and stow away neatly underneath.",
-      "features": ["Upholstered matching seats", "Includes 1 table+4 chair"],
+      "features": [
+        "Upholstered matching seats",
+        "Includes 1 table+4 chair"
+      ],
       "material": " Solid Wood",
       "color": "Brown",
       "deposit": "739"
     },
     {
       "id": 58,
-
       "productimage": "https://www.rentomojo.com/public/images/loader/image-loader.gif",
-
       "title": "Venti Centre Table",
       "rent": "339",
       "deliverytime": "72 hrs",
-      "dimensions": [37, 37, 14],
+      "dimensions": [
+        37,
+        37,
+        14
+      ],
       "producttype": "Center Tables",
       "description": "Venti is an ideal piece of furniture for any kind of interior setting. In addition to a spacious table surface, the Venti also includes smart storage space for your books and magazines.",
-      "features": ["2 shelf configuration", "Low set design"],
+      "features": [
+        "2 shelf configuration",
+        "Low set design"
+      ],
       "material": " Solid Wood",
       "color": "Brown",
       "deposit": "539"
@@ -1142,7 +1277,11 @@
       "title": "Vienna Coffee Table",
       "rent": "119",
       "deliverytime": "72 hrs",
-      "dimensions": [47, 24, 15],
+      "dimensions": [
+        47,
+        24,
+        15
+      ],
       "producttype": "Center Tables",
       "description": "The ideal addition to your living room, the Vienna Centre Table comes with a dark finish and a minimalist design to fit all decor styles.",
       "features": [
@@ -1160,7 +1299,11 @@
       "title": "Andrew Center Table",
       "rent": "299",
       "deliverytime": "72 hrs",
-      "dimensions": [35, 14, 18],
+      "dimensions": [
+        35,
+        14,
+        18
+      ],
       "producttype": "Center Tables",
       "description": "The only thing that the Andrew center table does not have room for is clutter. Equipped with a large table top, its ideal for friends and family to sit together for a meal or a hot cuppa.",
       "features": [
@@ -1178,7 +1321,11 @@
       "title": "Mackapar bench with Storage",
       "rent": "309",
       "deliverytime": "72 hrs",
-      "dimensions": [35, 14, 18],
+      "dimensions": [
+        35,
+        14,
+        18
+      ],
       "producttype": "Shoe Racks",
       "description": "Simple yet architectural, the Makapar bench with storage from IKEA, is a reminiscent of modern and contemporary design. Two shelves with sliding doors provide storage solutions to keep your entry & hallway clutter free. And, crisp clean bench offers an effortless character & charm. Place it in entryway/hallway as a shoe storage bench or a sitting bench.",
       "features": [
@@ -1198,10 +1345,18 @@
       "title": "Flip Shoe Rack",
       "rent": "239",
       "deliverytime": "72 hrs",
-      "dimensions": [32, 16, 21],
+      "dimensions": [
+        32,
+        16,
+        21
+      ],
       "producttype": "Shoe Racks",
       "description": "Tired of messy piles of shoes around all the time? Well, it's time to get organized with the Flip Shoe Rack! Apart from helping you clear the clutter, the shoe rack compliments any home decor.",
-      "features": ["2 shelf configuration", "Upholstered seat", "Wenge finish"],
+      "features": [
+        "2 shelf configuration",
+        "Upholstered seat",
+        "Wenge finish"
+      ],
       "material": "Engineered Wood",
       "color": "Brown",
       "deposit": "339"
@@ -1212,7 +1367,11 @@
       "title": "Bootlegger Shoe Rack",
       "rent": "199",
       "deliverytime": "72 hrs",
-      "dimensions": [32, 16, 21],
+      "dimensions": [
+        32,
+        16,
+        21
+      ],
       "producttype": "Shoe Racks",
       "description": "The Strap Shoe Rack is the perfect solution to clearing out the shoe clutter. Add to that, the stool with it provides comfortable seating as you tie up those laces everyday.",
       "features": [
@@ -1231,7 +1390,11 @@
       "title": "Solemate Shoe Rack",
       "rent": "349",
       "deliverytime": "72 hrs",
-      "dimensions": [32, 16, 21],
+      "dimensions": [
+        32,
+        16,
+        21
+      ],
       "producttype": "Shoe Racks",
       "description": "If you hate all of that shoe-clutter every time you enter your home, the Solemate comes with it's super spacious shelves. Ranking high on aesthetics, the shoe rack is a great addition to your home.",
       "features": [
@@ -1249,10 +1412,18 @@
       "title": "Footsie Shoe Rack Small",
       "rent": "119",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 14, 28],
+      "dimensions": [
+        24,
+        14,
+        28
+      ],
       "producttype": "Shoe Racks",
       "description": "The Saddle Shoe Rack is the perfect solution to clearing out the shoe clutter. It's design compliments any interior home decor style and is an ideal accent to add to your entryway or lobby.",
-      "features": ["4 shelf configuration", "Wenge finish", "Double door"],
+      "features": [
+        "4 shelf configuration",
+        "Wenge finish",
+        "Double door"
+      ],
       "material": "Engineered Wood",
       "color": "Brown",
       "deposit": "169"
@@ -1263,10 +1434,17 @@
       "title": "Pixar TV Unit",
       "rent": "259",
       "deliverytime": "72 hrs",
-      "dimensions": [46, 16, 24],
+      "dimensions": [
+        46,
+        16,
+        24
+      ],
       "producttype": "TV Units",
       "description": "Enjoy your leisure time at home with the Pixar TV unit. While being a safe, durable spot for your TV, the unit provides ample compartmentalized storage space for your entertainment staples.",
-      "features": ["3 shelf + 2 cabinet configuration", "Wenge finish"],
+      "features": [
+        "3 shelf + 2 cabinet configuration",
+        "Wenge finish"
+      ],
       "material": "Engineered Wood",
       "color": "Brown",
       "deposit": "359"
@@ -1277,7 +1455,11 @@
       "title": "Marvel TV Unit",
       "rent": "159",
       "deliverytime": "72 hrs",
-      "dimensions": [46, 16, 24],
+      "dimensions": [
+        46,
+        16,
+        24
+      ],
       "producttype": "TV Units",
       "description": "Sorting and organizing entertainment needs just got a whole lot quicker, all thanks to the Marvel TV unit. The compact unit is ideal for those looking to save space and avoid clutter.",
       "features": [
@@ -1295,7 +1477,11 @@
       "title": "Lack TV Bench",
       "rent": "89",
       "deliverytime": "72 hrs",
-      "dimensions": [46, 16, 24],
+      "dimensions": [
+        46,
+        16,
+        24
+      ],
       "producttype": "TV Units",
       "description": "A delight in white, IKEA Lack TV bench is a show stealer. Be it a living room or study its a perfect contemporary addition to your space. The Open shelf of this furniture enhances the sense of space and also allows for easy wire management",
       "features": [
@@ -1314,7 +1500,11 @@
       "title": "Java Center Table/ TV Unit",
       "rent": "119",
       "deliverytime": "72 hrs",
-      "dimensions": [46, 16, 24],
+      "dimensions": [
+        46,
+        16,
+        24
+      ],
       "producttype": "TV Units",
       "description": "A Contemporary looking coffee table which can also be used as a TV unit will make a chic centre piece in your living room. The perfect proportions & fine detailing makes it a piece worth flaunting. Use the spacious table top for a casual work station or even for a board game evening. Open shelf provides ample storage space for quick reads.",
       "features": [
@@ -1334,7 +1524,11 @@
       "title": "PS Cabinet by IKEA",
       "rent": "429",
       "deliverytime": "72 hrs",
-      "dimensions": [15, 16, 46],
+      "dimensions": [
+        15,
+        16,
+        46
+      ],
       "producttype": "TV Units",
       "description": "Get your life & home organized with a functional & stylish storage cabinet from IKEA. PS cabinet will help to keep everything right where you need it. A multipurpose storage solution, with a compact structure yet sturdy & strong is easy to maintain, is lightweight & is portable that makes it possible to place it anywhere in the house.",
       "features": [
@@ -1349,7 +1543,6 @@
       "deposit": "549"
     }
   ],
-
   "appliances": [
     {
       "id": 71,
@@ -1357,7 +1550,11 @@
       "title": "LED 32",
       "rent": "949",
       "deliverytime": "72 hrs",
-      "dimensions": [20, 5, 32],
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
       "producttype": "Televisions",
       "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
@@ -1376,7 +1573,11 @@
       "title": "LED TV - 40",
       "rent": "1429",
       "deliverytime": "72 hrs",
-      "dimensions": [20, 5, 32],
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
       "producttype": "Televisions",
       "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
@@ -1395,7 +1596,11 @@
       "title": "LED TV - 49",
       "rent": "1509",
       "deliverytime": "72 hrs",
-      "dimensions": [20, 5, 32],
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
       "producttype": "Televisions",
       "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
@@ -1414,7 +1619,11 @@
       "title": "LED TV - 24",
       "rent": "649",
       "deliverytime": "72 hrs",
-      "dimensions": [20, 5, 32],
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
       "producttype": "Televisions",
       "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
@@ -1433,7 +1642,11 @@
       "title": "LED TV - 55",
       "rent": "2649",
       "deliverytime": "72 hrs",
-      "dimensions": [20, 5, 32],
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
       "producttype": "Televisions",
       "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
@@ -1446,14 +1659,17 @@
       "color": "Black",
       "deposit": "3699"
     },
-
     {
       "id": 76,
       "productimage": "https://p.rmjo.in/moodShot/m4ep8wcm-1024x512.jpg",
       "title": "Single Door Fridge (190 Litre)",
       "rent": "809",
       "deliverytime": "72 hrs",
-      "dimensions": [25, 21, 49],
+      "dimensions": [
+        25,
+        21,
+        49
+      ],
       "producttype": "Refrigerators",
       "description": "There's always room for more food with a Single Door Refrigerator (190L). Designed for the modern home, this refrigerator effortlessly cools and keeps all your fruits and veggies fresh for a longer time. With best-in-class storage, corral your way to your favorite food station.",
       "features": [
@@ -1472,7 +1688,11 @@
       "title": "Mini Fridge",
       "rent": "485",
       "deliverytime": "72 hrs",
-      "dimensions": [19, 18, 20],
+      "dimensions": [
+        19,
+        18,
+        20
+      ],
       "producttype": "Refrigerators",
       "description": "Our single door fridge has a fast and effective cooling system to keep your food fresh. While it’s quick cooling saves you time, the energy-efficient technology ensures great cooling at low costs.",
       "features": [
@@ -1492,7 +1712,11 @@
       "title": "Single Door Fridge (190 Litre - 2s)",
       "rent": "1339",
       "deliverytime": "72 hrs",
-      "dimensions": [23, 21, 49],
+      "dimensions": [
+        23,
+        21,
+        49
+      ],
       "producttype": "Refrigerators",
       "description": "There's always room for more food with a Single Door Refrigerator (190L). Designed for the modern home, this refrigerator effortlessly cools and keeps all your fruits and veggies fresh for a longer time. With best-in-class storage, corral your way to your favorite food station.",
       "features": [
@@ -1512,7 +1736,11 @@
       "title": "Single Door Fridge (190 Litre - 2s)",
       "rent": "899",
       "deliverytime": "72 hrs",
-      "dimensions": [23, 21, 49],
+      "dimensions": [
+        23,
+        21,
+        49
+      ],
       "producttype": "Refrigerators",
       "description": "There's always room for more food with a Single Door Refrigerator (190L). Designed for the modern home, this refrigerator effortlessly cools and keeps all your fruits and veggies fresh for a longer time. With best-in-class storage, corral your way to your favorite food station.",
       "features": [
@@ -1532,7 +1760,11 @@
       "title": "Double Door Fridge (240 Litre)",
       "rent": "1189",
       "deliverytime": "72 hrs",
-      "dimensions": [23, 25, 60],
+      "dimensions": [
+        23,
+        25,
+        60
+      ],
       "producttype": "Refrigerators",
       "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
       "features": [
@@ -1546,14 +1778,17 @@
       "color": "Grey",
       "deposit": "1899"
     },
-
     {
       "id": 81,
       "productimage": "https://p.rmjo.in/moodShot/qpjmaco1-1024x512.jpg",
       "title": "Top Load Washing Machine",
       "rent": "859",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 23, 39],
+      "dimensions": [
+        24,
+        23,
+        39
+      ],
       "producttype": "Washing Machines",
       "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
       "features": [
@@ -1572,7 +1807,11 @@
       "title": "Semi Automatic Washing Machine",
       "rent": "539",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 23, 39],
+      "dimensions": [
+        24,
+        23,
+        39
+      ],
       "producttype": "Washing Machines",
       "description": "Laundry days just got easier. With our Semi-automatic washing machine, you can easily wash and dry your clothes.",
       "features": [
@@ -1593,7 +1832,11 @@
       "title": "Semi Automatic Washing Machine",
       "rent": "539",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 23, 39],
+      "dimensions": [
+        24,
+        23,
+        39
+      ],
       "producttype": "Washing Machines",
       "description": "Laundry days just got easier. With our Semi-automatic washing machine, you can easily wash and dry your clothes.",
       "features": [
@@ -1614,7 +1857,11 @@
       "title": "Front Load Washing Machine",
       "rent": "1329",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 23, 39],
+      "dimensions": [
+        24,
+        23,
+        39
+      ],
       "producttype": "Washing Machines",
       "description": "Say hello to your new laundry companion. Keep your clothes looking fresh and spotless with the feature-rich front-load automatic washing machine. Designed to protect the color and texture of your clothes, the front-loading washing machine delivers effortless cleaning while saving on water consumption with lower power bills.",
       "features": [
@@ -1635,7 +1882,11 @@
       "title": "Cloth Dryer",
       "rent": "1049",
       "deliverytime": "72 hrs",
-      "dimensions": [24, 23, 39],
+      "dimensions": [
+        24,
+        23,
+        39
+      ],
       "producttype": "Washing Machines",
       "description": "Wanted to wear that favorite shirt but it is still drying, no worries, with our new cloth dryer this task will only take minutes. This dryer with our washing machine range will fulfill all your laundry needs.",
       "features": [
@@ -1649,5 +1900,7 @@
       "color": "White",
       "deposit": "1889"
     }
+  ],
+  "questions": [
   ]
 }

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
+import React, { useEffect, useRef, useState } from "react";
+import { Box, Flex, Image, Text, Button, useDisclosure, UnorderedList, ListItem, Textarea} from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
@@ -7,10 +7,45 @@ import styles from "../Components/Productpage.module.css";
 import Productpageright from "../Components/Productpageright";
 import Productsection from "../Components/Productsection";
 
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+} from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { getquestionapi, postquestionapi } from "../Redux/Question/action";
+
 const SingleProductPage = () => {
+const { isOpen, onOpen, onClose } = useDisclosure();
+
   const [box1, setBox1] = useState(true);
 
   const [like, setLike] = useState(false);
+
+  const questionref = useRef();
+
+  const dispatch = useDispatch();
+
+  const{questions} = useSelector((state) => state.question);
+
+  const handlequestion = () => {
+    let question = questionref.current.value;
+
+    dispatch(postquestionapi(question))
+
+    questionref.current.value=null;
+  }
+
+  useEffect(() => {
+    dispatch(getquestionapi())
+  }, [])
+  
+
+  console.log("page",questions)
 
   const data = {
     id: 51,
@@ -53,7 +88,7 @@ const SingleProductPage = () => {
                 as={like ? FcLike : AiOutlineHeart}
               />
             </Box>
-            <Image src="https://p.rmjo.in/moodShot/ky3xx53f-1024x512.jpg" />
+            <Image width="100%" height="80vh" src="https://p.rmjo.in/moodShot/ky3xx53f-1024x512.jpg" />
           </Box>
 
           <Flex>
@@ -428,12 +463,29 @@ const SingleProductPage = () => {
                 </Text>
               </Box>
 
+              {questions
+                ? questions.map((el) => (
+                    <Box
+                      key={el.id}
+                      textAlign="left"
+                      borderBottom="1px solid silver"
+                      width="90%"
+                      margin="auto"
+                      paddingTop="20px"
+                      paddingBottom="20px"
+                    >
+                      <Text fontWeight="500">{el.data}</Text>
+                    </Box>
+                  ))
+                : ""}
+
               <Box padding="40px">
                 <Flex alignItems="center">
                   <Text color="gray.500" fontSize="16px">
                     Have aquestion in mind?
                   </Text>
                   <Button
+                    onClick={onOpen}
                     marginLeft="15px"
                     color="green.500"
                     border="1px solid green"
@@ -442,6 +494,77 @@ const SingleProductPage = () => {
                   >
                     Post a question
                   </Button>
+
+                  <Modal isOpen={isOpen} size={"4xl"} onClose={onClose}>
+                    <ModalOverlay />
+                    <ModalContent padding="20px">
+                      <ModalHeader fontSize="3xl">Post a Question</ModalHeader>
+                      <ModalCloseButton />
+                      <ModalBody>
+                        <UnorderedList color="gray.500">
+                          <ListItem>
+                            Be specific, ask questions only about the product.
+                          </ListItem>
+                          <ListItem>
+                            Ensure you have gone through the product
+                            specifications before posting your question.
+                          </ListItem>
+                          <ListItem>
+                            Reach out to our customer care for queries related
+                            to offers, orders, delivery etc.
+                          </ListItem>
+                        </UnorderedList>
+
+                        <Textarea
+                          ref={questionref}
+                          marginTop="20px"
+                          paddingTop="20px"
+                          height="30vh"
+                          fontSize="20px"
+                          placeholder="Start typing here"
+                        ></Textarea>
+
+                        <Box marginTop="20px">
+                          <Flex justifyContent="space-between">
+                            <Box>
+                              <Flex alignItems="center" gap="10px">
+                                <Text fontSize="14px" color="gray.500">
+                                  Read our FAQs before you ask something
+                                </Text>
+                                <a href="https://rentomojodesk.freshdesk.com/support/home">
+                                  <Button
+                                    padding="0px 20px 0px 20px"
+                                    height="30px"
+                                    fontWeight="300"
+                                    bg="white"
+                                    border="1px solid #1dbdc0"
+                                    color="#1dbdc0"
+                                    borderRadius="none"
+                                    _hover={{ color: "white", bg: "#1dbdc0" }}
+                                  >
+                                    FAQs
+                                  </Button>
+                                </a>
+                              </Flex>
+                            </Box>
+
+                            <Button
+                              borderRadius="none"
+                              height="30px"
+                              fontWeight="300"
+                              bg="#1dbdc0"
+                              border="1px solid #1dbdc0"
+                              color="white"
+                              _hover={{ bg: "#1dbdc0" }}
+                              onClick={handlequestion}
+                            >
+                              Submit
+                            </Button>
+                          </Flex>
+                        </Box>
+                      </ModalBody>
+                    </ModalContent>
+                  </Modal>
                 </Flex>
               </Box>
             </Box>

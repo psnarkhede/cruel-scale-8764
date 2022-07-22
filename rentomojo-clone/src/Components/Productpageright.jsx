@@ -1,11 +1,17 @@
 import { Box, Button, Flex, Icon, Image, Popover, PopoverBody, PopoverContent, PopoverTrigger, Text } from '@chakra-ui/react'
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { BiRupee } from "react-icons/bi";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaChevronCircleRight, FaShoppingCart } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const Productpageright = ({data}) => {
+
+  {/* Today */}
+
+  const [viewcartoption, setViewcartoption] = useState(false)
+
   return (
     <Box>
       <Text textAlign="left" padding="15px 0px 15px 5%" fontWeight="500">
@@ -190,7 +196,7 @@ const Productpageright = ({data}) => {
         color="green"
         border="1px solid green"
         padding="0px 23% 0px 23%"
-        _hover={{bg:"white"}}
+        _hover={{ bg: "white" }}
       >
         Compare All Tenures
       </Button>
@@ -201,37 +207,85 @@ const Productpageright = ({data}) => {
         2022{" "}
       </Text>
 
-      <Button
-        marginTop="5px"
-        fontWeight="300"
-        bg="red"
-        color="white"
-        border="1px solid red"
-        padding="0px 24% 0px 24%"
-        _hover={{ bg: "red" }}
+      <Box
+        hidden={!viewcartoption ? false : true}
+        onClick={() => setViewcartoption(!viewcartoption)}
       >
-        <Icon marginRight="10px" as={FaShoppingCart} />
-        Book Your Plan
-      </Button>
+        <Button
+          marginTop="5px"
+          fontWeight="300"
+          bg="red"
+          color="white"
+          border="1px solid red"
+          padding="0px 24% 0px 24%"
+          _hover={{ bg: "red" }}
+        >
+          <Icon marginRight="10px" as={FaShoppingCart} />
+          Book Your Plan
+        </Button>
+      </Box>
+
+      <Box
+        marginTop="5px"
+        hidden={viewcartoption ? false : true}
+        onClick={() => setViewcartoption(!viewcartoption)}
+      >
+        <Flex gap="10px" justifyContent="center">
+          <Link to="/">
+            {" "}
+            <Button color="white" bg="red" _hover={{ bg: "red" }}>
+              Browse More
+            </Button>
+          </Link>
+
+          <Link to="/cart">
+            {" "}
+            <Button color="white" bg="red" _hover={{ bg: "red" }}>
+              <Icon marginRight="10px" as={FaShoppingCart} />
+              View Cart
+            </Button>
+          </Link>
+        </Flex>
+      </Box>
 
       <Text textAlign="left" paddingLeft="8%" marginTop="30px" fontSize="14px">
         Special Offers
       </Text>
 
-      <Box border="1px dashed black" width="85%" margin="auto" marginTop="10px" padding="5px 0px 5px 0px" >
+      <Box
+        border="1px dashed black"
+        width="85%"
+        margin="auto"
+        marginTop="10px"
+        padding="5px 0px 5px 0px"
+      >
         <Flex gap="5px" justifyContent="center" alignItems="center">
-          <Image width="25px" height="25px" src="https://www.rentomojo.com/public/images/product/special-offer.svg" />
+          <Image
+            width="25px"
+            height="25px"
+            src="https://www.rentomojo.com/public/images/product/special-offer.svg"
+          />
 
-          <Box textAlign="left" fontSize="12px" >
+          <Box textAlign="left" fontSize="12px">
             <Text>
-              Use Code <span style={{fontWeight:"500"}} >CITY15</span>
+              Use Code <span style={{ fontWeight: "500" }}>CITY15</span>
             </Text>
             <Text>Flat 15% off on third Month invoice</Text>
-            <Text fontWeight="500" color="green" >Read More</Text>
-            <Text color="red" >Applicable to New Users</Text>
+            <Text fontWeight="500" color="green">
+              Read More
+            </Text>
+            <Text color="red">Applicable to New Users</Text>
           </Box>
 
-          <Button _hover={{bg:"white"}} fontSize="14px" color="green" bg="white" border="1px solid green">Copy</Button>
+          <Button
+            _hover={{ bg: "white" }}
+            fontSize="14px"
+            color="green"
+            bg="white"
+            border="1px solid green"
+          >
+            Copy
+          </Button>
         </Flex>
       </Box>
     </Box>
