@@ -11,7 +11,6 @@ import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import FadeEx from "./NavbarTransition";
 
 import React, { useState } from "react";
 import {
@@ -71,7 +70,6 @@ function WithSubnavigation() {
           </Box>
         </Link>
         <Box>
-          {/* <FadeEx /> */}
           <LocationMenu />
         </Box>
         <Box>
