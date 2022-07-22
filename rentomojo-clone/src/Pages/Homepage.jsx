@@ -4,6 +4,7 @@ import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 import SliderHome from "../Components/SliderHome";
 import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
+import Features from "../Components/Features";
 
 const Homepage = () => {
   return (
@@ -18,11 +19,10 @@ const Homepage = () => {
         marginTop="-50px"
       >
         <SliderHome />
-        <Box
-        //  border={"1px solid red"}
-        >
-          <MyOwlCarousel />
-        </Box>
+        <MyOwlCarousel />
+      </Box>
+      <Box>
+        <Features />
       </Box>
 
       {/* chat icon */}
