@@ -598,7 +598,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
 
         {/* Right Section */}
         <Box width="35%" height="100vh">
-          <Productpageright data={newproduct} />
+          <Productpageright data={newproduct} category={category} />
         </Box>
       </Flex>
     </Box>
