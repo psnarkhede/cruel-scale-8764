@@ -13,16 +13,17 @@ import SliderComponent from "../Components/Slider";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../Redux/Productapp/action";
 import SingleProduct from "../Components/SingleProduct";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Productspage = () => {
+  // const { category } = useParams();
   const data = useSelector((state) => state.data);
   console.log(data);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getProducts());
-  }, []);
+  }, [dispatch, getProducts]);
   return (
     <Box>
       <Flex justifyContent="center">

@@ -6,6 +6,7 @@ import { GiWashingMachine, GiOfficeChair } from "react-icons/gi";
 import { AiOutlineMobile } from "react-icons/ai";
 import { RiEBikeLine } from "react-icons/ri";
 import { CgGym } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 export const Pagelinkhomepage = () => {
   return (
@@ -18,15 +19,17 @@ export const Pagelinkhomepage = () => {
       transform={"translate(0%, -50%)"}
       // border={"1px solid red"}
     >
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <BiPackage size={"60px"} />
-        <Text>Package</Text>
-      </Box>
+      <Link to={`/products/:${"packages"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <BiPackage size={"60px"} />
+          <Text>Package</Text>
+        </Box>
+      </Link>
       <Box
         border={"1px solid grey"}
         borderRadius="10px"
