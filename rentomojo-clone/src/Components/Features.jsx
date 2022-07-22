@@ -1,12 +1,11 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import { IoBedOutline } from "react-icons/io5";
 import {
   MdOutlineEditLocationAlt,
   MdOutlineFreeCancellation,
 } from "react-icons/md";
-import { GrHostMaintenance } from "react-icons/gr";
 import { TbTruckReturn } from "react-icons/tb";
 import { GiArmorUpgrade, GiAutoRepair } from "react-icons/gi";
 
