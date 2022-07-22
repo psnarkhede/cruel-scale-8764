@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { getquestionapi, postquestionapi } from "../Redux/Question/action";
+import { useParams } from "react-router-dom";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -44,8 +45,6 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     dispatch(getquestionapi())
   }, [])
   
-
-  console.log("page",questions)
 
   const data = {
     id: 51,

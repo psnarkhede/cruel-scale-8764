@@ -91,7 +91,7 @@ const Productspage = () => {
                 //   border="1px solid grey"
                 // ></GridItem>
 
-                <SingleProduct {...item} />
+                <SingleProduct {...item} category={category} />
               );
             })}
           </Grid>
