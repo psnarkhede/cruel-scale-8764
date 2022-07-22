@@ -14,7 +14,7 @@ const Homepage = () => {
       </Box>
       <Box
         bg={"rgb(245,247,250)"}
-        //  border="1px solid red"
+        border="1px solid rgb(245,247,250)"
         marginTop="-50px"
       >
         <SliderHome />
