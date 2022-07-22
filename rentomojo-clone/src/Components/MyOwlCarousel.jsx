@@ -6,7 +6,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 const MyOwlCarousel = () => {
   const options = {
-    // arrows: true,
+    arrows: true,
     loop: true,
     margin: 10,
     items: 4.5,
