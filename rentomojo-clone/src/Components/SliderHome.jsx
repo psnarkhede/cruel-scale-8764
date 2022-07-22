@@ -26,7 +26,7 @@ const SliderHome = () => {
             >
               take these home
             </Text>
-            <Box width="50px"></Box>
+            <Box width="50px" border="1px solid red"></Box>
           </Box>
           <Box marginTop={"50px"}>
             <Flex>
