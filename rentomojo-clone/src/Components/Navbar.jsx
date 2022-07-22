@@ -14,7 +14,12 @@ import "./navbar.css";
 
 export default function WithSubnavigation() {
   return (
-    <Box className="navbar" margin="auto" width="100%">
+    <Box
+      className="navbar"
+      margin="auto"
+      width="100%"
+      bg={useColorModeValue("white")}
+    >
       <Flex
         bg={useColorModeValue("white")}
         // bg={"transparent"}

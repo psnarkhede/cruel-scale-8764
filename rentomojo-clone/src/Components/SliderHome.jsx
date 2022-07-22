@@ -1,9 +1,14 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
+
 const SliderHome = () => {
   return (
-    <Box border={"1px solid red"} height="250px" width={"80%"} margin="auto">
+    <Box
+      //  border={"1px solid red"}
+      width={"85%"}
+      margin="auto"
+    >
       <Box textAlign={"start"} marginTop="100px">
         <Flex flexDirection={"row"} justifyContent="space-between">
           <Box>
@@ -21,13 +26,16 @@ const SliderHome = () => {
             >
               take these home
             </Text>
-
-            <Box border={"1px solid red"} width="50px"></Box>
+            <Box width="50px"></Box>
           </Box>
           <Box marginTop={"50px"}>
             <Flex>
               <AiOutlineLeftCircle size="50" color="grey" />
-              <AiOutlineRightCircle size="50" />
+              <AiOutlineRightCircle
+                size="50"
+                color="grey"
+                fontVariant={"red"}
+              />
             </Flex>
           </Box>
         </Flex>
