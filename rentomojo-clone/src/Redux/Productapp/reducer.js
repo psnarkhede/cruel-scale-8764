@@ -4,12 +4,16 @@ import {
   GET_PRODUCTS_FAILURE,
   GET_PRODUCTS_REQUEST,
   GET_PRODUCTS_SUCCESS,
+  GET_SINGLEPRODUCT_ERROR,
+  GET_SINGLEPRODUCT_LOADING,
+  GET_SINGLEPRODUCT_SUCCESS,
 } from "./actiontypes";
 
 const initialState = {
   isLoading: false,
   isError: false,
   data: [],
+  newproduct:[]
 };
 export const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
@@ -34,6 +38,33 @@ export const reducer = (state = initialState, { type, payload }) => {
         isError: true,
       };
     }
+
+    case GET_SINGLEPRODUCT_LOADING: {
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    }
+
+    case GET_SINGLEPRODUCT_SUCCESS: {
+
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        newproduct: payload,
+      };
+    }
+
+    case GET_SINGLEPRODUCT_ERROR: {
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    }
+
     default: {
       return state;
     }

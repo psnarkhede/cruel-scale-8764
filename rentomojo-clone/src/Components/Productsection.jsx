@@ -14,8 +14,9 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { BsDot, BsCircleFill } from "react-icons/bs";
 import { BiRupee } from "react-icons/bi";
 
-const Productsection = ({ data }) => {
-  const [length, breadth, height] = data.dimensions;
+const Productsection = ({data,newdata, category, id}) => {
+  console.log(category,id)
+  let [length, breadth, height] = data.dimensions;
 
   return (
     <Box marginTop="50px">
