@@ -8,7 +8,6 @@ import {
   Input,
   Box,
   Grid,
-  Flex,
 } from "@chakra-ui/react";
 import { AiOutlineDown } from "react-icons/ai";
 import CityList from "./CityList";

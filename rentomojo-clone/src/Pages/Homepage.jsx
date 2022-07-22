@@ -4,6 +4,7 @@ import { BsFillChatQuoteFill } from "react-icons/bs";
 import { BiPackage } from "react-icons/bi";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
+import SliderHome from "../Components/SliderHome";
 
 const Homepage = () => {
   return (
@@ -17,7 +18,10 @@ const Homepage = () => {
         border="1px solid red"
         height={"300px"}
         marginTop="-20px"
-      ></Box>
+      >
+        <SliderHome />
+      </Box>
+
       {/* chat icon */}
       <BsFillChatQuoteFill
         position={"static"}
