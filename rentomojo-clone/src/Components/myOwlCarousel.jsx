@@ -82,7 +82,7 @@ const MyOwlCarousel = () => {
                 className="item"
                 key={e.id}
                 border="1px solid grey"
-                padding={"10px"}
+                padding={"30px 10px 10px 10px"}
                 bg={"white"}
               >
                 <img src={e.productimage} alt="img" />
