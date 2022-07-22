@@ -4,6 +4,7 @@ import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 import SliderHome from "../Components/SliderHome";
 import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
+import Features from "../Components/Features";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,9 @@ const Homepage = () => {
         >
           <MyOwlCarousel />
         </Box>
+      </Box>
+      <Box>
+        <Features />
       </Box>
 
       {/* chat icon */}
