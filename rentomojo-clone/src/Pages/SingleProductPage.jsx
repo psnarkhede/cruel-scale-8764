@@ -17,7 +17,7 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
-import { getquestionapi, postquestionapi } from "../Redux/Question/action";
+import { deletequestionapi, getquestionapi, postquestionapi } from "../Redux/Question/action";
 import { useParams } from "react-router-dom";
 import { getsingleproductapi } from "../Redux/Productapp/action";
 import { addtolikeapi, getlikeitemapi, removefromlikeapi } from "../Redux/Likeapp/action";
@@ -38,6 +38,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
 
   const{questions} = useSelector((state) => state.question);
 
+  const [btnstatus, setBtnstatus] = useState(true);
+
   const { newproduct} = useSelector((state) => state.productsreducer);
 
   const { likeditems } = useSelector((state) => state.likereducer);
@@ -53,6 +55,10 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   useEffect(() => {
     dispatch(getquestionapi())
   }, [])
+
+  const handledeletequestion = (id) => {
+    dispatch(deletequestionapi(id))
+  }
 
   useEffect(() => {
     dispatch(getsingleproductapi(category,id));
@@ -522,8 +528,13 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                       margin="auto"
                       paddingTop="20px"
                       paddingBottom="20px"
+                      className={styles.pardiv}
                     >
-                      <Text fontWeight="500">{el.data}</Text>
+                      <Flex justifyContent="space-between" >
+                        <Text fontWeight="500">{el.data}</Text>
+
+                        <Button bg="white" className={styles.delbtn} display="none" onClick={() => handledeletequestion(el.id)} >Delete</Button>
+                      </Flex>
                     </Box>
                   ))
                 : ""}
@@ -620,11 +631,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
           </Box>
 
           <Box hidden={box1 ? false : true}>
-            {category !== "packages" ? (
-              <Productsection category={category} id={id} />
-            ) : (
-              <Packagespage category={category} id={id} />
-            )}
+            {category !== "packages" ? <Productsection /> : <Packagespage />}
           </Box>
 
           <br />

@@ -15,7 +15,7 @@ import { BsDot, BsCircleFill } from "react-icons/bs";
 import { BiRupee } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
-const Packagespage = ({ category, id }) => {
+const Packagespage = () => {
 
   const { newproduct } = useSelector((state) => state.productsreducer);
 

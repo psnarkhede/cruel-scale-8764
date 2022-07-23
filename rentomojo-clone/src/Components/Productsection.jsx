@@ -13,7 +13,7 @@ import { BsDot, BsCircleFill } from "react-icons/bs";
 import { BiRupee } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
-const Productsection = ({ category, id }) => {
+const Productsection = () => {
 
   const { newproduct } = useSelector((state) => state.productsreducer);
 
