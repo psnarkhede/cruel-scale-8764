@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Image, Select, Text } from "@chakra-ui/react";
 import React from "react";
 import { DeleteIcon, AddIcon, MinusIcon } from "@chakra-ui/icons";
-import { BsPatchExclamation, BsTruck } from "react-icons/bs";
+import { BsTruck, BsPatchExclamation } from "react-icons/bs";
+
 export const CardCarts = () => {
   return (
     <>
