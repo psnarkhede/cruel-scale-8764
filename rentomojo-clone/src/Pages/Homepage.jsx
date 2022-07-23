@@ -7,8 +7,10 @@ import MyOwlCarousel from "../Components/myOwlCarousel";
 import Reviews from "../Components/Reviews";
 import Features from "../Components/Features";
 import { BsFillChatQuoteFill } from "react-icons/bs";
-import Footer from "../Components/Footer";
+// import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import Footersection1 from "../Components/Footersection1";
+import Footersection2 from "../Components/Footersection2";
 
 const Homepage = () => {
   return (
@@ -30,8 +32,10 @@ const Homepage = () => {
       <Features />
 
       <Reviews />
+      <Footersection1 />
+      <Footersection2 />
 
-      <Footer />
+      {/* <Footer /> */}
 
       {/* <Footersection1 /> */}
 
