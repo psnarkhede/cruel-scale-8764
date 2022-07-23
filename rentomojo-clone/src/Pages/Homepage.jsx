@@ -7,10 +7,10 @@ import MyOwlCarousel from "../Components/myOwlCarousel";
 import Reviews from "../Components/Reviews";
 import Features from "../Components/Features";
 import { BsFillChatQuoteFill } from "react-icons/bs";
-// import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Footersection1 from "../Components/Footersection1";
 import Footersection2 from "../Components/Footersection2";
+import Footer from "../Components/Footer";
 
 const Homepage = () => {
   return (
@@ -28,17 +28,8 @@ const Homepage = () => {
         <SliderHome />
         <MyOwlCarousel />
       </Box>
-
       <Features />
-
       <Reviews />
-      <Footersection1 />
-      <Footersection2 />
-
-      {/* <Footer /> */}
-
-      {/* <Footersection1 /> */}
-
       {/* chat icon */}
       <BsFillChatQuoteFill
         position={"static"}
@@ -48,6 +39,7 @@ const Homepage = () => {
         // vertical-align="bottom"
         // display="inline-block"
       />
+      <Footer />
     </Box>
   );
 };

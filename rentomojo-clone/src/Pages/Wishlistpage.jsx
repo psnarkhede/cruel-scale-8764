@@ -1,27 +1,27 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../Components/Navbar";
-import { getlikeitemapi, removefromlikeapi } from '../Redux/Likeapp/action';
+import { getlikeitemapi, removefromlikeapi } from "../Redux/Likeapp/action";
 import { Icon } from "@chakra-ui/react";
 import { FcLike } from "react-icons/fc";
 import { BiRupee } from "react-icons/bi";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 const Wishlistpage = () => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  const { likeditems } = useSelector((state) => state.likereducer);
 
-    const { likeditems } = useSelector((state) => state.likereducer);
+  useEffect(() => {
+    dispatch(getlikeitemapi());
+  }, []);
 
-    useEffect(() => {
-      dispatch(getlikeitemapi());
-    }, [])
-
-    const removelikeditem = (id) => {
-        dispatch(removefromlikeapi(id));
-        dispatch(getlikeitemapi());
-    }
+  const removelikeditem = (id) => {
+    dispatch(removefromlikeapi(id));
+    dispatch(getlikeitemapi());
+  };
 
   return (
     <>
@@ -38,14 +38,14 @@ const Wishlistpage = () => {
                   height="350px"
                 >
                   <Box display="flex">
-                      <Image
-                        width="100%"
-                        height="250px"
-                        borderTopLeftRadius="5px"
-                        borderTopRightRadius="5px"
-                        src={el.productimage}
-                        cursor="pointer"
-                      />
+                    <Image
+                      width="100%"
+                      height="250px"
+                      borderTopLeftRadius="5px"
+                      borderTopRightRadius="5px"
+                      src={el.productimage}
+                      cursor="pointer"
+                    />
                     <Box
                       width="35px"
                       height="35px"
@@ -108,8 +108,9 @@ const Wishlistpage = () => {
             : ""}
         </Grid>
       </Box>
+      <Footer />
     </>
   );
-}
+};
 
-export default Wishlistpage
+export default Wishlistpage;

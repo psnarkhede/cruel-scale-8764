@@ -3,6 +3,7 @@ import React from "react";
 import { Addons } from "../Components/Addons";
 import { CartCard } from "../Components/CartCard";
 import { CartHeader } from "../Components/CartHeader";
+import Footer from "../Components/Footer";
 import { OrderSummary } from "../Components/OrderSummary";
 // import "../Components/CartHeaders.css"
 const Cartpage = () => {
@@ -31,6 +32,7 @@ const Cartpage = () => {
           </Box>
         </Flex>
       </Stack>
+      <Footer />
     </Box>
   );
 };

@@ -18,6 +18,7 @@ import {
 import { Link } from "react-router-dom";
 import Homepage from "./Homepage";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Loginpage = () => {
   // const { isOpen, onOpen, onClose } = useDisclosure();
@@ -43,7 +44,7 @@ const Loginpage = () => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       {home ? (
         <Box>
           {/* <Button onClick={onOpen}>Login</Button>

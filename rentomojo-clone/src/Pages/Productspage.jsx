@@ -15,6 +15,7 @@ import { getProducts } from "../Redux/Productapp/action";
 import SingleProduct from "../Components/SingleProduct";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Productspage = () => {
   const { category } = useParams();
@@ -27,7 +28,7 @@ const Productspage = () => {
   }, [dispatch, getProducts]);
   return (
     <Box>
-      <Navbar/>
+      <Navbar />
       <Flex justifyContent="center">
         <Box
           width="25%"
@@ -99,6 +100,7 @@ const Productspage = () => {
           </Grid>
         </Box>
       </Flex>
+      <Footer />
     </Box>
   );
 };
