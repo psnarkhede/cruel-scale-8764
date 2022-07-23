@@ -62,10 +62,26 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   },[newproduct])
 
   const handlelike = () => {
+
+    let likedata = {
+      id: `likeditem${newproduct.id}`,
+      productimage: newproduct.productimage,
+      title: newproduct.title,
+      rent: newproduct.rent,
+      deliverytime: newproduct.deliverytime,
+      dimensions: newproduct.dimensions,
+      producttype: newproduct.producttype,
+      description: newproduct.description,
+      features: newproduct.features,
+      material: newproduct.material,
+      color: newproduct.color,
+      deposit: newproduct.deposit,
+    };
+
     if(!like){
-      dispatch(addtolikeapi(newproduct))
+      dispatch(addtolikeapi(likedata))
     }else{
-      dispatch(removefromlikeapi(newproduct.id))
+      dispatch(removefromlikeapi(likedata.id))
     }
   }
 
