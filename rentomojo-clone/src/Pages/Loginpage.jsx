@@ -43,12 +43,18 @@ const Loginpage = () => {
   return (
     <>
       {home ? (
-        <>
+        <Box>
           {/* <Button onClick={onOpen}>Login</Button>
           <Modal isOpen={isOpen} onClose={onClose}>
             <ModalOverlay /> */}
+          {flag && (
+            <Alert status="error">
+              <AlertIcon />
+              You have entered wrong information!
+            </Alert>
+          )}
           <Box
-          boxShadow="outline"
+            boxShadow="outline"
             margin="auto"
             marginTop="40px"
             maxW="800px"
@@ -137,13 +143,7 @@ const Loginpage = () => {
             {/* <ModalCloseButton _hover={"none"} /> */}
           </Box>
           {/* </Modal> */}
-          {flag && (
-            <Alert status="error">
-              <AlertIcon />
-              You have entered wrong information!
-            </Alert>
-          )}
-        </>
+        </Box>
       ) : (
         <>
           <Alert status="success">
