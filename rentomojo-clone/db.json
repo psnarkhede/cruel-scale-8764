@@ -1904,117 +1904,29 @@
   "questions": [],
   "cartitems": [
     {
-      "id": 53,
-      "productimage": "https://p.rmjo.in/moodShot/sbg8gqe1-1024x512.jpg",
-      "title": "Brooklyn 1-Seater Fabric Sofa",
-      "rent": "299",
-      "deliverytime": "24 hrs",
-      "dimensions": [
-        24,
-        30,
-        32
-      ],
-      "producttype": "Sofas",
-      "description": "With the Brooklyn Sofa , elegance and comfort find a new name. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
-      "features": [
-        "Fully upholstered couch",
-        "Soft foam cushioning",
-        "Added pouf that serves as extender"
-      ],
-      "material": "Fabric & Wood",
-      "color": "Blue",
-      "deposit": "409"
-    },
-    {
-      "id": 56,
-      "productimage": "https://p.rmjo.in/moodShot/n557a055-1024x512.jpg",
-      "title": "Latte Wooden Coffee Table",
-      "rent": "279",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
       "deliverytime": "72 hrs",
       "dimensions": [
-        35,
-        23,
-        14
-      ],
-      "producttype": "Center Tables",
-      "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
-      "features": [
-        "Wide-table top",
-        "Coffee table/center table"
-      ],
-      "material": " Solid Wood",
-      "color": "Teal Green",
-      "deposit": "379"
-    },
-    {
-      "id": 1,
-      "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
-      "title": "Cross Trainer C-500",
-      "rent": "1109",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        54,
-        46,
-        23
-      ],
-      "producttype": "",
-      "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
-      "features": [
-        "Capacity/Size : 53",
-        "Max user weight: 110kg",
-        "8kg flywheel for a smooth noise-free workout",
-        "Non-slip pedals with 18 inches stride",
-        "Monitor distance, time, calories & heart-rate",
-        "Accessory tablet holder"
-      ],
-      "material": "",
-      "color": "",
-      "deposit": "1719"
-    },
-    {
-      "id": 5,
-      "productimage": "https://p.rmjo.in/moodShot/o6i6bl38-1024x512.jpg",
-      "title": "Auto Inclination Treadmill TM-33",
-      "rent": "2939",
-      "deliverytime": "25th Jul 2022",
-      "dimensions": [
-        49,
-        17
-      ],
-      "producttype": "treadmills",
-      "description": "Engage in a whole new fitness experience with Treadmill TM 33 Built with a powerful 1.5/3.0 HP DC motor and an automatic motorized incline, TM-33 can deliver high-intensity training for walkers, runners and fitness enthusiasts. With the added benefit of elastomer cushion and intelligent space-saving design, make fitness a way of life.",
-      "features": [
-        "Capacity/Size : 110 Kg",
-        "Max. user weight: 110kg",
-        "Anti-slip slide rail",
-        "Wide running area",
-        "Track workout progress on LCD",
-        "Soft drop foldable structure"
-      ],
-      "material": "",
-      "color": "",
-      "deposit": "3639"
-    },
-    {
-      "id": 51,
-      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
-      "title": "Rex 3-Seater Leather Sofa",
-      "rent": "739",
-      "deliverytime": "48 hrs",
-      "dimensions": [
-        83,
-        31,
+        20,
+        5,
         32
       ],
-      "producttype": "Sofas",
-      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
-        "Leatherette covering",
-        "Foam filling"
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
       ],
-      "material": "Art Leather",
+      "material": "",
       "color": "Black",
-      "deposit": "1009"
+      "deposit": "1309",
+      "category": "appliances"
     }
   ],
   "likeditems": [
@@ -2041,56 +1953,6 @@
       "material": "",
       "color": "Black",
       "deposit": "1309",
-      "category": "appliances"
-    },
-    {
-      "id": "likeditem72",
-      "newid": 72,
-      "productimage": "https://p.rmjo.in/moodShot/5kifbyms-1024x512.jpg",
-      "title": "LED TV - 40",
-      "rent": "1429",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        20,
-        5,
-        32
-      ],
-      "producttype": "Televisions",
-      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
-      "features": [
-        "Capacity/Size : 40",
-        "Brands may vary",
-        "Wifi & Ethernet for internet connectivity",
-        "HDMI & USB support"
-      ],
-      "material": "",
-      "color": "Black",
-      "deposit": "1699",
-      "category": "appliances"
-    },
-    {
-      "id": "likeditem73",
-      "newid": 73,
-      "productimage": "https://p.rmjo.in/moodShot/ndpwrdu1-1024x512.jpg",
-      "title": "LED TV - 49",
-      "rent": "1509",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        20,
-        5,
-        32
-      ],
-      "producttype": "Televisions",
-      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
-      "features": [
-        "Capacity/Size : 49",
-        "Brands may vary",
-        "Wifi & Ethernet for internet connectivity",
-        "HDMI & USB support"
-      ],
-      "material": "",
-      "color": "Black",
-      "deposit": "2299",
       "category": "appliances"
     }
   ]
