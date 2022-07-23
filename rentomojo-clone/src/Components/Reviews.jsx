@@ -1,14 +1,11 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { useState } from "react";
-import Slider from "react-slick";
 
 const Reviews = () => {
-  const [slider, setSlider] = useState(Slider | (null > null));
   const options = {
     arrows: true,
     fade: true,
