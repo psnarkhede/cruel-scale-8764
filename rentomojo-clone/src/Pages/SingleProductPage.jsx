@@ -21,6 +21,7 @@ import { getquestionapi, postquestionapi } from "../Redux/Question/action";
 import { useParams } from "react-router-dom";
 import { getsingleproductapi } from "../Redux/Productapp/action";
 import { addtolikeapi, getlikeitemapi, removefromlikeapi } from "../Redux/Likeapp/action";
+import Packagespage from "../Components/Packagespage";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -49,8 +50,6 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     questionref.current.value=null;
   }
 
-  const [newdata, setNewdata] = useState();
-
   useEffect(() => {
     dispatch(getquestionapi())
   }, [])
@@ -60,16 +59,24 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   },[id]);
 
   useEffect(() => {
-    setNewdata(newproduct);
-  },[newproduct])
-
-  useEffect(() => {
     dispatch(getlikeitemapi());
   }, []);
 
+  useEffect(() => {
+    if(likeditems.length > 0){
+      likeditems.map((el) => {if(el.id === `likeditem${id}`){
+        setLike(true)
+      }})
+
+    }
+  },[likeditems])
+
   const handlelike = () => {
 
-    let likedata = {
+    let likedata = {};
+
+    if(category !== "packages"){
+      likedata = {
       id: `likeditem${newproduct.id}`,
       productimage: newproduct.productimage,
       title: newproduct.title,
@@ -83,31 +90,26 @@ const { isOpen, onOpen, onClose } = useDisclosure();
       color: newproduct.color,
       deposit: newproduct.deposit,
     };
+  }else{
+      likedata = {
+      id: `likeditem${newproduct.id}`,
+      productimage: newproduct.productimage,
+      title: newproduct.title,
+      rent: newproduct.rent,
+      producttype: newproduct.producttype,
+      deposit: newproduct.deposit,
+      product:newproduct.product,
+      roomtype:newproduct.roomtype,
+      items:newproduct.items
+    };
+  }
 
-    if(!like){
+    if(likedata && !like){
       dispatch(addtolikeapi(likedata))
     }else{
       dispatch(removefromlikeapi(likedata.id))
     }
   }
-
-  
-
-  const data = {
-    id: 51,
-    productimage: "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
-    title: "Rex 3-Seater Leather Sofa",
-    rent: "739",
-    deliverytime: "48 hrs",
-    dimensions: [83, 31, 32],
-    producttype: "Sofas",
-    description:
-      " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
-    features: ["Leatherette covering", "Foam filling"],
-    material: "Art Leather",
-    color: "black",
-    deposit: "1009",
-  };
 
   return (
     <Box>
@@ -128,7 +130,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
               justifyContent="center"
               alignItems="center"
             >
-              <Icon 
+              <Icon
+                cursor="pointer"
                 onClick={() => (setLike(!like), handlelike())}
                 fontSize="22px"
                 as={like ? FcLike : AiOutlineHeart}
@@ -617,8 +620,11 @@ const { isOpen, onOpen, onClose } = useDisclosure();
           </Box>
 
           <Box hidden={box1 ? false : true}>
-            {console.log(newproduct)}
-            {<Productsection data={data} newdata={newdata} category={category} id={id} />}
+            {category !== "packages" ? (
+              <Productsection category={category} id={id} />
+            ) : (
+              <Packagespage category={category} id={id} />
+            )}
           </Box>
 
           <br />
