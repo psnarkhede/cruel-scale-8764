@@ -61,6 +61,7 @@ const Settings = () => {
             fontWeight="300"
           >
             MALLIKARJUN ANNIGERI
+            {/* {loginName} */}
           </Text>
           <Box
             marginTop="8px"
