@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Homepage from "./Homepage";
+import Navbar from "../Components/Navbar";
 
 const Loginpage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,6 +43,7 @@ const Loginpage = () => {
 
   return (
     <>
+    <Navbar/>
       {home ? (
         <div>
           <Button onClick={onOpen}>Login</Button>

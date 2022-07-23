@@ -1994,6 +1994,27 @@
       "material": "",
       "color": "",
       "deposit": "3639"
+    },
+    {
+      "id": 51,
+      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
+      "title": "Rex 3-Seater Leather Sofa",
+      "rent": "739",
+      "deliverytime": "48 hrs",
+      "dimensions": [
+        83,
+        31,
+        32
+      ],
+      "producttype": "Sofas",
+      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+      "features": [
+        "Leatherette covering",
+        "Foam filling"
+      ],
+      "material": "Art Leather",
+      "color": "Black",
+      "deposit": "1009"
     }
   ],
   "likeditems": [

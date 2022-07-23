@@ -8,10 +8,12 @@ import Reviews from "../Components/Reviews";
 import Features from "../Components/Features";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 const Homepage = () => {
   return (
     <Box>
+      <Navbar />
       <Box width={"90%"} margin={"auto"}>
         <Carousel />
         <Pagelinkhomepage />

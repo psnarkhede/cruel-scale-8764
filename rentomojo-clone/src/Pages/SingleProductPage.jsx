@@ -22,6 +22,7 @@ import { useParams } from "react-router-dom";
 import { getsingleproductapi } from "../Redux/Productapp/action";
 import { addtolikeapi, getlikeitemapi, removefromlikeapi } from "../Redux/Likeapp/action";
 import Packagespage from "../Components/Packagespage";
+import Navbar from "../Components/Navbar";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -118,6 +119,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   }
 
   return (
+    <>
+    <Navbar/>
     <Box>
       <Flex>
         {/* Left Section */}
@@ -647,6 +650,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
         </Box>
       </Flex>
     </Box>
+    </>
   );
 };
 
