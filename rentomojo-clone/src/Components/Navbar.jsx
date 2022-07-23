@@ -91,32 +91,33 @@ function WithSubnavigation() {
           </Flex>
         </Link>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          {/* <Link to="/login"> */}
-          <Button
-            onClick={onOpen}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"red"}
-            href={"#"}
-            border="1px solid red"
-            borderRadius={"8px"}
-            _hover={{
-              bg: "white",
-              color: "red",
-            }}
+        {login ? (
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
           >
-            LOGIN/SIGNUP
-          </Button>
-          {/* </Link> */}
-          {login ? (
+            {/* <Link to="/login"> */}
+            <Button
+              onClick={onOpen}
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"red"}
+              href={"#"}
+              border="1px solid red"
+              borderRadius={"8px"}
+              _hover={{
+                bg: "white",
+                color: "red",
+              }}
+            >
+              LOGIN/SIGNUP
+            </Button>
+            {/* </Link> */}
+
             <Modal isOpen={isOpen} onClose={onClose}>
               <ModalOverlay />
               <ModalContent
@@ -251,10 +252,10 @@ function WithSubnavigation() {
             </ModalFooter> */}
               </ModalContent>
             </Modal>
-          ) : (
-            <Loginpage />
-          )}
-        </Stack>
+          </Stack>
+        ) : (
+          <Loginpage />
+        )}
       </Flex>
     </Box>
   );
