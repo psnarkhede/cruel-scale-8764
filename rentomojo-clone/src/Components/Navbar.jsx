@@ -6,6 +6,7 @@ import {
   Stack,
   useColorModeValue,
   Input,
+  Image,
 } from "@chakra-ui/react";
 import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
@@ -64,15 +65,31 @@ function WithSubnavigation() {
       >
         <Link to="/">
           <Box cursor="pointer" marginleft={"0px"}>
-            <img
-              src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
-              alt=""
-              width="300px"
-              overflow="hidden"
-            />
+            <Flex>
+              <Image
+                src="https://play-lh.googleusercontent.com/5S7hL_DxU_Ml7kGBs0M5pzKOoNXpFZELahoT-rbwKmeREwoBI_L8_ikrz_w5Me7K6A"
+                alt="rentomoj logo"
+                // boxSize="80px"
+                padding={"5px"}
+                width={"60px"}
+                h="68px"
+              />
+              <Text
+                fontSize={25}
+                textAlign="center"
+                as=""
+                marginLeft="0px"
+                p="10px 5px"
+                fontWeight="bold"
+                color="rgb(109,109,109)"
+                cursor="pointer"
+              >
+                rentomojo
+              </Text>
+            </Flex>
           </Box>
         </Link>
-        <Box>
+        <Box marginLeft={"5px"}>
           <LocationMenu />
         </Box>
         <Box>

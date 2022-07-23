@@ -24,12 +24,11 @@ const Homepage = () => {
         <SliderHome />
         <MyOwlCarousel />
       </Box>
-      <Box>
-        <Features />
-      </Box>
-      <Box>
-        <Reviews />
-      </Box>
+
+      <Features />
+
+      <Reviews />
+
       <Footer />
 
       {/* <Footersection1 /> */}
