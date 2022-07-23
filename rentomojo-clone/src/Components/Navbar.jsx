@@ -22,6 +22,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Loginpage from "../Pages/Loginpage";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function WithSubnavigation() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -72,7 +73,7 @@ function WithSubnavigation() {
                 // boxSize="80px"
                 padding={"5px"}
                 width={"60px"}
-                h="68px"
+                h="60px"
               />
               <Text
                 fontSize={25}
@@ -89,20 +90,25 @@ function WithSubnavigation() {
             </Flex>
           </Box>
         </Link>
-        <Box marginLeft={"5px"}>
+        <>
           <LocationMenu />
-        </Box>
+        </>
         <Box>
-          <Input
-            placeholder="Search for products"
-            // border="1px solid red"
-            type="search"
-            width={"700px"}
-            padding="20px"
-            margin={"auto"}
-            autoComplete="on"
+          <Flex
+            border="1px solid rgb(186,186,186)"
             borderRadius={"10px"}
-          />
+            padding="10px"
+          >
+            <Input
+              placeholder="Search for products"
+              type="search"
+              variant="unstyled"
+              width={"600px"}
+              margin={"auto"}
+              autoComplete="on"
+            />
+            <AiOutlineSearch size={"25px"} />
+          </Flex>
         </Box>
         <Link to="/cart">
           <Flex alignItems={"center"} gap="10px" cursor="pointer">

@@ -9,6 +9,7 @@ import {
   chakra,
   useColorModeValue,
   Flex,
+  Button,
 } from "@chakra-ui/react";
 import {
   FaTwitter,
@@ -19,6 +20,7 @@ import {
   FaFacebook,
   FaDribbble,
 } from "react-icons/fa";
+import Chatbox from "./Chatbox";
 import FooterSectionModel from "./FooterSection.Model";
 import ScrollToTop from "./ScrollToTop";
 
@@ -91,7 +93,13 @@ export default function Footersection2() {
 
           <Stack align={"flex-start"}>
             <ListHeader>NEED HELP ?</ListHeader>
-            <FooterSectionModel />
+            <Button
+              border={"1px solid rgb(49,49,49)"}
+              bg="rgb(245,247,250)"
+              _hover={{ bg: "rgb(245,247,250)" }}
+            >
+              Chat with us (9AM-6PM)
+            </Button>
 
             <Flex flexDirection={"row"} gap="10px" padding="10px">
               <FaTelegramPlane
@@ -121,6 +129,9 @@ export default function Footersection2() {
           </Stack>
         </SimpleGrid>
       </Container>
+      <Flex>
+        <Chatbox />
+      </Flex>
 
       <Box
         borderTopWidth={1}

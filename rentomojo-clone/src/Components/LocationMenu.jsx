@@ -23,7 +23,7 @@ export default function LocationMenu() {
     onOpen();
   };
 
-  const sizes = "700px";
+  const sizes = "600px";
   const cities = [
     {
       id: 1,
@@ -125,8 +125,7 @@ export default function LocationMenu() {
           m={4}
           bg="transparent"
           _hover={{ transition: "none" }}
-          // colorScheme="white"
-          variant={"ghost"}
+          _active={{ borderStyle: "outset" }}
         >
           Pune
           <AiOutlineDown />
@@ -140,6 +139,8 @@ export default function LocationMenu() {
               type="search"
               placeholder=" Search city here"
               padding={"20px"}
+              variant="unstyled"
+              border="1px solid rgb(186,186,186)"
             />
             <Box
               // border={"1px solid red"}
