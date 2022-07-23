@@ -6,6 +6,7 @@ import { GiWashingMachine, GiOfficeChair } from "react-icons/gi";
 import { AiOutlineMobile } from "react-icons/ai";
 import { RiEBikeLine } from "react-icons/ri";
 import { CgGym } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 export const Pagelinkhomepage = () => {
   return (
@@ -18,42 +19,54 @@ export const Pagelinkhomepage = () => {
       transform={"translate(0%, -50%)"}
       // border={"1px solid red"}
     >
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <BiPackage size={"60px"} />
-        <Text>Package</Text>
-      </Box>
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <IoBedOutline size={"60px"} />
-        <Text>Furniture</Text>
-      </Box>
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        cursor="pointer"
-        padding="30px 40px 15px 40px"
-      >
-        <GiWashingMachine size={"60px"} />
-        <Text>Appliances</Text>
-      </Box>
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <AiOutlineMobile size={"60px"} />
-        <Text>Electronics</Text>
-      </Box>
+      <Link to={`/products/${"packages"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <BiPackage size={"60px"} />
+          <Text>Package</Text>
+        </Box>
+      </Link>
+
+      <Link to={`/products/${"furniture"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <IoBedOutline size={"60px"} />
+          <Text>Furniture</Text>
+        </Box>
+      </Link>
+
+      <Link to={`/products/${"appliances"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          cursor="pointer"
+          padding="30px 40px 15px 40px"
+        >
+          <GiWashingMachine size={"60px"} />
+          <Text>Appliances</Text>
+        </Box>
+      </Link>
+
+      <Link to={`/products/${"electronics"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <AiOutlineMobile size={"60px"} />
+          <Text>Electronics</Text>
+        </Box>
+      </Link>
+
       <Box
         border={"1px solid grey"}
         borderRadius="10px"
@@ -63,24 +76,30 @@ export const Pagelinkhomepage = () => {
         <RiEBikeLine size={"60px"} />
         <Text>Bikes</Text>
       </Box>
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <CgGym size={"60px"} />
-        <Text>Fitness</Text>
-      </Box>
-      <Box
-        border={"1px solid grey"}
-        borderRadius="10px"
-        padding="30px 40px 15px 40px"
-        cursor="pointer"
-      >
-        <GiOfficeChair size={"60px"} />
-        <Text margin={"0"}>Essentials</Text>
-      </Box>
+
+      <Link to={`/products/${"fitness"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <CgGym size={"60px"} />
+          <Text>Fitness</Text>
+        </Box>
+      </Link>
+
+      <Link to={`/products/${"WFHEssentials"}`}>
+        <Box
+          border={"1px solid grey"}
+          borderRadius="10px"
+          padding="30px 40px 15px 40px"
+          cursor="pointer"
+        >
+          <GiOfficeChair size={"60px"} />
+          <Text margin={"0"}>WFHEssentials</Text>
+        </Box>
+      </Link>
     </Flex>
   );
 };

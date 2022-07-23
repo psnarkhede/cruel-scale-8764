@@ -13,7 +13,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
-import { ViewIcon } from "@chakra-ui/icons";
+//import { ViewIcon } from "@chakra-ui/icons";
 
 const Settings = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
