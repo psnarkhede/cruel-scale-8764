@@ -73,9 +73,6 @@ const Features = () => {
       </Flex>
       <Box marginTop={"20px"} margin="20px">
         <Grid templateColumns="repeat(3, 1fr)" gap={10}>
-          {/* <GridItem w="100%" h="10" bg="blue.500" />
-          <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" /> */}
           {data.map((e) => {
             return (
               <Box key={e.id}>
