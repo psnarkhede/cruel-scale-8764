@@ -1904,121 +1904,56 @@
   "questions": [],
   "cartitems": [
     {
-      "id": 53,
-      "productimage": "https://p.rmjo.in/moodShot/sbg8gqe1-1024x512.jpg",
-      "title": "Brooklyn 1-Seater Fabric Sofa",
-      "rent": "299",
-      "deliverytime": "24 hrs",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
+      "deliverytime": "72 hrs",
       "dimensions": [
-        24,
-        30,
+        20,
+        5,
         32
       ],
-      "producttype": "Sofas",
-      "description": "With the Brooklyn Sofa , elegance and comfort find a new name. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
-        "Fully upholstered couch",
-        "Soft foam cushioning",
-        "Added pouf that serves as extender"
-      ],
-      "material": "Fabric & Wood",
-      "color": "Blue",
-      "deposit": "409"
-    },
-    {
-      "id": 56,
-      "productimage": "https://p.rmjo.in/moodShot/n557a055-1024x512.jpg",
-      "title": "Latte Wooden Coffee Table",
-      "rent": "279",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        35,
-        23,
-        14
-      ],
-      "producttype": "Center Tables",
-      "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
-      "features": [
-        "Wide-table top",
-        "Coffee table/center table"
-      ],
-      "material": " Solid Wood",
-      "color": "Teal Green",
-      "deposit": "379"
-    },
-    {
-      "id": 1,
-      "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
-      "title": "Cross Trainer C-500",
-      "rent": "1109",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        54,
-        46,
-        23
-      ],
-      "producttype": "",
-      "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
-      "features": [
-        "Capacity/Size : 53",
-        "Max user weight: 110kg",
-        "8kg flywheel for a smooth noise-free workout",
-        "Non-slip pedals with 18 inches stride",
-        "Monitor distance, time, calories & heart-rate",
-        "Accessory tablet holder"
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
       ],
       "material": "",
-      "color": "",
-      "deposit": "1719"
+      "color": "Black",
+      "deposit": "1309",
+      "category": "appliances"
     }
   ],
   "likeditems": [
     {
-      "id": 1,
-      "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
-      "title": "Cross Trainer C-500",
-      "rent": "1109",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
       "deliverytime": "72 hrs",
       "dimensions": [
-        54,
-        46,
-        23
+        20,
+        5,
+        32
       ],
-      "producttype": "",
-      "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
-        "Capacity/Size : 53",
-        "Max user weight: 110kg",
-        "8kg flywheel for a smooth noise-free workout",
-        "Non-slip pedals with 18 inches stride",
-        "Monitor distance, time, calories & heart-rate",
-        "Accessory tablet holder"
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
       ],
       "material": "",
-      "color": "",
-      "deposit": "1719"
-    },
-    {
-      "id": 3,
-      "productimage": "https://p.rmjo.in/moodShot/66nko2kj-1024x512.jpg",
-      "title": "Felix 3-Seater Fabric Sofa (Blue)",
-      "rent": "789",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        70,
-        33,
-        24
-      ],
-      "producttype": "sofa",
-      "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
-      "features": [
-        "Soft fabric cover",
-        "3 seat cushions",
-        "Upholstered backrest cushions"
-      ],
-      "material": "fabric",
-      "color": "blue",
-      "deposit": "1229"
+      "color": "Black",
+      "deposit": "1309",
+      "category": "appliances"
     }
   ]
 }
