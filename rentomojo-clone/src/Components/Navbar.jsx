@@ -124,7 +124,6 @@ function WithSubnavigation() {
             <Modal isOpen={isOpen} onClose={onClose}>
               <ModalOverlay />
               <ModalContent
-               
                 minWidth={"800px"}
                 height={"580px"}
                 borderRadius="20px"
