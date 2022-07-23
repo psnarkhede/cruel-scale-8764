@@ -85,6 +85,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     if(category !== "packages"){
       likedata = {
       id: `likeditem${newproduct.id}`,
+      newid:newproduct.id,
       productimage: newproduct.productimage,
       title: newproduct.title,
       rent: newproduct.rent,
@@ -96,19 +97,22 @@ const { isOpen, onOpen, onClose } = useDisclosure();
       material: newproduct.material,
       color: newproduct.color,
       deposit: newproduct.deposit,
+      category:category,
     };
   }else{
       likedata = {
-      id: `likeditem${newproduct.id}`,
-      productimage: newproduct.productimage,
-      title: newproduct.title,
-      rent: newproduct.rent,
-      producttype: newproduct.producttype,
-      deposit: newproduct.deposit,
-      product:newproduct.product,
-      roomtype:newproduct.roomtype,
-      items:newproduct.items
-    };
+        id: `likeditem${newproduct.id}`,
+        newid: newproduct.id,
+        productimage: newproduct.productimage,
+        title: newproduct.title,
+        rent: newproduct.rent,
+        producttype: newproduct.producttype,
+        deposit: newproduct.deposit,
+        product: newproduct.product,
+        roomtype: newproduct.roomtype,
+        items: newproduct.items,
+        category: category,
+      };
   }
 
     if(likedata && !like){
