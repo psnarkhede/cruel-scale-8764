@@ -89,7 +89,8 @@ const Features = () => {
       <Button
         colorScheme="teal"
         variant="link"
-        marginLeft={"-1140px"}
+        // marginLeft={"-1140px"}
+        textAlign={"start"}
         marginBottom="20px"
       >
         KNOW MORE
