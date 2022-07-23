@@ -1927,6 +1927,29 @@
       "color": "Black",
       "deposit": "1309",
       "category": "appliances"
+    },
+    {
+      "id": "likeditem57",
+      "newid": 57,
+      "productimage": "https://p.rmjo.in/moodShot/h593jn2o-1024x512.jpg",
+      "title": "Perk 4-Seater Wooden Coffee Table",
+      "rent": "539",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        37,
+        37,
+        14
+      ],
+      "producttype": "Center Tables",
+      "description": "Strike a new vibe to your living room with the Perk 4-Seater Coffee Table. Crafted from sturdy solid wood, the Perk coffee table is complemented by four matching upholstered seats that can seat your guests comfortably and stow away neatly underneath.",
+      "features": [
+        "Upholstered matching seats",
+        "Includes 1 table+4 chair"
+      ],
+      "material": " Solid Wood",
+      "color": "Brown",
+      "deposit": "739",
+      "category": "furniture"
     }
   ],
   "likeditems": [
