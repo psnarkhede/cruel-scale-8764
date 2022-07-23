@@ -6,6 +6,7 @@ import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
 import Features from "../Components/Features";
 import Reviews from "../Components/Reviews";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -25,7 +26,13 @@ const Homepage = () => {
       <Box>
         <Features />
       </Box>
-      <Reviews />
+      <Box>
+        <Reviews />
+      </Box>
+      <Box>
+        <Footer />
+      </Box>
+      {/* <Footersection1 /> */}
 
       {/* chat icon */}
       {/* <BsFillChatQuoteFill

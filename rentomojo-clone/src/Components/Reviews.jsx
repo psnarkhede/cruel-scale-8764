@@ -74,12 +74,12 @@ const Reviews = () => {
   ];
 
   return (
-    <Box border={"1px solid red"}>
+    <Box>
       <Flex>
         <Box
           textAlign={"start"}
-          margin="40px 10px 10px 30px"
-          border={"1px solid red"}
+          margin="80px 10px 10px 30px"
+          // border={"1px solid red"}
           padding="30px 20px 0px 30px"
           height={"500px"}
         >
@@ -98,29 +98,16 @@ const Reviews = () => {
           <Text>
             Here's what they have to say about their RentoMojo experience.
           </Text>
-          {/* CSS files for react-slick */}
-          <link
-            rel="stylesheet"
-            type="text/css"
-            charSet="UTF-8"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-          />
-          {/* Left Icon */}
-          <Flex>
-            <Button onClick={() => slider?.slickPrev()}>
-              <AiOutlineLeftCircle size="50" color="grey" />
-            </Button>
-            <Button onClick={() => slider?.slickNext()}>
-              <AiOutlineRightCircle size="50" color="grey" />
-            </Button>
+          <Flex size="60px" marginTop={"20px"} width="150px">
+            {/* <Button onClick={() => slider?.slickPrev()}> */}
+            <AiOutlineLeftCircle size="50" color="grey" />
+            {/* </Button> */}
+            {/* <Button onClick={() => slider?.slickNext()}> */}
+            <AiOutlineRightCircle size="50" color="black" />
+            {/* </Button> */}
           </Flex>
         </Box>
-        <Box border={"1px solid red"} margin="40px 10px 10px 30px">
+        <Box margin="40px 10px 10px 30px">
           <Box
             padding={"0px 0px 20px 0px"}
             marginTop="30px"
@@ -144,7 +131,6 @@ const Reviews = () => {
                     >
                       <Flex flexDirection={"row"} gap="20px">
                         <Box
-                          // borderRadius={"50%"}
                           // border="1px solid red"
                           width={"200px"}
                           height={"150px"}
