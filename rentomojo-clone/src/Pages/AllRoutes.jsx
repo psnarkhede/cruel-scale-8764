@@ -13,6 +13,7 @@ import Wishlist from "./Wishlist";
 
 import Footer from "../Components/Footer";
 import { Navbar } from "../Components/Navbar"
+import Wishlistpage from "./Wishlistpage";
 
 
 const AllRoutes = () => {
@@ -41,6 +42,8 @@ const AllRoutes = () => {
         <Route path="/settings" element={<Settings />}></Route>
 
         <Route path="/signup" element={<Signuppage />}></Route>
+
+        <Route path="/wishlist" element={<Wishlistpage/>}></Route>
       </Routes>
 
       <Footer/>

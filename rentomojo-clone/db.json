@@ -2019,78 +2019,79 @@
   ],
   "likeditems": [
     {
-      "id": "likeditem2",
-      "productimage": "https://p.rmjo.in/moodShot/wruziw9d-1024x512.jpg",
-      "title": "Sofa & Bed Combo",
-      "rent": "789",
-      "deposit": "1229",
-      "product": [
-        {
-          "productimage": "https://p.rmjo.in/productSquare/mf3434ld-500x500.jpg",
-          "title": "Felix 3-Seater Fabric Sofa (Blue)",
-          "rent": "789",
-          "dimensions": [
-            70,
-            33,
-            24
-          ],
-          "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you.",
-          "features": [
-            "Soft fabric cover",
-            "3 seat cushions",
-            "Upholstered backrest cushions"
-          ],
-          "material": "Fabric",
-          "color": "Blue",
-          "deposit": "1229"
-        },
-        {
-          "productimage": "https://p.rmjo.in/productSquare/70rj36m0-500x500.jpg",
-          "title": "Poise Wooden Queen Bed (6x5)",
-          "rent": "549",
-          "dimensions": [
-            72,
-            60,
-            17
-          ],
-          "description": "Comfort and compactness, get them both with the Poise queen bed. The bed's strong metal frame ensures durability while the honey-toned solid wood adds both style and comfort to the mix.",
-          "features": [
-            "Metal bodied bed",
-            "Solid wood headboard",
-            "Durable coating to prevent rust",
-            "Honey finish"
-          ],
-          "material": "Metal & Solid Wood",
-          "color": "brown",
-          "deposit": "849"
-        }
-      ],
-      "roomtype": [
-        "bedroom",
-        "livingroom"
-      ],
-      "items": "2"
-    },
-    {
-      "id": "likeditem51",
-      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
-      "title": "Rex 3-Seater Leather Sofa",
-      "rent": "739",
-      "deliverytime": "48 hrs",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
+      "deliverytime": "72 hrs",
       "dimensions": [
-        83,
-        31,
+        20,
+        5,
         32
       ],
-      "producttype": "Sofas",
-      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
-        "Leatherette covering",
-        "Foam filling"
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
       ],
-      "material": "Art Leather",
+      "material": "",
       "color": "Black",
-      "deposit": "1009"
+      "deposit": "1309",
+      "category": "appliances"
+    },
+    {
+      "id": "likeditem72",
+      "newid": 72,
+      "productimage": "https://p.rmjo.in/moodShot/5kifbyms-1024x512.jpg",
+      "title": "LED TV - 40",
+      "rent": "1429",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
+      "features": [
+        "Capacity/Size : 40",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
+      ],
+      "material": "",
+      "color": "Black",
+      "deposit": "1699",
+      "category": "appliances"
+    },
+    {
+      "id": "likeditem73",
+      "newid": 73,
+      "productimage": "https://p.rmjo.in/moodShot/ndpwrdu1-1024x512.jpg",
+      "title": "LED TV - 49",
+      "rent": "1509",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        20,
+        5,
+        32
+      ],
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
+      "features": [
+        "Capacity/Size : 49",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
+      ],
+      "material": "",
+      "color": "Black",
+      "deposit": "2299",
+      "category": "appliances"
     }
   ]
 }
