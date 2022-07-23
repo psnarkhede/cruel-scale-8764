@@ -86,7 +86,12 @@ const Features = () => {
           })}
         </Grid>
       </Box>
-      <Button colorScheme="teal" variant="link" marginLeft={"-1140px"}>
+      <Button
+        colorScheme="teal"
+        variant="link"
+        marginLeft={"-1140px"}
+        marginBottom="20px"
+      >
         KNOW MORE
       </Button>
     </Box>

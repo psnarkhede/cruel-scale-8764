@@ -7,7 +7,7 @@ export const Addons =()=>{
     return (
         <Box 
         // border='1px solid teal'
-          w='58%' h='135px' marginTop='60px' marginLeft='65px' boxShadow='xl' p='' rounded='md' bg='white'>
+          w='80%' h='135px' marginTop='130px' marginLeft='65px' boxShadow='xl' p='' rounded='md' bg='white'>
             <Flex direction='row' justifyContent='space-around'>
                <Box 
                 // border='1px solid red'

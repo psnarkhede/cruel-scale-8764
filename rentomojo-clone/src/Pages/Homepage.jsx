@@ -2,12 +2,12 @@ import React from "react";
 import Carousel from "../Components/Crousel";
 import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 import SliderHome from "../Components/SliderHome";
-import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
-import Features from "../Components/Features";
+import MyOwlCarousel from "../Components/MyOwlCarousel";
 import Reviews from "../Components/Reviews";
-import Footer from "../Components/Footer";
+import Features from "../Components/Features";
 import { BsFillChatQuoteFill } from "react-icons/bs";
+import Footer from "../Components/Footer";
 
 const Homepage = () => {
   return (
@@ -30,7 +30,6 @@ const Homepage = () => {
       <Box>
         <Reviews />
       </Box>
-
       <Footer />
 
       {/* <Footersection1 /> */}

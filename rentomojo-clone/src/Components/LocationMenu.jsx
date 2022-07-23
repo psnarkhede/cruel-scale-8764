@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Tooltip } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -12,9 +13,10 @@ import {
 import { AiOutlineDown } from "react-icons/ai";
 import CityList from "./CityList";
 
-export default function SizeExample() {
+export default function LocationMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = useState("");
+  const [color, setColor] = useState("");
 
   const handleSizeClick = (newSize) => {
     setSize(newSize);
@@ -113,19 +115,23 @@ export default function SizeExample() {
 
   return (
     <Box>
-      <Button
-        onClick={() => handleSizeClick(sizes)}
-        key={size}
-        m={4}
-        bg="transparent"
-        transition={"none"}
-        // colorScheme="white"
-        // variant={"ghost"}
-      >
-        Pune
-        <AiOutlineDown />
-      </Button>
-
+      <Tooltip label="Click to Change city" aria-label="A tooltip">
+        <Button
+          onClick={() => {
+            handleSizeClick(sizes);
+            setColor("white");
+          }}
+          key={size}
+          m={4}
+          bg="transparent"
+          _hover={{ transition: "none" }}
+          // colorScheme="white"
+          variant={"ghost"}
+        >
+          Pune
+          <AiOutlineDown />
+        </Button>
+      </Tooltip>
       <Modal onClose={onClose} size={size} isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent>
@@ -148,7 +154,11 @@ export default function SizeExample() {
                 {cities.map((e) => {
                   return (
                     <Box>
-                      <CityList city={e.city_Name} id={e.id} image={e.image} />
+                      <CityList
+                        city={e.city_Name}
+                        key={e.id.toString()}
+                        image={e.image}
+                      />
                     </Box>
                   );
                 })}

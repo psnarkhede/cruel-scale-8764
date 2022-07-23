@@ -19,6 +19,8 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { getquestionapi, postquestionapi } from "../Redux/Question/action";
 import { useParams } from "react-router-dom";
+import { getsingleproductapi } from "../Redux/Productapp/action";
+import { addtolikeapi, removefromlikeapi } from "../Redux/Likeapp/action";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,11 +29,15 @@ const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [like, setLike] = useState(false);
 
+  let { category, id } = useParams();
+
   const questionref = useRef();
 
   const dispatch = useDispatch();
 
   const{questions} = useSelector((state) => state.question);
+
+  const { newproduct} = useSelector((state) => state.productsreducer);
 
   const handlequestion = () => {
     let question = questionref.current.value;
@@ -41,10 +47,44 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     questionref.current.value=null;
   }
 
+  const [newdata, setNewdata] = useState();
+
   useEffect(() => {
     dispatch(getquestionapi())
   }, [])
-  
+
+  useEffect(() => {
+    dispatch(getsingleproductapi(category,id));
+  },[id]);
+
+  useEffect(() => {
+    setNewdata(newproduct);
+  },[newproduct])
+
+  const handlelike = () => {
+
+    let likedata = {
+      id: `likeditem${newproduct.id}`,
+      productimage: newproduct.productimage,
+      title: newproduct.title,
+      rent: newproduct.rent,
+      deliverytime: newproduct.deliverytime,
+      dimensions: newproduct.dimensions,
+      producttype: newproduct.producttype,
+      description: newproduct.description,
+      features: newproduct.features,
+      material: newproduct.material,
+      color: newproduct.color,
+      deposit: newproduct.deposit,
+    };
+
+    if(!like){
+      dispatch(addtolikeapi(likedata))
+    }else{
+      dispatch(removefromlikeapi(likedata.id))
+    }
+  }
+
 
   const data = {
     id: 51,
@@ -81,13 +121,13 @@ const { isOpen, onOpen, onClose } = useDisclosure();
               justifyContent="center"
               alignItems="center"
             >
-              <Icon
-                onClick={() => setLike(!like)}
+              <Icon 
+                onClick={() => (setLike(!like), handlelike())}
                 fontSize="22px"
                 as={like ? FcLike : AiOutlineHeart}
               />
             </Box>
-            <Image width="100%" height="80vh" src="https://p.rmjo.in/moodShot/ky3xx53f-1024x512.jpg" />
+            <Image width="100%" height="80vh" src={newproduct.productimage} />
           </Box>
 
           <Flex>
@@ -570,7 +610,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
           </Box>
 
           <Box hidden={box1 ? false : true}>
-            <Productsection data={data} />
+            {console.log(newproduct)}
+            {<Productsection data={data} newdata={newdata} category={category} id={id} />}
           </Box>
 
           <br />
@@ -582,7 +623,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
 
         {/* Right Section */}
         <Box width="35%" height="100vh">
-          <Productpageright data={data} />
+          <Productpageright data={newproduct} category={category} />
         </Box>
       </Flex>
     </Box>
