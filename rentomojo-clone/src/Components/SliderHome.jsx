@@ -33,7 +33,7 @@ const SliderHome = () => {
               <AiOutlineLeftCircle size="50" color="grey" />
               <AiOutlineRightCircle
                 size="50"
-                color="grey"
+                color="black"
                 fontVariant={"red"}
               />
             </Flex>

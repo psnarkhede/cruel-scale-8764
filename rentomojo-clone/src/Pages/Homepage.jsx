@@ -6,6 +6,8 @@ import { Box } from "@chakra-ui/react";
 import MyOwlCarousel from "../Components/MyOwlCarousel";
 import Reviews from "../Components/Reviews";
 import Features from "../Components/Features";
+import { BsFillChatQuoteFill } from "react-icons/bs";
+import Footer from "../Components/Footer";
 
 const Homepage = () => {
   return (
@@ -25,17 +27,22 @@ const Homepage = () => {
       <Box>
         <Features />
       </Box>
-      <Reviews />
+      <Box>
+        <Reviews />
+      </Box>
+      <Footer />
+
+      {/* <Footersection1 /> */}
 
       {/* chat icon */}
-      {/* <BsFillChatQuoteFill
+      <BsFillChatQuoteFill
         position={"static"}
         size={"60px"}
         left="0"
         bottom="0"
         // vertical-align="bottom"
         // display="inline-block"
-      /> */}
+      />
     </Box>
   );
 };

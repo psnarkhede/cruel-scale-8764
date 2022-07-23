@@ -50,9 +50,9 @@ const Features = () => {
     },
   ];
   return (
-    <Box width="95%" border={"1px solid red"} margin="auto">
+    <Box width="95%" margin="auto">
       <Flex>
-        <Box padding={"20px"}>
+        <Box padding={"20px"} marginTop="70px">
           <Text
             fontFamily={"Muli, sans-serif"}
             fontSize="30px"
