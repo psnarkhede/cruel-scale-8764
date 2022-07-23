@@ -8,9 +8,7 @@ import {
   VisuallyHidden,
   chakra,
   useColorModeValue,
-  Input,
   Flex,
-  Button,
 } from "@chakra-ui/react";
 import {
   FaTwitter,
@@ -21,7 +19,6 @@ import {
   FaFacebook,
   FaDribbble,
 } from "react-icons/fa";
-import { BsArrowUp } from "react-icons/bs";
 import FooterSectionModel from "./FooterSection.Model";
 import ScrollToTop from "./ScrollToTop";
 
