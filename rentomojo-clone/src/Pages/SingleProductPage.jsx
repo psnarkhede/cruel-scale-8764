@@ -20,6 +20,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getquestionapi, postquestionapi } from "../Redux/Question/action";
 import { useParams } from "react-router-dom";
 import { getsingleproductapi } from "../Redux/Productapp/action";
+import { addtolikeapi, removefromlikeapi } from "../Redux/Likeapp/action";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,6 +61,14 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     setNewdata(newproduct);
   },[newproduct])
 
+  const handlelike = () => {
+    if(!like){
+      dispatch(addtolikeapi(newproduct))
+    }else{
+      dispatch(removefromlikeapi(newproduct.id))
+    }
+  }
+
 
   const data = {
     id: 51,
@@ -96,8 +105,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
               justifyContent="center"
               alignItems="center"
             >
-              <Icon
-                onClick={() => setLike(!like)}
+              <Icon 
+                onClick={() => (setLike(!like), handlelike())}
                 fontSize="22px"
                 as={like ? FcLike : AiOutlineHeart}
               />
