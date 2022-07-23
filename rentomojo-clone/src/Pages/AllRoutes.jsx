@@ -8,6 +8,7 @@ import SingleProductPage from "./SingleProductPage";
 import Productspage from "./Productspage";
 import Settings from "./Settings";
 import Signuppage from "./Signuppage";
+import Wishlist from "./Wishlist";
 
 const AllRoutes = () => {
   return (
@@ -28,6 +29,8 @@ const AllRoutes = () => {
       <Route path="/payment" element={<Paymentspage />}></Route>
 
       <Route path="/settings" element={<Settings />}></Route>
+
+      <Route path="/mywishlist" element={<Wishlist />}></Route>
 
       <Route path="/signup" element={<Signuppage />}></Route>
     </Routes>
