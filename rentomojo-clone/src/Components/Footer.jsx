@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import Footersection1 from "../Components/Footersection1";
-import Footersection2 from "../Components/Footersection2";
+import Footersection1 from "./Footersection1";
+import Footersection2 from "./Footersection2";
 
 const Footer = () => {
   return (

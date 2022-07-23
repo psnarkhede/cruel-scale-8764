@@ -6,7 +6,7 @@ import MyOwlCarousel from "../Components/MyOwlCarousel";
 import { Box } from "@chakra-ui/react";
 import Features from "../Components/Features";
 import Reviews from "../Components/Reviews";
-import Footer from "./Footer";
+import Footer from "../Components/Footer";
 
 const Homepage = () => {
   return (
@@ -29,9 +29,9 @@ const Homepage = () => {
       <Box>
         <Reviews />
       </Box>
-      <Box>
-        <Footer />
-      </Box>
+
+      <Footer />
+
       {/* <Footersection1 /> */}
 
       {/* chat icon */}
