@@ -7,6 +7,7 @@ import { Box } from "@chakra-ui/react";
 import Features from "../Components/Features";
 import Reviews from "../Components/Reviews";
 import Footer from "../Components/Footer";
+import { BsFillChatQuoteFill } from "react-icons/bs";
 
 const Homepage = () => {
   return (
@@ -35,14 +36,14 @@ const Homepage = () => {
       {/* <Footersection1 /> */}
 
       {/* chat icon */}
-      {/* <BsFillChatQuoteFill
+      <BsFillChatQuoteFill
         position={"static"}
         size={"60px"}
         left="0"
         bottom="0"
         // vertical-align="bottom"
         // display="inline-block"
-      /> */}
+      />
     </Box>
   );
 };
