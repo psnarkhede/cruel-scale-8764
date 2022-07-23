@@ -10,7 +10,7 @@ import { postdatatocartapi } from '../Redux/Cartapp/action';
 
 const Productpageright = ({data,category}) => {
 
-  {/* Today */}
+  const [btntext, setBtntext] = useState("Copy")
 
   const dispatch = useDispatch();
 
@@ -18,7 +18,21 @@ const Productpageright = ({data,category}) => {
     dispatch(postdatatocartapi(data))
   }
 
-  const [viewcartoption, setViewcartoption] = useState(false)
+  const [viewcartoption, setViewcartoption] = useState(false);
+
+  const handlecopy = (text) => {
+    navigator.clipboard.writeText(text);
+
+    setBtntext("Copied")
+
+    setTimeout(() => {
+      setBtntext("Copy")
+      console.log(1);
+    }, 1000);
+     
+  }
+
+ 
 
   return (
     <Box>
@@ -209,9 +223,9 @@ const Productpageright = ({data,category}) => {
         Compare All Tenures
       </Button>
 
-      <Text textAlign="left" paddingLeft="8%" marginTop="20px" fontSize="14px">
+      <Text textAlign="left" paddingLeft="12%" marginTop="20px" fontSize="14px">
         {" "}
-        <Icon marginRight="20px" as={TbTruckDelivery} /> Delivery by 34th Jul
+        <Icon marginRight="15px" as={TbTruckDelivery} /> Delivery by 24th Jul
         2022{" "}
       </Text>
 
@@ -268,7 +282,7 @@ const Productpageright = ({data,category}) => {
         marginTop="10px"
         padding="5px 0px 5px 0px"
       >
-        <Flex gap="5px" justifyContent="center" alignItems="center">
+        <Flex gap="20px" justifyContent="center" alignItems="center">
           <Image
             width="25px"
             height="25px"
@@ -280,9 +294,9 @@ const Productpageright = ({data,category}) => {
               Use Code <span style={{ fontWeight: "500" }}>CITY15</span>
             </Text>
             <Text>Flat 15% off on third Month invoice</Text>
-            <Text fontWeight="500" color="green">
+            {/*<Text fontWeight="500" color="green">
               Read More
-            </Text>
+  </Text>*/}
             <Text color="red">Applicable to New Users</Text>
           </Box>
 
@@ -292,8 +306,9 @@ const Productpageright = ({data,category}) => {
             color="green"
             bg="white"
             border="1px solid green"
+            onClick={() => handlecopy("CITY15")}
           >
-            Copy
+            {btntext}
           </Button>
         </Flex>
       </Box>

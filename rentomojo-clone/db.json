@@ -1970,55 +1970,127 @@
       "material": "",
       "color": "",
       "deposit": "1719"
+    },
+    {
+      "id": 5,
+      "productimage": "https://p.rmjo.in/moodShot/o6i6bl38-1024x512.jpg",
+      "title": "Auto Inclination Treadmill TM-33",
+      "rent": "2939",
+      "deliverytime": "25th Jul 2022",
+      "dimensions": [
+        49,
+        17
+      ],
+      "producttype": "treadmills",
+      "description": "Engage in a whole new fitness experience with Treadmill TM 33 Built with a powerful 1.5/3.0 HP DC motor and an automatic motorized incline, TM-33 can deliver high-intensity training for walkers, runners and fitness enthusiasts. With the added benefit of elastomer cushion and intelligent space-saving design, make fitness a way of life.",
+      "features": [
+        "Capacity/Size : 110 Kg",
+        "Max. user weight: 110kg",
+        "Anti-slip slide rail",
+        "Wide running area",
+        "Track workout progress on LCD",
+        "Soft drop foldable structure"
+      ],
+      "material": "",
+      "color": "",
+      "deposit": "3639"
+    },
+    {
+      "id": 51,
+      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
+      "title": "Rex 3-Seater Leather Sofa",
+      "rent": "739",
+      "deliverytime": "48 hrs",
+      "dimensions": [
+        83,
+        31,
+        32
+      ],
+      "producttype": "Sofas",
+      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+      "features": [
+        "Leatherette covering",
+        "Foam filling"
+      ],
+      "material": "Art Leather",
+      "color": "Black",
+      "deposit": "1009"
     }
   ],
   "likeditems": [
     {
-      "id": 1,
-      "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
-      "title": "Cross Trainer C-500",
-      "rent": "1109",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        54,
-        46,
-        23
+      "id": "likeditem2",
+      "productimage": "https://p.rmjo.in/moodShot/wruziw9d-1024x512.jpg",
+      "title": "Sofa & Bed Combo",
+      "rent": "789",
+      "deposit": "1229",
+      "product": [
+        {
+          "productimage": "https://p.rmjo.in/productSquare/mf3434ld-500x500.jpg",
+          "title": "Felix 3-Seater Fabric Sofa (Blue)",
+          "rent": "789",
+          "dimensions": [
+            70,
+            33,
+            24
+          ],
+          "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you.",
+          "features": [
+            "Soft fabric cover",
+            "3 seat cushions",
+            "Upholstered backrest cushions"
+          ],
+          "material": "Fabric",
+          "color": "Blue",
+          "deposit": "1229"
+        },
+        {
+          "productimage": "https://p.rmjo.in/productSquare/70rj36m0-500x500.jpg",
+          "title": "Poise Wooden Queen Bed (6x5)",
+          "rent": "549",
+          "dimensions": [
+            72,
+            60,
+            17
+          ],
+          "description": "Comfort and compactness, get them both with the Poise queen bed. The bed's strong metal frame ensures durability while the honey-toned solid wood adds both style and comfort to the mix.",
+          "features": [
+            "Metal bodied bed",
+            "Solid wood headboard",
+            "Durable coating to prevent rust",
+            "Honey finish"
+          ],
+          "material": "Metal & Solid Wood",
+          "color": "brown",
+          "deposit": "849"
+        }
       ],
-      "producttype": "",
-      "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
-      "features": [
-        "Capacity/Size : 53",
-        "Max user weight: 110kg",
-        "8kg flywheel for a smooth noise-free workout",
-        "Non-slip pedals with 18 inches stride",
-        "Monitor distance, time, calories & heart-rate",
-        "Accessory tablet holder"
+      "roomtype": [
+        "bedroom",
+        "livingroom"
       ],
-      "material": "",
-      "color": "",
-      "deposit": "1719"
+      "items": "2"
     },
     {
-      "id": 3,
-      "productimage": "https://p.rmjo.in/moodShot/66nko2kj-1024x512.jpg",
-      "title": "Felix 3-Seater Fabric Sofa (Blue)",
-      "rent": "789",
-      "deliverytime": "72 hrs",
+      "id": "likeditem51",
+      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
+      "title": "Rex 3-Seater Leather Sofa",
+      "rent": "739",
+      "deliverytime": "48 hrs",
       "dimensions": [
-        70,
-        33,
-        24
+        83,
+        31,
+        32
       ],
-      "producttype": "sofa",
-      "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
+      "producttype": "Sofas",
+      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
       "features": [
-        "Soft fabric cover",
-        "3 seat cushions",
-        "Upholstered backrest cushions"
+        "Leatherette covering",
+        "Foam filling"
       ],
-      "material": "fabric",
-      "color": "blue",
-      "deposit": "1229"
+      "material": "Art Leather",
+      "color": "Black",
+      "deposit": "1009"
     }
   ]
 }

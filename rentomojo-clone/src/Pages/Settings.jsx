@@ -14,11 +14,14 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 //import { ViewIcon } from "@chakra-ui/icons";
+import Navbar from "../Components/Navbar";
 
 const Settings = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
+    <>
+    <Navbar/>
     <Container
       maxW="700px"
       padding="40px 40px"
@@ -223,6 +226,7 @@ const Settings = () => {
         </ModalContent>
       </Modal>
     </Container>
+    </>
   );
 };
 
