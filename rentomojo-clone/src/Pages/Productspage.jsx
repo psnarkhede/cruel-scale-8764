@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../Redux/Productapp/action";
 import SingleProduct from "../Components/SingleProduct";
 import { Link, useParams } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const Productspage = () => {
   const { category } = useParams();
@@ -26,6 +27,7 @@ const Productspage = () => {
   }, [dispatch, getProducts]);
   return (
     <Box>
+      <Navbar/>
       <Flex justifyContent="center">
         <Box
           width="25%"

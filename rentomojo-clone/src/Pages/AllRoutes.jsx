@@ -9,28 +9,46 @@ import Productspage from "./Productspage";
 import Settings from "./Settings";
 import Signuppage from "./Signuppage";
 
+import Wishlist from "./Wishlist";
+
+import Footer from "../Components/Footer";
+import { Navbar } from "../Components/Navbar"
+import Wishlistpage from "./Wishlistpage";
+
+
 const AllRoutes = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />}></Route>
+    <div>
 
-      <Route path="/products/:category" element={<Productspage />}></Route>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
 
-      <Route
-        path="/product/:category/:id"
-        element={<SingleProductPage />}
-      ></Route>
+        <Route path="/products/:category" element={<Productspage />}></Route>
 
-      <Route path="/cart" element={<Cartpage />}></Route>
+        <Route
+          path="/product/:category/:id"
+          element={<SingleProductPage />}
+        ></Route>
 
-      <Route path="/login" element={<Loginpage />}></Route>
+        <Route path="/cart" element={<Cartpage />}></Route>
 
-      <Route path="/payment" element={<Paymentspage />}></Route>
+        <Route path="/login" element={<Loginpage />}></Route>
 
-      <Route path="/settings" element={<Settings />}></Route>
+        <Route path="/payment" element={<Paymentspage />}></Route>
 
-      <Route path="/signup" element={<Signuppage />}></Route>
-    </Routes>
+
+      <Route path="/mywishlist" element={<Wishlist />}></Route>
+
+        <Route path="/settings" element={<Settings />}></Route>
+
+        <Route path="/signup" element={<Signuppage />}></Route>
+
+        <Route path="/wishlist" element={<Wishlistpage/>}></Route>
+      </Routes>
+
+      <Footer/>
+    </div>
+
   );
 };
 

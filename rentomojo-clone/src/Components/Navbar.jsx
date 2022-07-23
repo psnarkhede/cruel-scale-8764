@@ -142,7 +142,7 @@ function WithSubnavigation() {
               <ModalOverlay />
               <ModalContent
                 minWidth={"800px"}
-                height={"570px"}
+                height={"580px"}
                 borderRadius="20px"
                 margin="auto"
               >

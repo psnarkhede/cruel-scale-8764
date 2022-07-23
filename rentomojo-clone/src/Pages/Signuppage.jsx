@@ -1,7 +1,11 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 
 const Signuppage = () => {
-  return <div>Signuppage</div>;
+  return <div>
+    <Navbar/>
+    Signuppage
+    </div>;
 };
 
 export default Signuppage;

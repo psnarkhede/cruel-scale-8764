@@ -1,22 +1,21 @@
 import {
   Box,
-  Button,
   Flex,
   Icon,
   Image,
-  List,
   ListItem,
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { BsDot, BsCircleFill } from "react-icons/bs";
 import { BiRupee } from "react-icons/bi";
+import { useDispatch, useSelector } from "react-redux";
 
-const Productsection = ({data,newdata, category, id}) => {
-  console.log(category,id)
-  let [length, breadth, height] = data.dimensions;
+const Productsection = () => {
+
+  const { newproduct } = useSelector((state) => state.productsreducer);
 
   return (
     <Box marginTop="50px">
@@ -80,7 +79,7 @@ const Productsection = ({data,newdata, category, id}) => {
       <Box width="85%" margin="auto" marginTop="30px">
         <Flex>
           <Box width="40%" height="60vh">
-            <Image width="100%" height="100%" src={data.productimage} />
+            <Image width="100%" height="60vh" src={newproduct.productimage} />
           </Box>
 
           <Box
@@ -88,41 +87,70 @@ const Productsection = ({data,newdata, category, id}) => {
             boxSizing="borderbox"
             paddingLeft="4%"
             width="60%"
-            height="60vh"
+            height="auto"
           >
             <Text fontSize="18px" fontWeight="500">
-              {data.title}
+              {newproduct.title}
             </Text>
             <Box bgColor="gray" height="2px" width="8%" marginTop="5px" />
 
             <Text marginTop="20px" fontSize="13px" color="gray.500">
-              {data.description}
+              {newproduct.description}
             </Text>
 
             <Box marginTop="30px">
               <Flex gap="40px">
                 <Box>
                   <Box>
-                    <Text fontSize="14px">Size & Diamensions</Text>
+                    <Text width="150px" fontSize="14px">Size & Diamensions</Text>
                     <Flex marginTop="10px" alignItems="center">
-                      <Icon as={BsDot} />
-                      <Text
-                        fontSize="14px"
+                      {newproduct.dimensions ? 
+                      <Icon
+                        marginLeft="-5px"
+                        fontSize="30px"
                         color="gray.500"
-                      >{`${length}"L x ${breadth}"B x ${height}"H`}</Text>
+                        as={BsDot}
+                      />:""}
+                      <Flex>
+                        {newproduct.dimensions
+                          ? newproduct.dimensions.map((el, id) => (
+                              <Box key={id}>
+                                <Text
+                                  fontSize="14px"
+                                  color="gray.500"
+                                  width="42px"
+                                >
+                                  {el}
+                                  {id == 0
+                                    ? `"L x`
+                                    : id == 1 &&
+                                      newproduct.dimensions.length > 2
+                                    ? `"B x`
+                                    : id == 2
+                                    ? `"H`
+                                    : ""}
+                                </Text>
+                              </Box>
+                            ))
+                          : ""}
+                      </Flex>
                     </Flex>
                   </Box>
 
                   <Box marginTop="40px">
                     <Text fontSize="14px">Material & Color</Text>
                     <Flex marginTop="10px" alignItems="center" gap="10px">
-                      <Icon
-                        fontSize="10px"
-                        color={data.color}
-                        as={BsCircleFill}
-                      />
+                      {newproduct.color !== "" ? (
+                        <Icon
+                          fontSize="10px"
+                          color={newproduct.color}
+                          as={BsCircleFill}
+                        />
+                      ) : (
+                        ""
+                      )}
                       <Text fontSize="14px" color="gray.500">
-                        {data.material}
+                        {newproduct.material}
                       </Text>
                     </Flex>
                   </Box>
@@ -131,15 +159,18 @@ const Productsection = ({data,newdata, category, id}) => {
                 <Box>
                   <Text fontSize="14px">Features & Specs</Text>
                   <UnorderedList>
-                    {data.features.map((el) => (
-                      <ListItem
-                        marginTop="10px"
-                        fontSize="14px"
-                        color="gray.500"
-                      >
-                        {el}
-                      </ListItem>
-                    ))}
+                    {newproduct.features
+                      ? newproduct.features.map((el,ind) => (
+                          <ListItem
+                          key={ind}
+                            marginTop="10px"
+                            fontSize="14px"
+                            color="gray.500"
+                          >
+                            {el}
+                          </ListItem>
+                        ))
+                      : ""}
                   </UnorderedList>
                 </Box>
               </Flex>
@@ -150,7 +181,13 @@ const Productsection = ({data,newdata, category, id}) => {
 
       {/* Cost box */}
 
-      <Box border="1px solid gray" width="50%" margin="auto" marginTop="20px" padding="10px">
+      <Box
+        border="1px solid gray"
+        width="50%"
+        margin="auto"
+        marginTop="20px"
+        padding="10px"
+      >
         <Flex justifyContent="space-between">
           <Box>
             <Flex alignItems="center">
@@ -162,7 +199,7 @@ const Productsection = ({data,newdata, category, id}) => {
                 fontSize="18px"
                 as={BiRupee}
               />
-              <Text fontWeight="500"> {data.rent} </Text>
+              <Text fontWeight="500"> {newproduct.rent} </Text>
             </Flex>
           </Box>
 
@@ -176,7 +213,7 @@ const Productsection = ({data,newdata, category, id}) => {
                 fontSize="18px"
                 as={BiRupee}
               />
-              <Text fontWeight="500"> {data.deposit} </Text>
+              <Text fontWeight="500"> {newproduct.deposit} </Text>
             </Flex>
           </Box>
         </Flex>
