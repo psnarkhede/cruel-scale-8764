@@ -3,13 +3,14 @@ import React from "react";
 
 const CityList = ({ city, image, id }) => {
   return (
-    <Box key={id} width="140px">
+    <Box width="140px">
       <Box
         // border={"1px solid red"}
         borderRadius="10px"
         cursor={"pointer"}
         _hover={{ border: "1px solid red" }}
         height="160px"
+        key={id}
       >
         <Box
           padding="17px"
