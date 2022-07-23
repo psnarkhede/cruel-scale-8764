@@ -16,9 +16,6 @@ import { BiRupee } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
 const Packagespage = ({ category, id }) => {
-  console.log(category, id);
-
-  const dispatch = useDispatch();
 
   const { newproduct } = useSelector((state) => state.productsreducer);
 

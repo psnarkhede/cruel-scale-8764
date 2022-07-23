@@ -1,10 +1,8 @@
 import {
   Box,
-  Button,
   Flex,
   Icon,
   Image,
-  List,
   ListItem,
   Text,
   UnorderedList,
@@ -16,9 +14,6 @@ import { BiRupee } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 
 const Productsection = ({ category, id }) => {
-  console.log(category, id);
-
-  const dispatch = useDispatch();
 
   const { newproduct } = useSelector((state) => state.productsreducer);
 
@@ -165,8 +160,9 @@ const Productsection = ({ category, id }) => {
                   <Text fontSize="14px">Features & Specs</Text>
                   <UnorderedList>
                     {newproduct.features
-                      ? newproduct.features.map((el) => (
+                      ? newproduct.features.map((el,ind) => (
                           <ListItem
+                          key={ind}
                             marginTop="10px"
                             fontSize="14px"
                             color="gray.500"

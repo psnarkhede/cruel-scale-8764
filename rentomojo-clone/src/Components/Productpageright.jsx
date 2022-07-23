@@ -10,7 +10,7 @@ import { postdatatocartapi } from '../Redux/Cartapp/action';
 
 const Productpageright = ({data,category}) => {
 
-  {/* Today */}
+  const [btntext, setBtntext] = useState("Copy")
 
   const dispatch = useDispatch();
 
@@ -18,7 +18,21 @@ const Productpageright = ({data,category}) => {
     dispatch(postdatatocartapi(data))
   }
 
-  const [viewcartoption, setViewcartoption] = useState(false)
+  const [viewcartoption, setViewcartoption] = useState(false);
+
+  const handlecopy = (text) => {
+    navigator.clipboard.writeText(text);
+
+    setBtntext("Copied")
+
+    setTimeout(() => {
+      setBtntext("Copy")
+      console.log(1);
+    }, 1000);
+     
+  }
+
+ 
 
   return (
     <Box>
@@ -292,8 +306,9 @@ const Productpageright = ({data,category}) => {
             color="green"
             bg="white"
             border="1px solid green"
+            onClick={() => handlecopy("CITY15")}
           >
-            Copy
+            {btntext}
           </Button>
         </Flex>
       </Box>
