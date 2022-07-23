@@ -2019,6 +2019,30 @@
       "material": "fabric",
       "color": "blue",
       "deposit": "1229"
+    },
+    {
+      "id": "likeditem5",
+      "productimage": "https://p.rmjo.in/moodShot/lx0e9aiz-1024x512.jpg",
+      "title": "Dell XPS 13 , Intel Core i5 processor , 8th Gen - ( 8 GB / 256 GB SSD / Win 10 Pro OS , 13.3 inch,Silver )",
+      "rent": "3679",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        0.4,
+        11.96,
+        7.87
+      ],
+      "producttype": "",
+      "description": "A laptop that is made to cater to students as well as working professionals with its eighth-generation quad-core i5 processor. Carry this compact lightweight 13.3-inch display laptop anywhere to multitask on-the-go. Let it be work, play or leisure, the Dell XPS 13 will let you do it all.",
+      "features": [
+        "Capacity/Size : 13.3",
+        "RAM: 8GB, SSD: 256GB",
+        "Windows 10 Pro operating system",
+        "Backlit Keyboard",
+        "Fingerprint reader"
+      ],
+      "material": "",
+      "color": "",
+      "deposit": "9549"
     }
   ]
 }

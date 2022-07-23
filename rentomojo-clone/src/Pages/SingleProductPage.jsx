@@ -20,7 +20,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getquestionapi, postquestionapi } from "../Redux/Question/action";
 import { useParams } from "react-router-dom";
 import { getsingleproductapi } from "../Redux/Productapp/action";
-import { addtolikeapi, removefromlikeapi } from "../Redux/Likeapp/action";
+import { addtolikeapi, getlikeitemapi, removefromlikeapi } from "../Redux/Likeapp/action";
 
 const SingleProductPage = () => {
 const { isOpen, onOpen, onClose } = useDisclosure();
@@ -38,6 +38,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   const{questions} = useSelector((state) => state.question);
 
   const { newproduct} = useSelector((state) => state.productsreducer);
+
+  const { likeditems } = useSelector((state) => state.likereducer);
 
   const handlequestion = () => {
     let question = questionref.current.value;
@@ -60,6 +62,10 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   useEffect(() => {
     setNewdata(newproduct);
   },[newproduct])
+
+  useEffect(() => {
+    dispatch(getlikeitemapi());
+  }, []);
 
   const handlelike = () => {
 
@@ -85,6 +91,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
     }
   }
 
+  
 
   const data = {
     id: 51,
