@@ -8,8 +8,12 @@ import SingleProductPage from "./SingleProductPage";
 import Productspage from "./Productspage";
 import Settings from "./Settings";
 import Signuppage from "./Signuppage";
+
+import Wishlist from "./Wishlist";
+
 import Footer from "../Components/Footer";
 import { Navbar } from "../Components/Navbar"
+
 
 const AllRoutes = () => {
   return (
@@ -31,6 +35,9 @@ const AllRoutes = () => {
 
         <Route path="/payment" element={<Paymentspage />}></Route>
 
+
+      <Route path="/mywishlist" element={<Wishlist />}></Route>
+
         <Route path="/settings" element={<Settings />}></Route>
 
         <Route path="/signup" element={<Signuppage />}></Route>
@@ -38,6 +45,7 @@ const AllRoutes = () => {
 
       <Footer/>
     </div>
+
   );
 };
 
