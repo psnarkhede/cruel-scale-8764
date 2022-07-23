@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { MdCheckCircle } from "react-icons/md";
 import { useState } from "react";
-import { CartPopover } from "./CartPopover";
 import LocationMenu from "./LocationMenu";
 export const CartHeader = () => {
   const [isCheck] = useState(true);

@@ -51,7 +51,7 @@ export const OrderDetails=()=>{
                         <Flex direction='column' justifyContent='space-around' gap={3}>
                             <Box marginLeft='25px' marginTop='-13px'>
                             <Text>
-                              Payable Now 
+                            Payable Now 
                             </Text>
                             </Box>
                            
@@ -118,6 +118,7 @@ export const OrderDetails=()=>{
                         // borderRightWidth='10px'
                         w='98%'
                         h='240px'
+                        marginTop='55px'
                         // p='5px 2px'
                         borderRadius='10px'
                         alignItems='center'
