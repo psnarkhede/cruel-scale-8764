@@ -1,12 +1,26 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import {BsPatchCheck} from "react-icons/bs"
 import {AiOutlineRight} from "react-icons/ai"
 import { CardCarts } from "./CardCarts";
+import {useDispatch, useSelector} from "react-redux"
+import { addCartItem } from "../Redux/Cartapp/action";
 export const CartCard=()=>{
 
+    const dispatch=useDispatch();
+    const cartcard=useSelector((state)=>state.cartreducer.cartdata)
+
+    useEffect(()=>{
+        if(cartcard?.length===0){
+            dispatch(addCartItem())
+        }
+    
+
+    },[cartcard?.length, dispatch])
+
+    // console.log("cart-",cartcard)
     return (
-        <Flex direction='column' border='1px solid teal'w='400px' px='10px' py='2px'  marginTop='130px' gap={3} justifyContent='space-around'>
+        <Flex direction='column' /*border='1px solid teal'*/w='400px' px='10px' py='2px'  marginTop='130px' gap={3} justifyContent='space-around'>
              {/* have coupon code */}
             <Flex 
              direction='row'
@@ -15,6 +29,7 @@ export const CartCard=()=>{
              boxShadow='xs' p='' rounded='md' bg='white'
              justifyContent='space-around'
              alignItems='center'
+             
             >
                 <Box>
                  <BsPatchCheck  fontSize='25px'/>
@@ -29,17 +44,18 @@ export const CartCard=()=>{
                 </Box>
             </Flex>
             {/* cart Card start */}
-            <Flex 
-               direction='column'
-               w='95%'
-            //    h='190px'
-               boxShadow='xs' p='' rounded='md' bg='white'
-               justifyContent='space-around'
-               alignItems='center'
-            >
-                {/* todo */}
-                <CardCarts/>
-            </Flex>
+            {/* <Box */}
+            {/* //    direction='column' */}
+            {/* //    w='95%' */}
+            {/* //    boxShadow='xs' p='' rounded='md' bg='white' */}
+            {/* //    justifyContent='space-around' */}
+            {/* //    alignItems='center' */}
+            {/* //    gap={2} */}
+            {/* > */}
+                {cartcard?.length>0 && cartcard.map((item)=>(<CardCarts key={item.id} item={item} />))}
+                
+                
+            {/* </Box> */}
 
         </Flex>
     )

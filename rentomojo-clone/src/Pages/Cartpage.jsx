@@ -8,7 +8,7 @@ import { OrderSummary } from '../Components/OrderSummary'
 // import "../Components/CartHeaders.css"
 const Cartpage = () => {
   return (
-    <Box border='2px solid #1A202C' w='100%'  bg='#EDF2F7'>
+    <Box /*border='2px solid #1A202C'*/ w='100%'  bg='#EDF2F7'>
       <Stack direction='column'>
         <Flex direction='column' >
            <Box >

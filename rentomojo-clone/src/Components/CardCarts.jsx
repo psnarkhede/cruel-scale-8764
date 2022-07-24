@@ -3,56 +3,65 @@ import { Box, Button, Flex, Image, Select, Text } from "@chakra-ui/react";
 import React from "react";
 import {DeleteIcon,AddIcon,MinusIcon} from"@chakra-ui/icons"
 import {BsPatchExclamation,BsTruck} from "react-icons/bs"
-export const CardCarts=()=>{
+export const CardCarts=({item})=>{
 
     return (
-        <>
+        <Box
+         dispaly='flex'
+         alignItems='center'
+         w='95%'
+         flexDirection='column'
+         key={item.id}
+         boxShadow='xs' p='' rounded='md' bg='white'
+         justifyContent='space-around'
+          gap={3}
+        >
          {/* card box first  */}
            <Box
             //  border='1px solid gray'
-             w='95%'
-             h='140px'
+             w='100%'
+             h='130px'
            >
              {/* inside box flex divide two pointer */}
               <Flex
                 // border='1px solid gray'
                 w='100%'
-                h='135px'
+                h='125px'
                 justifyContent='space-around'
                alignItems='center'
                 gap={1}
-                // px='5px'
+                px='8px'
                 // py='5px'
               >
                 {/* image box card */}
                 <Box
                 //    border='1px solid gray'
-                   w='30%'
+                   w='33%'
                    h='120px'
                 //    px="10px"
                    py="0px"
                     alignItems='center'
                 >
                     {/* image box coming through api */}
-                  <Image borderRadius='5px' src="https://imgs.search.brave.com/4Hbo1VMepAMjNt4vk7IESJNCCUnQnZT_E1DFl_Aiwnc/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5F/emZJdWxEVWhYcnB0/VWFJVWV3OGxRSGFF/OCZwaWQ9QXBp"/>
+                  <Image borderRadius='5px' h='100px' src={item.productimage}/>
                 </Box>
                 {/* title and product name  */}
                 <Box
                 //  border='1px solid gray'
                  w='68%'
-                 h='140px'
+                 h='125px'
                 >
                  <Flex 
                   direction='column'
                    justifyContent='space-around'
                    alignItems='center'
                    w='100%'
-                   h='140px'
+                   h='125px'
                    gap={1}
                  >
                     {/* name and delete item */}
                     <Box
-                    //   border='1px solid gray'
+                      // border='1px solid gray'
                       w='100%'
                       h='68px'
                     >
@@ -66,7 +75,7 @@ export const CardCarts=()=>{
                         {/* name */}
                         <Box>
                           <Text fontSize='13px'>
-                          Poise Wooden King Bed (6x6)
+                          {item.title}
                           </Text>
                         </Box>
                          {/* delete */}
@@ -98,7 +107,7 @@ export const CardCarts=()=>{
                           <Text fontSize='14px' marginLeft='-29px'>
                             Rent
                           </Text>
-                          <Text>₹669/mo</Text>
+                          <Text>₹{item.rent}/mo</Text>
                           </Flex>
                         </Box>
                         {/* deposit amount */}
@@ -110,7 +119,7 @@ export const CardCarts=()=>{
                           <Text fontSize='14px' marginLeft='-10px'>
                             Deposit
                           </Text>
-                          <Text>₹669/mo</Text>
+                          <Text>₹{item.deposit}/mo</Text>
                           </Flex>
                         </Box>
 
@@ -124,9 +133,12 @@ export const CardCarts=()=>{
            </Box>
            {/* increment box and total momeny */}
            <Box
+             gap={2}
             // border='1px solid gray'
-            w='95%'
+            w='100%'
             h='40px'
+            py='5px'
+            px='10px'
            >
             {/* minus and plus */}
             <Flex
@@ -160,7 +172,7 @@ export const CardCarts=()=>{
                border='1px solid #A0AEC0'
                borderRadius='5px'
                alignItems='center'
-               w='38%'
+               w='42%'
                h='40px'
              >
                <Select boxShadow='xs' p='' rounded='md' bg='white' border='none'>
@@ -192,10 +204,10 @@ export const CardCarts=()=>{
              >
                 {/* delivery data */}
                  <BsTruck/>
-                <Text marginLeft='-60px'>Delivery by 25th Jul 2022</Text>
+                <Text marginLeft='-60px'>Delivery {item.deliverytime}</Text>
                 <BsPatchExclamation/>
              </Flex>
            </Box>
-        </>
+        </Box>
     )
 } 
