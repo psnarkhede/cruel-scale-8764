@@ -9,7 +9,6 @@ import Productspage from "./Productspage";
 import Settings from "./Settings";
 import Signuppage from "./Signuppage";
 
-import Footer from "../Components/Footer";
 import { Navbar } from "../Components/Navbar";
 
 import Wishlistpage from "./Wishlistpage";
@@ -33,17 +32,14 @@ const AllRoutes = () => {
 
         <Route path="/payment" element={<Paymentspage />}></Route>
 
-
         <Route path="/settings" element={<Settings />}></Route>
 
         <Route path="/signup" element={<Signuppage />}></Route>
 
-
-      <Footer />
+        {/* <Footer /> */}
 
         <Route path="/wishlist" element={<Wishlistpage />}></Route>
       </Routes>
-
     </div>
   );
 };
