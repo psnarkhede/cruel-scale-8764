@@ -9,9 +9,9 @@ export const CartHeader = () => {
   return (
     <Box
       // border='1px solid teal'
-      position="sticky"
-      z-index="1"
-      top="0px"
+      // position="sticky"
+      // z-index="1"
+      // top="0px"
       //  bg='white'
       w="100%"
       h="75px"
