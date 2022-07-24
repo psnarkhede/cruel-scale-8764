@@ -2027,115 +2027,30 @@
       "items": "3",
       "category": "packages"
     }
-    
   ],
   "likeditems": [
     {
-      "id": "likeditem71",
-      "newid": 71,
-      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
-      "title": "LED 32",
-      "rent": "949",
-      "deliverytime": "72 hrs",
+      "id": "likeditem51",
+      "newid": 51,
+      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
+      "title": "Rex 3-Seater Leather Sofa",
+      "rent": "739",
+      "deliverytime": "48 hrs",
       "dimensions": [
-        20,
-        5,
+        83,
+        31,
         32
       ],
-      "producttype": "Televisions",
-      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
-      "features": [
-        "Capacity/Size : 32",
-        "Brands may vary",
-        "Wifi & Ethernet for internet connectivity",
-        "HDMI & USB support"
-      ],
-      "material": "",
-      "color": "Black",
-      "deposit": "1309",
-      "category": "appliances"
-    },
-    {
-      "id": "likeditem1",
-      "newid": 1,
-      "productimage": "https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
-      "title": "Double Bed with Fridge & Washing Machine",
-      "rent": "1049",
-      "deposit": "1629",
-      "product": [
-        {
-          "productimage": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
-          "title": "Double Door Fridge (240 Litre)",
-          "rent": "1049",
-          "dimensions": [
-            30,
-            25,
-            60
-          ],
-          "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
-          "features": [
-            "Capacity/Size : 230-250 L",
-            "Brand May vary",
-            "Whirlpool/Haier/Godrej/Samsung",
-            "Deep Frost"
-          ],
-          "material": "",
-          "color": "",
-          "deposit": "1629"
-        },
-        {
-          "productimage": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
-          "title": "Top Load Washing Machine",
-          "rent": "769",
-          "dimensions": [
-            24,
-            23,
-            39
-          ],
-          "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
-          "features": [
-            "Capacity/Size : 5.8 to 6.5",
-            "Brands: Whirlpool/Haier/Godrej/Samsung",
-            "Sleek, compact design",
-            "Multiple wash modes"
-          ],
-          "material": "",
-          "color": "",
-          "deposit": "1189"
-        },
-        {
-          "productimage": "https://p.rmjo.in/productSquare/m9qgitpv-500x500.jpg",
-          "title": "Aurora Wooden Queen Bed (6x5)",
-          "rent": "539",
-          "dimensions": [
-            72,
-            60,
-            8
-          ],
-          "description": "The Aurora bed's frame provides a simple & stylish look to your room. The light brown colour of the bed matches any decor. The cot's frame has a low height & a headboard for you to lean comfortably.",
-          "features": [
-            "Cot frame with Headboard",
-            "Cot frame with Headboard",
-            "Wooden headboard",
-            "To fit Mattress Size: 72 inches L x 60 inches B"
-          ],
-          "material": "Solid wood",
-          "color": "Brown",
-          "deposit": "829"
-        }
-      ],
       "producttype": "Sofas",
-      "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
+      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
       "features": [
-        "Soft fabric cover",
-        "3 seat cushions",
-        "Upholstered backrest cushions"],
-      "roomtype": [
-        "bedroom",
-        "appliances"
+        "Leatherette covering",
+        "Foam filling"
       ],
-      "items": "3",
-      "category": "packages"
+      "material": "Art Leather",
+      "color": "Black",
+      "deposit": "1009",
+      "category": "furniture"
     }
   ]
 }
