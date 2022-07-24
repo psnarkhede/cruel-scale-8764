@@ -50,9 +50,9 @@ const Features = () => {
     },
   ];
   return (
-    <Box width="95%" border={"1px solid red"} margin="auto">
+    <Box width="95%" margin="auto">
       <Flex>
-        <Box padding={"20px"}>
+        <Box padding={"20px"} marginTop="70px">
           <Text
             fontFamily={"Muli, sans-serif"}
             fontSize="30px"
@@ -73,9 +73,6 @@ const Features = () => {
       </Flex>
       <Box marginTop={"20px"} margin="20px">
         <Grid templateColumns="repeat(3, 1fr)" gap={10}>
-          {/* <GridItem w="100%" h="10" bg="blue.500" />
-          <GridItem w="100%" h="10" bg="blue.500" />
-        <GridItem w="100%" h="10" bg="blue.500" /> */}
           {data.map((e) => {
             return (
               <Box key={e.id}>
@@ -89,7 +86,12 @@ const Features = () => {
           })}
         </Grid>
       </Box>
-      <Button colorScheme="teal" variant="link" marginLeft={"-1140px"}>
+      <Button
+        colorScheme="teal"
+        variant="link"
+        marginLeft={"-1140px"}
+        marginBottom="20px"
+      >
         KNOW MORE
       </Button>
     </Box>

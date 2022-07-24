@@ -11,6 +11,7 @@ import {
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Slider from "react-slick";
+import "./Crousel.css";
 
 const settings = {
   arrows: true,
@@ -45,7 +46,6 @@ export default function CaptionCarousel() {
       height={"450px"}
       width={"full"}
       marginTop="20px"
-      cursor={"pointer"}
       // overflow={"hidden"}
     >
       {/* CSS files for react-slick */}
@@ -70,9 +70,12 @@ export default function CaptionCarousel() {
         bg="white"
         color="grey"
         height={"70px"}
-        zIndex={"1"}
+        zIndex={1}
+        cursor={"pointer"}
         transform={"translate(0%, -50%)"}
         onClick={() => slider?.slickPrev()}
+        _hover={{ transition: "none" }}
+        _active={{ borderStyle: "outset" }}
       >
         <RiArrowLeftSLine size="40px" />
       </IconButton>
@@ -84,11 +87,13 @@ export default function CaptionCarousel() {
         right={"0px"}
         color="grey"
         bg="white"
-        z-index="1"
-        // bg="transparent"
+        // z-index="1"
         height={"70px"}
+        cursor={"pointer"}
         top={top}
         transform={"translate(0%, -50%)"}
+        _hover={{ transition: "none" }}
+        _active={{ borderStyle: "outset" }}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
@@ -106,6 +111,8 @@ export default function CaptionCarousel() {
             backgroundSize="cover"
             backgroundImage={`url(${card.image})`}
             borderRadius="30px"
+            cursor={"pointer"}
+
             // border={"1px solid red"}
           >
             {/* This is the block you need to change, to customize the caption */}

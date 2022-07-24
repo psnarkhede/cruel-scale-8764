@@ -10,18 +10,23 @@ import {
   TagLabel,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
-import SliderComponent from "../Components/Slider";
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../Redux/Productapp/action";
-import SingleProduct from "../Components/SingleProduct";
 import {
   Link,
   useLocation,
   useParams,
   useSearchParams,
 } from "react-router-dom";
+import React, { useEffect } from "react";
+import SliderComponent from "../Components/Slider";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../Redux/Productapp/action";
+import SingleProduct from "../Components/SingleProduct";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import FilterProducts from "../Components/FilterProducts";
+
+
+
 
 const Productspage = () => {
   const location = useLocation();
@@ -39,6 +44,7 @@ const Productspage = () => {
 
   return (
     <Box>
+      <Navbar />
       <Flex justifyContent="center">
         <Box width="25%" height="250vh" justifyContent="center">
           <Box
@@ -143,6 +149,7 @@ const Productspage = () => {
           </Grid>
         </Box>
       </Flex>
+      <Footer />
     </Box>
   );
 };

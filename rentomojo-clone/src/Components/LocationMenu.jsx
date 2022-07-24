@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Tooltip } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -15,13 +16,14 @@ import CityList from "./CityList";
 export default function LocationMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = useState("");
+  const [color, setColor] = useState("");
 
   const handleSizeClick = (newSize) => {
     setSize(newSize);
     onOpen();
   };
 
-  const sizes = "700px";
+  const sizes = "600px";
   const cities = [
     {
       id: 1,
@@ -113,19 +115,22 @@ export default function LocationMenu() {
 
   return (
     <Box>
-      <Button
-        onClick={() => handleSizeClick(sizes)}
-        key={size}
-        m={4}
-        bg="transparent"
-        transition={"none"}
-        // colorScheme="white"
-        // variant={"ghost"}
-      >
-        Pune
-        <AiOutlineDown />
-      </Button>
-
+      <Tooltip label="Click to Change city" aria-label="A tooltip">
+        <Button
+          onClick={() => {
+            handleSizeClick(sizes);
+            setColor("white");
+          }}
+          key={size}
+          m={4}
+          bg="transparent"
+          _hover={{ transition: "none" }}
+          _active={{ borderStyle: "outset" }}
+        >
+          Pune
+          <AiOutlineDown />
+        </Button>
+      </Tooltip>
       <Modal onClose={onClose} size={size} isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent>
@@ -134,6 +139,8 @@ export default function LocationMenu() {
               type="search"
               placeholder=" Search city here"
               padding={"20px"}
+              variant="unstyled"
+              border="1px solid rgb(186,186,186)"
             />
             <Box
               // border={"1px solid red"}
@@ -148,7 +155,11 @@ export default function LocationMenu() {
                 {cities.map((e) => {
                   return (
                     <Box>
-                      <CityList city={e.city_Name} id={e.id} image={e.image} />
+                      <CityList
+                        city={e.city_Name}
+                        key={e.id.toString()}
+                        image={e.image}
+                      />
                     </Box>
                   );
                 })}

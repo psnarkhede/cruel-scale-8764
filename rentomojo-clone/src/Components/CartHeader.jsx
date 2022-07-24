@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { MdCheckCircle } from "react-icons/md";
 import { useState } from "react";
-import { CartPopover } from "./CartPopover";
 import LocationMenu from "./LocationMenu";
+
 export const CartHeader = () => {
   const [isCheck] = useState(true);
   return (
@@ -30,20 +30,21 @@ export const CartHeader = () => {
         >
           <Flex>
             <Image
-              src="https://imgs.search.brave.com/OB0gsW8kLE55wzM881HIkuMGB4U_iSX6UXI3VddIHrE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9kMXFi/Mm5iNWN6bmF0dS5j/bG91ZGZyb250Lm5l/dC9zdGFydHVwcy9p/LzU1OTMxNS1mODUy/MDY3ZDQ1NjIyMTZk/MWExMTEyZTI2MjYw/YjM1Mi1tZWRpdW1f/anBnLmpwZz9idXN0/ZXI9MTQ3NTg0Mzg1/MQ"
+              src="https://play-lh.googleusercontent.com/5S7hL_DxU_Ml7kGBs0M5pzKOoNXpFZELahoT-rbwKmeREwoBI_L8_ikrz_w5Me7K6A"
               alt="rentomoj logo"
-              boxSize="80px"
-              objectfit="cover"
+              // boxSize="80px"
+              padding={"5px"}
+              width={"60px"}
               h="68px"
             />
             <Text
-              fontSize={28}
+              fontSize={25}
               textAlign="center"
               as=""
-              marginLeft="20px"
+              marginLeft="0px"
               p="10px 5px"
-              fontWeight="medium"
-              color="#718096"
+              fontWeight="bold"
+              color="rgb(109,109,109)"
               cursor="pointer"
             >
               rentomojo

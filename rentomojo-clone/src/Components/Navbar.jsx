@@ -6,6 +6,7 @@ import {
   Stack,
   useColorModeValue,
   Input,
+  Image,
 } from "@chakra-ui/react";
 import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
@@ -21,6 +22,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Loginpage from "../Pages/Loginpage";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function WithSubnavigation() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -64,28 +66,49 @@ function WithSubnavigation() {
       >
         <Link to="/">
           <Box cursor="pointer" marginleft={"0px"}>
-            <img
-              src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/34e7cf10-932f-495d-aa1f-d76577d50be4.png"
-              alt=""
-              width="300px"
-              overflow="hidden"
-            />
+            <Flex>
+              <Image
+                src="https://play-lh.googleusercontent.com/5S7hL_DxU_Ml7kGBs0M5pzKOoNXpFZELahoT-rbwKmeREwoBI_L8_ikrz_w5Me7K6A"
+                alt="rentomoj logo"
+                // boxSize="80px"
+                padding={"5px"}
+                width={"60px"}
+                h="60px"
+              />
+              <Text
+                fontSize={25}
+                textAlign="center"
+                as=""
+                marginLeft="0px"
+                p="10px 5px"
+                fontWeight="bold"
+                color="rgb(109,109,109)"
+                cursor="pointer"
+              >
+                rentomojo
+              </Text>
+            </Flex>
           </Box>
         </Link>
-        <Box>
+        <>
           <LocationMenu />
-        </Box>
+        </>
         <Box>
-          <Input
-            placeholder="Search for products"
-            // border="1px solid red"
-            type="search"
-            width={"700px"}
-            padding="20px"
-            margin={"auto"}
-            autoComplete="on"
+          <Flex
+            border="1px solid rgb(186,186,186)"
             borderRadius={"10px"}
-          />
+            padding="10px"
+          >
+            <Input
+              placeholder="Search for products"
+              type="search"
+              variant="unstyled"
+              width={"600px"}
+              margin={"auto"}
+              autoComplete="on"
+            />
+            <AiOutlineSearch size={"25px"} />
+          </Flex>
         </Box>
         <Link to="/cart">
           <Flex alignItems={"center"} gap="10px" cursor="pointer">
@@ -125,7 +148,7 @@ function WithSubnavigation() {
               <ModalOverlay />
               <ModalContent
                 minWidth={"800px"}
-                height={"570px"}
+                height={"580px"}
                 borderRadius="20px"
                 margin="auto"
               >
