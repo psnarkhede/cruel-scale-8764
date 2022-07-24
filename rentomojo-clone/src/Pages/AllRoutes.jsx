@@ -12,13 +12,11 @@ import Signuppage from "./Signuppage";
 import Wishlist from "./Wishlist";
 
 import Footer from "../Components/Footer";
-import { Navbar } from "../Components/Navbar"
-
+import { Navbar } from "../Components/Navbar";
 
 const AllRoutes = () => {
   return (
     <div>
-
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
 
@@ -35,17 +33,13 @@ const AllRoutes = () => {
 
         <Route path="/payment" element={<Paymentspage />}></Route>
 
-
-      <Route path="/mywishlist" element={<Wishlist />}></Route>
-
         <Route path="/settings" element={<Settings />}></Route>
 
         <Route path="/signup" element={<Signuppage />}></Route>
       </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
-
   );
 };
 
