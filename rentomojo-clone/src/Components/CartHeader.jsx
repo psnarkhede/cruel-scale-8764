@@ -53,7 +53,9 @@ export const CartHeader = () => {
         </Box>
         {/* select city option  */}
 
-        <Box border="1px solid red">
+        <Box 
+        // border="1px solid red"
+        >
           <Flex>
             <LocationMenu />
           </Flex>
