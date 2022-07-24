@@ -148,28 +148,32 @@ const SingleProductPage = () => {
         <Flex>
           {/* Left Section */}
           <Box className={styles.leftdiv} width="65%" height="100vh">
-            <Box bg="white">
-              <Box
-                marginLeft="60%"
-                bg="white"
-                marginTop="20px"
-                width="35px"
-                height="35px"
-                zIndex="1"
-                position="absolute"
-                borderRadius="50%"
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Icon
-                  cursor="pointer"
-                  onClick={() => (setLike(!like), handlelike())}
-                  fontSize="22px"
-                  as={like ? FcLike : AiOutlineHeart}
+            <Box>
+              <Flex>
+                <Image
+                  width="100%"
+                  height="80vh"
+                  src={newproduct.productimage}
                 />
-              </Box>
-              <Image width="100%" height="80vh" src={newproduct.productimage} />
+                <Box
+                marginLeft="-60px"
+                  bg="white"
+                  marginTop="20px"
+                  width="35px"
+                  height="35px"
+                  borderRadius="50%"
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Icon
+                    cursor="pointer"
+                    onClick={() => (setLike(!like), handlelike())}
+                    fontSize="22px"
+                    as={like ? FcLike : AiOutlineHeart}
+                  />
+                </Box>
+              </Flex>
             </Box>
 
             <Flex>
