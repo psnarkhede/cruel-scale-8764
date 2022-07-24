@@ -129,9 +129,9 @@ export default function Footersection2() {
           </Stack>
         </SimpleGrid>
       </Container>
-      <Flex>
+      <Box>
         <Chatbox />
-      </Flex>
+      </Box>
 
       <Box
         borderTopWidth={1}
