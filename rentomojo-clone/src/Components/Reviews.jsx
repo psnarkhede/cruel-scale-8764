@@ -1,19 +1,16 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { useState } from "react";
-import Slider from "react-slick";
 
 const Reviews = () => {
-  const [slider, setSlider] = useState(Slider | (null > null));
   const options = {
     arrows: true,
     fade: true,
     infinite: true,
-    items: 1.6,
+    items: 1.5,
     autoplay: true,
     margin: 10,
     speed: 500,
@@ -29,7 +26,7 @@ const Reviews = () => {
         "https://media.istockphoto.com/photos/cheerful-young-athlete-outdoors-by-the-river-picture-id944300692?s=612x612",
       name: "Shreyas Ravetkar",
       comment:
-        "Rentomojo was unbelievably helpful. Never thought that setting upa new place would be just few clicks away. The customer supportstaff was on their toes to help me. Anytime I need something for my house, Rentomojo has it. :)",
+        "Rentomojo was unbelievably helpful. Never thought that setting up a new place would be just few clicks away. The customer supportstaff was on their toes to help me. Anytime I need something for my house, Rentomojo has it. :)",
     },
     {
       id: 2,
@@ -37,7 +34,7 @@ const Reviews = () => {
         "https://media.istockphoto.com/photos/middle-aged-man-with-pleasant-face-expression-picture-id1005817658?b=1&k=20&m=1005817658&s=170667a&w=0&h=tpil3FJm2k6CHWiVczRjC-dBR8kP1ZckPMVETYX-89g=",
       name: "Kushal Tiwari",
       comment:
-        "Marriage comes with a lot of unavoidable expenses in India and spending a big chunk of your savings on furniture and white goods, could be a big challenge. RentoMojo not just took away all our worries but in fact went to the extent of spoiling us. Where I could have owned just some bare essentials after making a huge hole in my pocket or paid unnecessary EMIs, I could smartly own a lot of stuff which would have come much later on my list. Heartfeltthanks to the whole Rentomojo team for making our rentingexperience completely hassle-free. It has been two great years and am sure there are many more to come.",
+        "Marriage comes with a lot of unavoidable expenses in India and spending a big chunk of your savings on furniture and white goods, could be a big challenge. RentoMojo not just took away all our worries but in fact went to the extent of spoiling us. Where I could have owned just some bare essentials after making a huge hole in my pocket or paid unnecessary EMIs, I could smartly own a lot of stuff which would have come much later on my list. Heartfelt thanks to the whole Rentomojo team for making our rentingexperience completely hassle-free. It has been two great years and am sure there are many more to come.",
     },
     {
       id: 3,
@@ -69,17 +66,17 @@ const Reviews = () => {
         "https://media.istockphoto.com/photos/handsome-young-man-picture-id96775862?b=1&k=20&m=96775862&s=170667a&w=0&h=s6F5IrOoHf9MUR-nZ1l5KwvRrQL4tXV1QnpdnB5_uOQ=",
       name: "Manish Srivastava",
       comment:
-        "Iwas suddenly asked to move to Chennai from Bengaluru in couple of days. Everything was garbled for me and huge tension of getting apartment, buying furnitures, selling while going back to Bangalore. Thanks to RentoMojo for excellent budgeted plans. With few mouse clicks and nominal security deposit u are done e. No tension for delivery, Rentomojo is a furniture wish wizard. Also takes care of relocation made my life easy. Happy to be a customer for Rentomojo. It made my house a happy home!",
+        "I was suddenly asked to move to Chennai from Bengaluru in couple of days. Everything was garbled for me and huge tension of getting apartment, buying furnitures, selling while going back to Bangalore. Thanks to RentoMojo for excellent budgeted plans. With few mouse clicks and nominal security deposit u are done e. No tension for delivery, Rentomojo is a furniture wish wizard. Also takes care of relocation made my life easy. Happy to be a customer for Rentomojo. It made my house a happy home!",
     },
   ];
 
   return (
-    <Box border={"1px solid red"}>
+    <Box width={"100%"}>
       <Flex>
         <Box
           textAlign={"start"}
-          margin="40px 10px 10px 30px"
-          border={"1px solid red"}
+          margin="80px 10px 10px 30px"
+          // border={"1px solid red"}
           padding="30px 20px 0px 30px"
           height={"500px"}
         >
@@ -98,29 +95,20 @@ const Reviews = () => {
           <Text>
             Here's what they have to say about their RentoMojo experience.
           </Text>
-          {/* CSS files for react-slick */}
-          <link
-            rel="stylesheet"
-            type="text/css"
-            charSet="UTF-8"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-          />
-          {/* Left Icon */}
-          <Flex>
-            <Button onClick={() => slider?.slickPrev()}>
-              <AiOutlineLeftCircle size="50" color="grey" />
-            </Button>
-            <Button onClick={() => slider?.slickNext()}>
-              <AiOutlineRightCircle size="50" color="grey" />
-            </Button>
+          <Flex size="60px" marginTop={"20px"} width="150px">
+            {/* <Button onClick={() => slider?.slickPrev()}> */}
+            <AiOutlineLeftCircle size="50" color="grey" />
+            {/* </Button> */}
+            {/* <Button onClick={() => slider?.slickNext()}> */}
+            <AiOutlineRightCircle size="50" color="black" />
+            {/* </Button> */}
           </Flex>
         </Box>
-        <Box border={"1px solid red"} margin="40px 10px 10px 30px">
+        <Box
+          margin="40px 10px 10px 30px"
+          // border={"1px solid red"}
+          overflow="hidden"
+        >
           <Box
             padding={"0px 0px 20px 0px"}
             marginTop="30px"
@@ -144,7 +132,6 @@ const Reviews = () => {
                     >
                       <Flex flexDirection={"row"} gap="20px">
                         <Box
-                          // borderRadius={"50%"}
                           // border="1px solid red"
                           width={"200px"}
                           height={"150px"}

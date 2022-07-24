@@ -1,4 +1,3 @@
-
 import { Box, Flex, Stack } from '@chakra-ui/react'
 import React from 'react'
 import { Addons } from '../Components/Addons'
@@ -41,3 +40,4 @@ const Cartpage = () => {
 
 
 export default Cartpage;
+

@@ -2,6 +2,10 @@
   text-align: center;
   /* width: 85%; */
   margin: auto;
+  /* font-family: Muli, sans-serif; */
+  font-family: "Muli" "sans-serif";
+  font-style: normal;
+  color: "rgb(186,186,186)";
 }
 
 .App-logo {

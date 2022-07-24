@@ -63,5 +63,3 @@ export const CartCard=()=>{
    
 }
 
-
-
