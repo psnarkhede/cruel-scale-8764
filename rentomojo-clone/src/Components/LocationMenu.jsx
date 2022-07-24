@@ -21,6 +21,7 @@ export default function LocationMenu() {
   const handleSizeClick = (newSize) => {
     setSize(newSize);
     onOpen();
+    onclose();
   };
 
   const sizes = "600px";
@@ -115,7 +116,11 @@ export default function LocationMenu() {
 
   return (
     <Box>
-      <Tooltip label="Click to Change city" aria-label="A tooltip">
+      <Tooltip
+        label="Click to Change city"
+        aria-label="A tooltip"
+        marginTop={"5px"}
+      >
         <Button
           onClick={() => {
             handleSizeClick(sizes);

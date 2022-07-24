@@ -25,9 +25,6 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import FilterProducts from "../Components/FilterProducts";
 
-
-
-
 const Productspage = () => {
   const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();

@@ -90,9 +90,11 @@ function WithSubnavigation() {
             </Flex>
           </Box>
         </Link>
-        <>
-          <LocationMenu />
-        </>
+        <Box>
+          <Flex>
+            <LocationMenu />
+          </Flex>
+        </Box>
         <Box>
           <Flex
             border="1px solid rgb(186,186,186)"
