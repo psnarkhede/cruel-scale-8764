@@ -12,6 +12,7 @@ import LocationMenu from "./LocationMenu";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { FcLike } from "react-icons/fc";
 
 import React, { useState } from "react";
 import {
@@ -65,7 +66,7 @@ function WithSubnavigation() {
         padding="2px 5px 2px 2px"
       >
         <Link to="/">
-          <Box cursor="pointer" marginleft={"0px"}>
+          <Box cursor="pointer" marginLeft={"-15px"}>
             <Flex>
               <Image
                 src="https://play-lh.googleusercontent.com/5S7hL_DxU_Ml7kGBs0M5pzKOoNXpFZELahoT-rbwKmeREwoBI_L8_ikrz_w5Me7K6A"
@@ -90,9 +91,11 @@ function WithSubnavigation() {
             </Flex>
           </Box>
         </Link>
-        <>
-          <LocationMenu />
-        </>
+        <Box marginLeft="10px" >
+          <Flex>
+            <LocationMenu />
+          </Flex>
+        </Box>
         <Box>
           <Flex
             border="1px solid rgb(186,186,186)"
@@ -103,7 +106,7 @@ function WithSubnavigation() {
               placeholder="Search for products"
               type="search"
               variant="unstyled"
-              width={"600px"}
+              width={"580px"}
               margin={"auto"}
               autoComplete="on"
             />
@@ -115,6 +118,10 @@ function WithSubnavigation() {
             <BsCart2 size={"20px"} />
             <Text>Cart</Text>
           </Flex>
+        </Link>
+
+        <Link to="/wishlist">
+          <FcLike color="red" size={"20px"} />
         </Link>
 
         {login ? (

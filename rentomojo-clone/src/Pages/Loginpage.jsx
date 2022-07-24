@@ -17,7 +17,6 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Homepage from "./Homepage";
-import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const Loginpage = () => {
@@ -44,7 +43,6 @@ const Loginpage = () => {
 
   return (
     <>
-      <Navbar />
       {home ? (
         <Box>
           {/* <Button onClick={onOpen}>Login</Button>
