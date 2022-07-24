@@ -14,7 +14,7 @@ export const CartHeader = () => {
       margin="auto"
       width="100%"
       bg={useColorModeValue("white")}
-      border="1px solid red"
+      // border="1px solid red"
       // margin="auto"
     >
       <Flex
