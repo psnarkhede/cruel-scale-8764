@@ -15,7 +15,41 @@ const Productpageright = ({data,category}) => {
   const dispatch = useDispatch();
 
   const handleaddtocart = (data) => {
-    dispatch(postdatatocartapi(data))
+    let cart = {};
+
+    if (category !== "packages") {
+      cart = {
+        id: `likeditem${data.id}`,
+        newid: data.id,
+        productimage: data.productimage,
+        title: data.title,
+        rent: data.rent,
+        deliverytime: data.deliverytime,
+        dimensions: data.dimensions,
+        producttype: data.producttype,
+        description: data.description,
+        features: data.features,
+        material: data.material,
+        color: data.color,
+        deposit: data.deposit,
+        category: category,
+      };
+    } else {
+      cart = {
+        id: `likeditem${data.id}`,
+        newid: data.id,
+        productimage: data.productimage,
+        title: data.title,
+        rent: data.rent,
+        producttype: data.producttype,
+        deposit: data.deposit,
+        product: data.product,
+        roomtype: data.roomtype,
+        items: data.items,
+        category: category,
+      };
+    }
+    dispatch(postdatatocartapi(cart))
   }
 
   const [viewcartoption, setViewcartoption] = useState(false);

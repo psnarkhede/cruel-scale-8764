@@ -1904,193 +1904,231 @@
   "questions": [],
   "cartitems": [
     {
-      "id": 53,
-      "productimage": "https://p.rmjo.in/moodShot/sbg8gqe1-1024x512.jpg",
-      "title": "Brooklyn 1-Seater Fabric Sofa",
-      "rent": "299",
-      "deliverytime": "24 hrs",
-      "dimensions": [
-        24,
-        30,
-        32
-      ],
-      "producttype": "Sofas",
-      "description": "With the Brooklyn Sofa , elegance and comfort find a new name. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you",
-      "features": [
-        "Fully upholstered couch",
-        "Soft foam cushioning",
-        "Added pouf that serves as extender"
-      ],
-      "material": "Fabric & Wood",
-      "color": "Blue",
-      "deposit": "409"
-    },
-    {
-      "id": 56,
-      "productimage": "https://p.rmjo.in/moodShot/n557a055-1024x512.jpg",
-      "title": "Latte Wooden Coffee Table",
-      "rent": "279",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
       "deliverytime": "72 hrs",
       "dimensions": [
-        35,
-        23,
+        20,
+        5,
+        32
+      ],
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
+      "features": [
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
+      ],
+      "material": "",
+      "color": "Black",
+      "deposit": "1309",
+      "category": "appliances"
+    },
+    {
+      "id": "likeditem57",
+      "newid": 57,
+      "productimage": "https://p.rmjo.in/moodShot/h593jn2o-1024x512.jpg",
+      "title": "Perk 4-Seater Wooden Coffee Table",
+      "rent": "539",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        37,
+        37,
         14
       ],
       "producttype": "Center Tables",
-      "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
+      "description": "Strike a new vibe to your living room with the Perk 4-Seater Coffee Table. Crafted from sturdy solid wood, the Perk coffee table is complemented by four matching upholstered seats that can seat your guests comfortably and stow away neatly underneath.",
       "features": [
-        "Wide-table top",
-        "Coffee table/center table"
+        "Upholstered matching seats",
+        "Includes 1 table+4 chair"
       ],
       "material": " Solid Wood",
-      "color": "Teal Green",
-      "deposit": "379"
+      "color": "Brown",
+      "deposit": "739",
+      "category": "furniture"
     },
     {
-      "id": 1,
-      "productimage": "https://p.rmjo.in/moodShot/zqztx0ou-1024x512.jpg",
-      "title": "Cross Trainer C-500",
-      "rent": "1109",
-      "deliverytime": "72 hrs",
-      "dimensions": [
-        54,
-        46,
-        23
-      ],
-      "producttype": "",
-      "description": "The C-500 cross-trainer delivers an instinctively natural stride that ensures a safe and consistent strengthening workout for your upper and lower body with reduced stress on your knees. The 8-level resistance control provides additional personalization for your workouts with heart-rate monitoring, making it an ideal fitness companion for your everyday workouts.",
-      "features": [
-        "Capacity/Size : 53",
-        "Max user weight: 110kg",
-        "8kg flywheel for a smooth noise-free workout",
-        "Non-slip pedals with 18 inches stride",
-        "Monitor distance, time, calories & heart-rate",
-        "Accessory tablet holder"
-      ],
-      "material": "",
-      "color": "",
-      "deposit": "1719"
-    },
-    {
-      "id": 5,
-      "productimage": "https://p.rmjo.in/moodShot/o6i6bl38-1024x512.jpg",
-      "title": "Auto Inclination Treadmill TM-33",
-      "rent": "2939",
-      "deliverytime": "25th Jul 2022",
-      "dimensions": [
-        49,
-        17
-      ],
-      "producttype": "treadmills",
-      "description": "Engage in a whole new fitness experience with Treadmill TM 33 Built with a powerful 1.5/3.0 HP DC motor and an automatic motorized incline, TM-33 can deliver high-intensity training for walkers, runners and fitness enthusiasts. With the added benefit of elastomer cushion and intelligent space-saving design, make fitness a way of life.",
-      "features": [
-        "Capacity/Size : 110 Kg",
-        "Max. user weight: 110kg",
-        "Anti-slip slide rail",
-        "Wide running area",
-        "Track workout progress on LCD",
-        "Soft drop foldable structure"
-      ],
-      "material": "",
-      "color": "",
-      "deposit": "3639"
-    },
-    {
-      "id": 51,
-      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
-      "title": "Rex 3-Seater Leather Sofa",
-      "rent": "739",
-      "deliverytime": "48 hrs",
-      "dimensions": [
-        83,
-        31,
-        32
-      ],
-      "producttype": "Sofas",
-      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
-      "features": [
-        "Leatherette covering",
-        "Foam filling"
-      ],
-      "material": "Art Leather",
-      "color": "Black",
-      "deposit": "1009"
-    }
-  ],
-  "likeditems": [
-    {
-      "id": "likeditem2",
-      "productimage": "https://p.rmjo.in/moodShot/wruziw9d-1024x512.jpg",
-      "title": "Sofa & Bed Combo",
-      "rent": "789",
-      "deposit": "1229",
+      "id": "likeditem1",
+      "newid": 1,
+      "productimage": "https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
+      "title": "Double Bed with Fridge & Washing Machine",
+      "rent": "1049",
+      "deposit": "1629",
       "product": [
         {
-          "productimage": "https://p.rmjo.in/productSquare/mf3434ld-500x500.jpg",
-          "title": "Felix 3-Seater Fabric Sofa (Blue)",
-          "rent": "789",
+          "productimage": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
+          "title": "Double Door Fridge (240 Litre)",
+          "rent": "1049",
           "dimensions": [
-            70,
-            33,
-            24
+            30,
+            25,
+            60
           ],
-          "description": "Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you.",
+          "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
           "features": [
-            "Soft fabric cover",
-            "3 seat cushions",
-            "Upholstered backrest cushions"
+            "Capacity/Size : 230-250 L",
+            "Brand May vary",
+            "Whirlpool/Haier/Godrej/Samsung",
+            "Deep Frost"
           ],
-          "material": "Fabric",
-          "color": "Blue",
-          "deposit": "1229"
+          "material": "",
+          "color": "",
+          "deposit": "1629"
         },
         {
-          "productimage": "https://p.rmjo.in/productSquare/70rj36m0-500x500.jpg",
-          "title": "Poise Wooden Queen Bed (6x5)",
-          "rent": "549",
+          "productimage": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
+          "title": "Top Load Washing Machine",
+          "rent": "769",
+          "dimensions": [
+            24,
+            23,
+            39
+          ],
+          "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
+          "features": [
+            "Capacity/Size : 5.8 to 6.5",
+            "Brands: Whirlpool/Haier/Godrej/Samsung",
+            "Sleek, compact design",
+            "Multiple wash modes"
+          ],
+          "material": "",
+          "color": "",
+          "deposit": "1189"
+        },
+        {
+          "productimage": "https://p.rmjo.in/productSquare/m9qgitpv-500x500.jpg",
+          "title": "Aurora Wooden Queen Bed (6x5)",
+          "rent": "539",
           "dimensions": [
             72,
             60,
-            17
+            8
           ],
-          "description": "Comfort and compactness, get them both with the Poise queen bed. The bed's strong metal frame ensures durability while the honey-toned solid wood adds both style and comfort to the mix.",
+          "description": "The Aurora bed's frame provides a simple & stylish look to your room. The light brown colour of the bed matches any decor. The cot's frame has a low height & a headboard for you to lean comfortably.",
           "features": [
-            "Metal bodied bed",
-            "Solid wood headboard",
-            "Durable coating to prevent rust",
-            "Honey finish"
+            "Cot frame with Headboard",
+            "Cot frame with Headboard",
+            "Wooden headboard",
+            "To fit Mattress Size: 72 inches L x 60 inches B"
           ],
-          "material": "Metal & Solid Wood",
-          "color": "brown",
-          "deposit": "849"
+          "material": "Solid wood",
+          "color": "Brown",
+          "deposit": "829"
         }
       ],
       "roomtype": [
         "bedroom",
-        "livingroom"
+        "appliances"
       ],
-      "items": "2"
-    },
+      "items": "3",
+      "category": "packages"
+    }
+  ],
+  "likeditems": [
     {
-      "id": "likeditem51",
-      "productimage": "https://p.rmjo.in/moodShot/ifv17023-1024x512.jpg",
-      "title": "Rex 3-Seater Leather Sofa",
-      "rent": "739",
-      "deliverytime": "48 hrs",
+      "id": "likeditem71",
+      "newid": 71,
+      "productimage": "https://p.rmjo.in/moodShot/20fvmug2-1024x512.jpg",
+      "title": "LED 32",
+      "rent": "949",
+      "deliverytime": "72 hrs",
       "dimensions": [
-        83,
-        31,
+        20,
+        5,
         32
       ],
-      "producttype": "Sofas",
-      "description": " Meet Rex, the couch that's here to redefine class. If you're looking for a chance treat yourself (and your living room) with a bit of luxury, get the Rex. Best part? It matches any home decor.",
+      "producttype": "Televisions",
+      "description": "Entertainment is just a click away with our Smart LED TV. Enjoy your favourite shows with high quality. Experience television like it was meant to be. So sit back & relax!",
       "features": [
-        "Leatherette covering",
-        "Foam filling"
+        "Capacity/Size : 32",
+        "Brands may vary",
+        "Wifi & Ethernet for internet connectivity",
+        "HDMI & USB support"
       ],
-      "material": "Art Leather",
+      "material": "",
       "color": "Black",
-      "deposit": "1009"
+      "deposit": "1309",
+      "category": "appliances"
+    },
+    {
+      "id": "likeditem1",
+      "newid": 1,
+      "productimage": "https://p.rmjo.in/moodShot/i05w1kj4-1024x512.jpg",
+      "title": "Double Bed with Fridge & Washing Machine",
+      "rent": "1049",
+      "deposit": "1629",
+      "product": [
+        {
+          "productimage": "https://p.rmjo.in/productSquare/caskfrhd-500x500.jpg",
+          "title": "Double Door Fridge (240 Litre)",
+          "rent": "1049",
+          "dimensions": [
+            30,
+            25,
+            60
+          ],
+          "description": "Our double-door refrigerators powerful cooling system ensures your food stays fresh & healthy. While it’s quick cooling saves you time, the energy efficient technology ensures great cooling at low costs.",
+          "features": [
+            "Capacity/Size : 230-250 L",
+            "Brand May vary",
+            "Whirlpool/Haier/Godrej/Samsung",
+            "Deep Frost"
+          ],
+          "material": "",
+          "color": "",
+          "deposit": "1629"
+        },
+        {
+          "productimage": "https://p.rmjo.in/productSquare/m00l8vn2-500x500.jpg",
+          "title": "Top Load Washing Machine",
+          "rent": "769",
+          "dimensions": [
+            24,
+            23,
+            39
+          ],
+          "description": "Stains, dirt or lint—get effortless cleaning with a Top Load Washing Machine. Equipped with multiple wash programs and a preset water level selector, save time on laundry without any hassle. This top load fully automatic washing machine is ideal for all your daily washing needs.",
+          "features": [
+            "Capacity/Size : 5.8 to 6.5",
+            "Brands: Whirlpool/Haier/Godrej/Samsung",
+            "Sleek, compact design",
+            "Multiple wash modes"
+          ],
+          "material": "",
+          "color": "",
+          "deposit": "1189"
+        },
+        {
+          "productimage": "https://p.rmjo.in/productSquare/m9qgitpv-500x500.jpg",
+          "title": "Aurora Wooden Queen Bed (6x5)",
+          "rent": "539",
+          "dimensions": [
+            72,
+            60,
+            8
+          ],
+          "description": "The Aurora bed's frame provides a simple & stylish look to your room. The light brown colour of the bed matches any decor. The cot's frame has a low height & a headboard for you to lean comfortably.",
+          "features": [
+            "Cot frame with Headboard",
+            "Cot frame with Headboard",
+            "Wooden headboard",
+            "To fit Mattress Size: 72 inches L x 60 inches B"
+          ],
+          "material": "Solid wood",
+          "color": "Brown",
+          "deposit": "829"
+        }
+      ],
+      "roomtype": [
+        "bedroom",
+        "appliances"
+      ],
+      "items": "3",
+      "category": "packages"
     }
   ]
 }

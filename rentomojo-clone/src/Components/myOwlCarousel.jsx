@@ -10,7 +10,7 @@ const MyOwlCarousel = () => {
     loop: true,
     margin: 10,
     items: 4.5,
-    infinite: true,
+    // infinite: true,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -76,6 +76,7 @@ const MyOwlCarousel = () => {
       // position={"relative"} position: sticky;
       /* position: -webkit-sticky; */
       z-index={1}
+      // width="100%"
       // top: 0;
     >
       <OwlCarousel className="owl-theme" {...options}>
