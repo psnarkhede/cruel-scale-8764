@@ -3,7 +3,7 @@ import Carousel from "../Components/Crousel";
 import { Pagelinkhomepage } from "../Components/Pagelink-homepage";
 import SliderHome from "../Components/SliderHome";
 import { Box } from "@chakra-ui/react";
-import MyOwlCarousel from "../Components/MyOwlCarousel";
+import MyOwlCarousel from "../Components/myOwlCarousel";
 import Reviews from "../Components/Reviews";
 import Features from "../Components/Features";
 
