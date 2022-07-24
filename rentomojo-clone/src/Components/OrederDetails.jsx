@@ -1,8 +1,46 @@
 import { Box, Button, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import{BsFileEarmarkText,BsCalendar3} from"react-icons/bs"
+import { useSelector,useDispatch } from "react-redux";
+import { addCartItem } from "../Redux/Cartapp/action";
 export const OrderDetails=()=>{
+    const [data,setRent] =useState([])
+    const dispatch=useDispatch()
+    const cartdata=useSelector((state)=>state.cartreducer.cartdata)
+    
+    const addPaymentRent=()=>{
+      
+      const totalProductRent =[...data];
+      totalProductRent?.length>0 && totalProductRent.reduce((previousValue, currentValu)=>{
+        
+         return Number(previousValue.rent)+Number(currentValu.rent)
+      })
 
+
+    }
+    addPaymentRent()
+    // console.log (addPaymentRent())
+
+    //  const totalProductRent =0;
+     const refundableDeposit=0;
+     const gst=0;
+     const deliverCharge=0;
+    useEffect(()=>{
+      if(cartdata?.length===0){
+        // setRent(cartdata)
+        dispatch(addCartItem()).then((r)=>{
+          if(r.type==='POST_DATA_TO_CARTS_SUCCESS'){
+             setRent(r.payload)
+            // addPaymentRent()
+
+          }
+     
+        })
+      }
+      // setRent(cartdata)
+    },[])
 
     return (
         <>
@@ -49,7 +87,7 @@ export const OrderDetails=()=>{
                         alignItems='center'
                        >
                         <Flex direction='column' justifyContent='space-around' gap={3}>
-                            <Box marginLeft='25px' marginTop='-13px'>
+                            <Box marginLeft='-190px' marginTop='-13px'>
                             <Text>
                             Payable Now 
                             </Text>
@@ -124,7 +162,7 @@ export const OrderDetails=()=>{
                         alignItems='center'
                        >
                         <Flex direction='column' justifyContent='space-around' gap={3}>
-                            <Box marginLeft='25px' marginTop='-13px'>
+                            <Box marginLeft='-170px' marginTop='-13px'>
                             <Text>
                               Monthly Payable
                             </Text>
