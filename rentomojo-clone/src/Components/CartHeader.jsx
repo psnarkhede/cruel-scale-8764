@@ -21,15 +21,6 @@ export const CartHeader = () => {
         bg={useColorModeValue("white")}
         // bg={"transparent"}
 
-<<<<<<< HEAD
-        <Box 
-        // border="1px solid red"
-        >
-          <Flex>
-            <LocationMenu />
-          </Flex>
-        </Box>
-=======
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         width={"90%"}
@@ -75,7 +66,6 @@ export const CartHeader = () => {
               </Box>
             </Link>
             {/* select city option  */}
->>>>>>> 441a9a602035747143d25660e66d0b2c7026e512
 
             <Box>
               <Flex>
