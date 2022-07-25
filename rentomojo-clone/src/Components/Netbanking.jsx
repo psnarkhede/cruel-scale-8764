@@ -1,4 +1,14 @@
-import { Box, Button, FormControl, FormLabel, Input, useDisclosure } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Flex,
+  FormControl,
+  FormLabel,
+  Image,
+  Input,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -8,20 +18,30 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
-import React, { useRef } from 'react'
+import React, { useRef } from "react";
 
 export const Netbanking = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const initialRef = useRef(null);
-    const finalRef = useRef(null);
+  const initialRef = useRef(null);
+  const finalRef = useRef(null);
 
   return (
     <>
-      <Button onClick={onOpen}>Open Modal</Button>
-      <Button ml={4} ref={finalRef}>
-        I'll receive focus on close
+      <Button onClick={onOpen}>
+        {" "}
+        <Flex flexDirection={"row"}>
+          <Image
+            cursor="pointer"
+            src="https://www.rentomojo.com/public/images/cart/payment/razorpay.png"
+            w="100px"
+            h="50px"
+          />
+        </Flex>
       </Button>
+      {/* <Button ml={4} ref={finalRef}>
+        I'll receive focus on close
+      </Button> */}
 
       <Modal
         initialFocusRef={initialRef}
@@ -55,4 +75,4 @@ export const Netbanking = () => {
       </Modal>
     </>
   );
-}
+};
