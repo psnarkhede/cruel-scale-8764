@@ -1998,6 +1998,31 @@
       "color": "Brown",
       "deposit": "299",
       "category": "furniture"
+    },
+    {
+      "id": "likeditem54",
+      "newid": 54,
+      "productimage": "https://p.rmjo.in/moodShot/ft5ggjmi-1024x512.jpg",
+      "title": "Regina 3-Seater Fabric Sofa ",
+      "rent": "899",
+      "deliverytime": "24 hrs",
+      "dimensions": [
+        72,
+        34,
+        33
+      ],
+      "producttype": "Sofas",
+      "description": "Indulge in classic styling of the Regina Sofa, which exudes pure comfort and style. With attention to the smallest detail, this designer sofa is finished with luxurious cushion seams and tapered legs in a premium walnut finish—perfect for making a bold statement.",
+      "features": [
+        "Seat filling: Soft foam",
+        "Rich textured upholstery",
+        "Sturdy solid wood frame",
+        "Boxed cushions"
+      ],
+      "material": "Fabric & Wood",
+      "color": "White",
+      "deposit": "1179",
+      "category": "furniture"
     }
   ],
   "likeditems": [
@@ -2023,6 +2048,29 @@
       "material": "Engineered Wood",
       "color": "Brown",
       "deposit": "339",
+      "category": "furniture"
+    },
+    {
+      "id": "likeditem56",
+      "newid": 56,
+      "productimage": "https://p.rmjo.in/moodShot/n557a055-1024x512.jpg",
+      "title": "Latte Wooden Coffee Table",
+      "rent": "279",
+      "deliverytime": "72 hrs",
+      "dimensions": [
+        35,
+        23,
+        14
+      ],
+      "producttype": "Center Tables",
+      "description": "The Latte Coffee table is light brown in colour and is sure to suit the decor of your living room. Serving multiple purposes, you can use it as a coffee table or a center table",
+      "features": [
+        "Wide-table top",
+        "Coffee table/center table"
+      ],
+      "material": " Solid Wood",
+      "color": "Teal Green",
+      "deposit": "379",
       "category": "furniture"
     },
     {

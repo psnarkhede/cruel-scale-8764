@@ -51,26 +51,23 @@ export const Netbanking = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Create your account</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="First name" />
-            </FormControl>
+            <Box >
+              <Flex>
+                <Image src="https://www.rentomojo.com/images/rm-razorpay.png" />
+                <Box marginTop="20px" marginLeft="20px">
+                  <Text>RentoMojo </Text>
+                  <Text> Order Id: 201570320</Text>
+                  <Text>₹ 3234 </Text>
+                </Box>
+              </Flex>
 
-            <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input placeholder="Last name" />
-            </FormControl>
+              <Box>
+                <Text textAlign="left">English</Text>
+              </Box>
+            </Box>
           </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3}>
-              Save
-            </Button>
-            <Button onClick={onClose}>Cancel</Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
