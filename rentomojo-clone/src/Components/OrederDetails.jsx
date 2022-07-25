@@ -6,6 +6,7 @@ import{BsFileEarmarkText,BsCalendar3} from"react-icons/bs"
 import { useSelector,useDispatch } from "react-redux";
 import { addCartItem } from "../Redux/Cartapp/action";
 import {Link} from "react-router-dom";
+import { PaymentCard } from "./PaymentCard";
 export const OrderDetails=()=>{
     const [data,setRent] =useState([])
     const dispatch=useDispatch()
@@ -105,27 +106,26 @@ export const OrderDetails=()=>{
                 </Flex>
               </Box>
             </Box>
-            {/* pay button */}
-            <Link to="/payment">
-              {" "}
-              <Box
-                //   border='1px solid gray'
-                w="100%"
-                h="90px"
-                p="10px 5px"
-              >
-                <Flex direction="row" justifyContent="space-around">
-                  {/* <Box> */}
-                  <Button colorScheme="red" w="98%" h="60px">
+            {/* pay button */}{" "}
+            <Box
+              //   border='1px solid gray'
+              w="100%"
+              h="90px"
+              p="10px 5px"
+            >
+              <Flex direction="row" justifyContent="space-around">
+                {/* <Box> */}
+                {/*<Button colorScheme="red" w="98%" h="60px">
                     <span>
-                      ₹3234 <Text fontSize="12px">Pay Now</Text>{" "}
+                    
+                     
                     </span>
                     <Text marginLeft="170px">Proceed</Text>
-                  </Button>
-                  {/* </Box> */}
-                </Flex>
-              </Box>{" "}
-            </Link>
+    </Button>*/}{" "}
+                <PaymentCard />
+                {/* </Box> */}
+              </Flex>
+            </Box>{" "}
           </Flex>
         </Box>
         {/* monthly payable */}
