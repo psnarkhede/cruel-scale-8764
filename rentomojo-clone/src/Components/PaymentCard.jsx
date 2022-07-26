@@ -20,17 +20,36 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { Netbanking } from "./Netbanking";
-export const PaymentCard = () => {
+export const PaymentCard = ({amount}) => {
   // const [size,setSize] =useState('')
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="red" w="98%" h="60px" onClick={onOpen}>
-        <Flex gap="140px" alignItems="center">
-          <Text> ₹3234</Text>
-          <Text fontSize="14px">Pay Now</Text>
+      <Button
+        marginLeft="7%"
+        ref={btnRef}
+        bg="#dc3226"
+        color="white"
+        w="80%"
+        h="60px"
+        _hover={{ bg: "#dc3226" }}
+        onClick={onOpen}
+      >
+        <Flex width="100%" justifyContent="space-between" alignItems="center">
+          <Box textAlign="left">
+            <Text fontSize="14px" fontWeight="200">
+              {" "}
+              ₹{amount}
+            </Text>
+            <Text fontSize="14px" fontWeight="100">
+              Payable Now
+            </Text>
+          </Box>
+          <Box>
+            <Text fontWeight="400">Proceed</Text>
+          </Box>
         </Flex>
       </Button>
       <Drawer
@@ -68,7 +87,7 @@ export const PaymentCard = () => {
                   <Flex direction="column">
                     <Text>Total Amount Payable</Text>
                     <Heading fontSize="19px" fontWeight="medium">
-                      ₹2974
+                      ₹{amount}
                     </Heading>
                     {/* checkbox and term start */}
                     <Box>
@@ -131,7 +150,7 @@ export const PaymentCard = () => {
                           <Text cursor="pointer" fontSize="13px">
                             Netbanking
                           </Text> */}
-                          <Netbanking />
+                          <Netbanking amount={amount} />
                         </Button>
                         <ChevronRightIcon fontSize="18px" cursor="pointer" />
                       </Flex>
