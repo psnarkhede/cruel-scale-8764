@@ -20,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 
-export const Netbanking = () => {
+export const Netbanking = ({amount}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = useRef(null);
@@ -59,7 +59,7 @@ export const Netbanking = () => {
                 <Box marginTop="20px" marginLeft="20px">
                   <Text>RentoMojo </Text>
                   <Text> Order Id: 201570320</Text>
-                  <Text>₹ 3234 </Text>
+                  <Text>₹ {amount} </Text>
                 </Box>
               </Flex>
 

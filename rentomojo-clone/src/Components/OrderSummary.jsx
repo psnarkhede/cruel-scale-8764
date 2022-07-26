@@ -10,7 +10,7 @@ export const OrderSummary=()=>{
     return (
         <Box
         //  border='1px solid teal'
-         w='80%' h='520px' marginTop='60px' marginLeft='65px' boxShadow='xl' p='' rounded='md' bg='white'
+         w='80%'height="590px" marginTop='60px' marginLeft='65px' boxShadow='xl' p='' rounded='md' bg='white'
 
         >
         <Flex direction='column' justifyContent='space-around' gap={3}>
