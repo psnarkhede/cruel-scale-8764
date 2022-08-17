@@ -27,12 +27,12 @@ Netlify link:- https://rentomojo-clone.netlify.app
 <p>There are severeal categories of products pages such as packages, furniture, electronics, appliances, fitness,etc. You can visit any of them according to your preference. One of the products page is dispalyed below.</p>
 <img src="https://strong-dodol-f37473.netlify.app/images/ProductsPage.jpg"/>
 
-### Product
+### Product page
 <p>On clicking any of the product it will redirect to the products page which shows detail information of the product along with buttons such as book your plan and add to wish list.</p>
 <img src="https://strong-dodol-f37473.netlify.app/images/productpage1.jpg"/>
 <img src="https://strong-dodol-f37473.netlify.app/images/productpage2.jpg"/>
 
-### Wish list
+### Wishlist page
 <p>This page shows the products which customer add to the wish list from product page. From here customer can also remove it from the wish list.</p>
 <img src="https://strong-dodol-f37473.netlify.app/images/wishlistpage.jpg"/>
 
