@@ -1,70 +1,58 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RentoMojo.com
+<p>	RentoMojo is an online rental platform that provides furniture, appliances and electronics (mobiles, laptops) on a monthly rental basis. </p>
 
-## Available Scripts
+## About this project.
+This project is built by us (5 team members) during construct week of unit 3 at Masai School.
+Netlify link:- https://rentomojo-clone.netlify.app 
 
-In the project directory, you can run:
+## Team Members.
+1.	Mr. Rahul Yadav.
+2.	Mr. Mallikarjuna Annigeri.
+3.	Mr. Rupesh Chavan.
+4.	Mr. Piyush Narkhede.
+5.	Mr. Raushan Kumar.
 
-### `npm start`
+## Pages and Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page
+<p>It contains Navigation bar with different categories. Also footer which provides some information about the company and links to social media handles. Also it shows images of some latest products.</p>
+<img src="https://strong-dodol-f37473.netlify.app/images/HomePage.jpg"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Signup and Login 
+<p>On this page, user can signup and after successfully signingup he can login.</p>
+<img src="https://strong-dodol-f37473.netlify.app/images/signup.jpg"/><img src="https://strong-dodol-f37473.netlify.app/images/login.jpg"/>
 
-### `npm test`
+### Products Page
+<p>There are severeal categories of products pages such as packages, furniture, electronics, appliances, fitness,etc. You can visit any of them according to your preference. One of the products page is dispalyed below.</p>
+<img src="https://strong-dodol-f37473.netlify.app/images/ProductsPage.jpg"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Product page
+<p>On clicking any of the product it will redirect to the products page which shows detail information of the product along with buttons such as book your plan and add to wish list.</p>
+<img src="https://strong-dodol-f37473.netlify.app/images/productpage1.jpg"/>
+<img src="https://strong-dodol-f37473.netlify.app/images/productpage2.jpg"/>
 
-### `npm run build`
+### Wishlist page
+<p>This page shows the products which customer add to the wish list from product page. From here customer can also remove it from the wish list.</p>
+<img src="https://strong-dodol-f37473.netlify.app/images/wishlistpage.jpg"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cart and Checkout page
+<p>On cart page customer can see the order summary and also customer can increase and decrease the quantity of the product. </p>
+<img src="https://strong-dodol-f37473.netlify.app/images/checkoutpage.jpg"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack:
+1.	HTML
+2.	CSS
+3.	JavaScript
+4.  React
+5.  Redux
+6.  Chakra-Ui
+7.  JSON-Server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tools Used
 
-### `npm run eject`
+###### • Github for code collaboration.
+###### • Slack and Zoom for communication.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Feedback:
+If you want to suggest us anything or want to give us feedback then please connect us at yrahul9452@gmail.com, mallikarjunaannigeri27@gmail.com, piyushnarkhede02@gmail.com, rupeshchavan12498@gmail.com, sraushan890@gmail.com
