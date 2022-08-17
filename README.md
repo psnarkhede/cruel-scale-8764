@@ -43,10 +43,16 @@ Netlify link:- https://rentomojo-clone.netlify.app
 ## Tech Stack:
 1.	HTML
 2.	CSS
-3.	JavaScript - ES6, local Storage, DE-bouncing, Fetch API, Import / Export, 
-                    Set Interval / Set Timeout.
-4.	API - for signIn and signUp functionality we used https://github.com/masai-school/api-mocker/wiki/Authentication-API
-5.  for search functionality we used https://api.unsplash.com
+3.	JavaScript
+4.  React
+5.  Redux
+6.  Chakra-Ui
+7.  JSON-Server
+
+## Tools Used
+
+###### • Github for code collaboration.
+###### • Slack and Zoom for communication.
 
 ## Feedback:
-If you want to suggest us anything or want to give us feedback then please connect us at boby150499@gmail.com, aifanislam50@gmail.com, piyushnarkhede02@gmail.com, anuragpawar.me@gmail.com, palprajjwal143@gmail.com, bokshisumit@gmail.com
+If you want to suggest us anything or want to give us feedback then please connect us at yrahul9452@gmail.com, mallikarjunaannigeri27@gmail.com, piyushnarkhede02@gmail.com, rupeshchavan12498@gmail.com, sraushan890@gmail.com
