@@ -149,6 +149,7 @@ export default function CaptionCarousel() {
             color="ff00ff"
             fontFamily="aerial"
             fontWeight={"3px"}
+            marginTop="10px"
           >
             Know more <IoIosArrowDroprightCircle />
           </Button>

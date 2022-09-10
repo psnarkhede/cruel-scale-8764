@@ -16,9 +16,11 @@ const Homepage = () => {
     <Box>
       <Navbar />
       <Box>
-        <Box width={"90%"} margin={"auto"}>
+        <Box width={"90%"}  margin={"auto"}>
           <Carousel />
-          <Pagelinkhomepage />
+          <Box width="100%">
+            <Pagelinkhomepage />
+          </Box>
         </Box>
         <Box
           bg={"rgb(245,247,250)"}
@@ -33,7 +35,6 @@ const Homepage = () => {
         {/* chat icon */}
         <Footer />
       </Box>
-    
     </Box>
   );
 };

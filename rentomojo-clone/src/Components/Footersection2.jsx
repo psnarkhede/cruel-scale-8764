@@ -129,7 +129,7 @@ export default function Footersection2() {
           </Stack>
         </SimpleGrid>
       </Container>
-      <Box>
+      <Box height="70px" display="flex" justifyContent="center" alignItems="center" >
         <Chatbox />
       </Box>
 

@@ -24,13 +24,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <BiPackage size={"60px"} />
           <Text>Package</Text>
@@ -41,13 +46,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <IoBedOutline size={"60px"} />
           <Text>Furniture</Text>
@@ -59,12 +69,17 @@ export const Pagelinkhomepage = () => {
           border={"1px solid grey"}
           borderRadius="10px"
           cursor="pointer"
-          padding="30px 40px 15px 40px"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <GiWashingMachine size={"60px"} />
           <Text>Appliances</Text>
@@ -75,13 +90,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <AiOutlineMobile size={"60px"} />
           <Text>Electronics</Text>
@@ -91,13 +111,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <RiEBikeLine size={"60px"} />
           <Text>Bikes</Text>
@@ -108,13 +133,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <CgGym size={"60px"} />
           <Text>Fitness</Text>
@@ -125,13 +155,18 @@ export const Pagelinkhomepage = () => {
         <Box
           border={"1px solid grey"}
           borderRadius="10px"
-          padding="30px 40px 15px 40px"
           cursor="pointer"
           _hover={{
             transition: "transform .5s, box-shadow 1s",
             boxShadow:
               "rgba(136, 165, 191, 0.48) 0px 10px 16px 10px, rgba(255, 255, 255, 0.8) 0px 2px 16px 0px",
           }}
+          width="130px"
+          height="130px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <GiOfficeChair size={"60px"} />
           <Text margin={"0"}>WFH Essentials</Text>

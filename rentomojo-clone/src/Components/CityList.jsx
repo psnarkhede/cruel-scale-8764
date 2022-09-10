@@ -3,7 +3,7 @@ import React from "react";
 
 const CityList = ({ city, image, id }) => {
   return (
-    <Box width="140px">
+    <Box >
       <Box
         // border={"1px solid red"}
         borderRadius="10px"

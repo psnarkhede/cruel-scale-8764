@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tooltip } from "@chakra-ui/react";
+import { Text, Tooltip } from "@chakra-ui/react";
 import {
   Modal,
   ModalOverlay,
@@ -17,6 +17,8 @@ export default function LocationMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = useState("");
   const [color, setColor] = useState("");
+
+  const [city, setCity] = useState("Pune");
 
   const handleSizeClick = (newSize) => {
     setSize(newSize);
@@ -115,28 +117,35 @@ export default function LocationMenu() {
   ];
 
   return (
-    <Box>
+    <Box  width="100%">
       <Tooltip
         label="Click to Change city"
         aria-label="A tooltip"
         marginTop={"5px"}
       >
-        <Button
+        <Box
           onClick={() => {
             handleSizeClick(sizes);
             setColor("white");
           }}
+          width="100%"
           key={size}
           m={4}
           bg="transparent"
           _hover={{ transition: "none" }}
           _active={{ borderStyle: "outset" }}
+          display="flex"
+          justifyContent="space-around"
+          alignItems="center"
+          margin="auto"
         >
-          Pune
+          <Text  width="90%" textAlign="center">
+            {city}
+          </Text>
           <AiOutlineDown />
-        </Button>
+        </Box>
       </Tooltip>
-      <Modal onClose={onClose} size={size} isOpen={isOpen}>
+      <Modal size={size} isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent>
           <Box margin={"15px"} padding="10px">
@@ -159,7 +168,7 @@ export default function LocationMenu() {
               >
                 {cities.map((e) => {
                   return (
-                    <Box>
+                    <Box onClick={() => (setCity(e.city_Name), onClose())}>
                       <CityList
                         city={e.city_Name}
                         key={e.id.toString()}

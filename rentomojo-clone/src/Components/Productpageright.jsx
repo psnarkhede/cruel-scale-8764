@@ -253,6 +253,7 @@ const Productpageright = ({data,category}) => {
         border="1px solid green"
         padding="0px 23% 0px 23%"
         _hover={{ bg: "white" }}
+        marginLeft="11%"
       >
         Compare All Tenures
       </Button>
@@ -274,6 +275,7 @@ const Productpageright = ({data,category}) => {
           color="white"
           border="1px solid red"
           padding="0px 24% 0px 24%"
+          marginLeft="11%"
           _hover={{ bg: "red" }}
           onClick={() => handleaddtocart(data)}
         >

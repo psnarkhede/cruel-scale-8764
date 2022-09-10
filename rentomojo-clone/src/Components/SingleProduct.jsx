@@ -105,14 +105,14 @@ const SingleProduct = ({
 
   return (
     <Box
+      border="1px solid gray;"
       height="420px"
-      width="290px"
-      border="1px solid grey"
+      width="100%"
       borderRadius="3px"
     >
       <Box
         // marginLeft="40%"
-        marginLeft="250px"
+        marginLeft="220px"
         bg="white"
         marginTop="12px"
         width="35px"
@@ -131,7 +131,12 @@ const SingleProduct = ({
         />
       </Box>
       <Img src={productimage} height="240px"></Img>
-      <Text fontFamily="Muli,sans-serif" fontSize="15px" marginTop="3px">
+      <Text
+        fontFamily="Muli,sans-serif"
+        fontSize="15px"
+        textAlign="center"
+        marginTop="3px"
+      >
         {title}
       </Text>
       <Divider
@@ -162,6 +167,7 @@ const SingleProduct = ({
           fontSize="13px"
           border="1px solid blue"
           width="200px"
+          marginLeft="13%"
         >
           Quick View
         </Button>

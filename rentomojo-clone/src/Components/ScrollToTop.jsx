@@ -26,9 +26,8 @@ const ScrollToTop = () => {
       {showTopBtn && (
         <Button
           className="icon-position icon-style"
-          width={"50px"}
           onClick={goToTop}
-          padding="5px"
+          padding="10px"
         >
           <Flex>
             Go Up <BsArrowUp size={"20px"} />
